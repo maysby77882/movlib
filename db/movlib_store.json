@@ -1,0 +1,2608 @@
+{
+  "media_items": {
+    "seed_movie_interstellar": {
+      "id": "seed_movie_interstellar",
+      "external_id": "157336",
+      "media_type": "movie",
+      "title": "Interstellar",
+      "release_year": "2014",
+      "creator": "Christopher Nolan",
+      "synopsis": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Adventure"
+      ],
+      "tags": [
+        "Scientific Rigor & Exploration",
+        "Time Dilation & Relativity",
+        "Awe & Wonder",
+        "Deep Space & Exoplanets"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Scientific Rigor & Exploration"
+        ],
+        "moods": [
+          "Awe & Wonder"
+        ],
+        "tropes": [
+          "Solitary Specialist / Castaway"
+        ]
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Scientific Rigor & Exploration\nConcepts: Time Dilation & Relativity\nTone & Atmosphere: Awe & Wonder\nSetting: Deep Space & Exoplanets\nCharacter Dynamics: Solitary Specialist / Castaway\nStory Essence: When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.335Z",
+      "updated_at": "2026-09-22T19:29:47.927Z"
+    },
+    "seed_movie_arrival": {
+      "id": "seed_movie_arrival",
+      "external_id": "329865",
+      "media_type": "movie",
+      "title": "Arrival",
+      "release_year": "2016",
+      "creator": "Denis Villeneuve",
+      "synopsis": "Taking place after alien crafts land around the world, an expert linguist is recruited by the military to determine whether they come in peace or are a threat.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Science Fiction",
+        "Mystery",
+        "Drama"
+      ],
+      "tags": [
+        "Sacrifice & Parental Grief",
+        "First Contact & Cosmic Unknown",
+        "Cerebral & Mind-Bending"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Sacrifice & Parental Grief"
+        ],
+        "moods": [
+          "Cerebral & Mind-Bending"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Sacrifice & Parental Grief\nConcepts: First Contact & Cosmic Unknown\nTone & Atmosphere: Cerebral & Mind-Bending\nStory Essence: Taking place after alien crafts land around the world, an expert linguist is recruited by the military to determine whether they come in peace or are a threat.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.339Z",
+      "updated_at": "2026-09-22T19:29:47.943Z"
+    },
+    "seed_movie_bladerunner2049": {
+      "id": "seed_movie_bladerunner2049",
+      "external_id": "335984",
+      "media_type": "movie",
+      "title": "Blade Runner 2049",
+      "release_year": "2017",
+      "creator": "Denis Villeneuve",
+      "synopsis": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Science Fiction",
+        "Mystery",
+        "Action"
+      ],
+      "tags": [
+        "Existentialism & Identity",
+        "Artificial Intelligence & Sentience",
+        "Tense & Claustrophobic"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Tense & Claustrophobic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Existentialism & Identity\nConcepts: Artificial Intelligence & Sentience\nTone & Atmosphere: Tense & Claustrophobic\nStory Essence: Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.340Z",
+      "updated_at": "2026-09-22T19:29:47.944Z"
+    },
+    "seed_movie_dune": {
+      "id": "seed_movie_dune",
+      "external_id": "438631",
+      "media_type": "movie",
+      "title": "Dune",
+      "release_year": "2021",
+      "creator": "Denis Villeneuve",
+      "synopsis": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.341Z",
+      "updated_at": "2026-09-22T20:50:08.493Z"
+    },
+    "seed_tv_dark": {
+      "id": "seed_tv_dark",
+      "external_id": "70523",
+      "media_type": "tv",
+      "title": "Dark",
+      "release_year": "2017",
+      "creator": "Baran bo Odar, Jantje Friese",
+      "synopsis": "A missing child sets four families on a frantic hunt for answers as they unearth a mind-bending mystery that spans three generations.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Drama",
+        "Mystery"
+      ],
+      "tags": [
+        "Determinism vs Free Will",
+        "Causal Loops & Time Travel",
+        "Cerebral & Mind-Bending",
+        "Bleak & Melancholic"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Determinism vs Free Will"
+        ],
+        "moods": [
+          "Cerebral & Mind-Bending",
+          "Bleak & Melancholic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Determinism vs Free Will\nConcepts: Causal Loops & Time Travel\nTone & Atmosphere: Cerebral & Mind-Bending; Bleak & Melancholic\nStory Essence: A missing child sets four families on a frantic hunt for answers as they unearth a mind-bending mystery that spans three generations.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.341Z",
+      "updated_at": "2026-09-22T19:29:47.950Z"
+    },
+    "seed_tv_severance": {
+      "id": "seed_tv_severance",
+      "external_id": "95396",
+      "media_type": "tv",
+      "title": "Severance",
+      "release_year": "2022",
+      "creator": "Dan Erickson",
+      "synopsis": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jEgdYp4pX7l4W6fV3E5dE6f7uX.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi & Fantasy"
+      ],
+      "tags": [
+        "Existentialism & Identity",
+        "Dystopian Panopticon"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": [
+          "The Awoken Worker / Split Persona"
+        ]
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Existentialism & Identity\nConcepts: Dystopian Panopticon\nTone & Atmosphere: Dramatic\nCharacter Dynamics: The Awoken Worker / Split Persona\nStory Essence: Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.342Z",
+      "updated_at": "2026-09-22T19:29:47.953Z"
+    },
+    "seed_tv_the_expanse": {
+      "id": "seed_tv_the_expanse",
+      "external_id": "63639",
+      "media_type": "tv",
+      "title": "The Expanse",
+      "release_year": "2015",
+      "creator": "Mark Fergus, Hawk Ostby",
+      "synopsis": "A thriller set two hundred years in the future following the case of a missing young woman who brings a hardened detective and a rogue ship's captain together in a race across the solar system.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/kNO4Nq1e7e7yH6K6U5f5n0L3Q4.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Drama",
+        "Mystery"
+      ],
+      "tags": [
+        "Power & Political Intrigue",
+        "Rebellion & Anti-Totalitarianism"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Power & Political Intrigue",
+          "Rebellion & Anti-Totalitarianism"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Power & Political Intrigue; Rebellion & Anti-Totalitarianism\nTone & Atmosphere: Dramatic\nStory Essence: A thriller set two hundred years in the future following the case of a missing young woman who brings a hardened detective and a rogue ship's captain together in a race across the solar system.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.343Z",
+      "updated_at": "2026-09-22T19:29:47.958Z"
+    },
+    "seed_book_three_body_problem": {
+      "id": "seed_book_three_body_problem",
+      "external_id": "gbook_three_body",
+      "media_type": "book",
+      "title": "The Three-Body Problem",
+      "release_year": "2008",
+      "creator": "Cixin Liu",
+      "synopsis": "Set against the backdrop of China's Cultural Revolution, a secret military project sends signals into space to establish contact with aliens, leading to a catastrophic chain of events.",
+      "poster_url": "https://books.google.com/books/content?id=zyTCAlFPjgYC&printsec=frontcover&img=1&zoom=1",
+      "backdrop_url": null,
+      "genres": [
+        "Hard Science Fiction",
+        "Cosmic Philosophy"
+      ],
+      "tags": [
+        "Scientific Rigor & Exploration",
+        "First Contact & Cosmic Unknown",
+        "Extinction-Level Crisis"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Scientific Rigor & Exploration"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Scientific Rigor & Exploration\nConcepts: First Contact & Cosmic Unknown; Extinction-Level Crisis\nTone & Atmosphere: Dramatic\nStory Essence: Set against the backdrop of China's Cultural Revolution, a secret military project sends signals into space to establish contact with aliens, leading to a catastrophic chain of events.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.344Z",
+      "updated_at": "2026-09-22T19:29:47.966Z"
+    },
+    "seed_book_project_hail_mary": {
+      "id": "seed_book_project_hail_mary",
+      "external_id": "gbook_hail_mary",
+      "media_type": "book",
+      "title": "Project Hail Mary",
+      "release_year": "2021",
+      "creator": "Andy Weir",
+      "synopsis": "Ryland Grace is the sole survivor on a desperate, last-chance mission—and if he fails, humanity and the earth itself will perish.",
+      "poster_url": "https://books.google.com/books/content?id=x7_rDwAAQBAJ&printsec=frontcover&img=1&zoom=1",
+      "backdrop_url": null,
+      "genres": [
+        "Science Fiction",
+        "Survival Thriller"
+      ],
+      "tags": [
+        "Scientific Rigor & Exploration",
+        "First Contact & Cosmic Unknown",
+        "Extinction-Level Crisis",
+        "Deep Space & Exoplanets"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Scientific Rigor & Exploration"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Scientific Rigor & Exploration\nConcepts: First Contact & Cosmic Unknown; Extinction-Level Crisis\nTone & Atmosphere: Dramatic\nSetting: Deep Space & Exoplanets\nStory Essence: Ryland Grace is the sole survivor on a desperate, last-chance mission—and if he fails, humanity and the earth itself will perish.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.346Z",
+      "updated_at": "2026-09-22T19:29:47.973Z"
+    },
+    "seed_book_1984": {
+      "id": "seed_book_1984",
+      "external_id": "gbook_1984",
+      "media_type": "book",
+      "title": "1984",
+      "release_year": "1949",
+      "creator": "George Orwell",
+      "synopsis": "A dystopian social science fiction novel and cautionary tale about totalitarianism, mass surveillance, and repressive regimentation of persons and behaviors within society.",
+      "poster_url": "https://books.google.com/books/content?id=kotPYEqx7kMC&printsec=frontcover&img=1&zoom=1",
+      "backdrop_url": null,
+      "genres": [
+        "Classic Literature",
+        "Dystopian"
+      ],
+      "tags": [
+        "Rebellion & Anti-Totalitarianism",
+        "Dystopian Panopticon"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Rebellion & Anti-Totalitarianism"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Rebellion & Anti-Totalitarianism\nConcepts: Dystopian Panopticon\nTone & Atmosphere: Dramatic\nStory Essence: A dystopian social science fiction novel and cautionary tale about totalitarianism, mass surveillance, and repressive regimentation of persons and behaviors within society.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.347Z",
+      "updated_at": "2026-09-22T19:29:47.975Z"
+    },
+    "seed_book_hyperion": {
+      "id": "seed_book_hyperion",
+      "external_id": "gbook_hyperion",
+      "media_type": "book",
+      "title": "Hyperion",
+      "release_year": "1989",
+      "creator": "Dan Simmons",
+      "synopsis": "On the world of Hyperion, the mysterious Time Tombs are opening, and seven pilgrims set forth on a final voyage to uncover their secrets.",
+      "poster_url": "https://books.google.com/books/content?id=4y8jDwAAQBAJ&printsec=frontcover&img=1&zoom=1",
+      "backdrop_url": null,
+      "genres": [
+        "Space Opera",
+        "Literary Sci-Fi"
+      ],
+      "tags": [
+        "Eerie & Uncanny"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Eerie & Uncanny"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Eerie & Uncanny\nStory Essence: On the world of Hyperion, the mysterious Time Tombs are opening, and seven pilgrims set forth on a final voyage to uncover their secrets.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-21T17:30:03.347Z",
+      "updated_at": "2026-09-22T19:29:47.977Z"
+    },
+    "ol_OL19761168W": {
+      "id": "ol_OL19761168W",
+      "external_id": "/works/OL19761168W",
+      "media_type": "book",
+      "title": "The proposal",
+      "release_year": "2018",
+      "creator": "Jasmine Guillory",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/9211495-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.866Z",
+      "updated_at": "2026-09-22T20:35:34.694Z"
+    },
+    "ol_OL21448052W": {
+      "id": "ol_OL21448052W",
+      "external_id": "/works/OL21448052W",
+      "media_type": "book",
+      "title": "An Ordinary Girl / The Proposal",
+      "release_year": "2008",
+      "creator": "Betty Neels",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/11699783-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: An Ordinary Girl / The Proposal\nMedium: Book\nCreator/Author: Betty Neels\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.871Z",
+      "updated_at": "2026-09-22T06:24:05.871Z"
+    },
+    "ol_OL111096W": {
+      "id": "ol_OL111096W",
+      "external_id": "/works/OL111096W",
+      "media_type": "book",
+      "title": "The proposal",
+      "release_year": "2002",
+      "creator": "Lori Wick",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/1470691-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: The proposal\nMedium: Book\nCreator/Author: Lori Wick\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.872Z",
+      "updated_at": "2026-09-22T06:24:05.872Z"
+    },
+    "ol_OL16134606W": {
+      "id": "ol_OL16134606W",
+      "external_id": "/works/OL16134606W",
+      "media_type": "book",
+      "title": "The Proposal",
+      "release_year": "2012",
+      "creator": "Mary Balogh",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/9729905-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: The Proposal\nMedium: Book\nCreator/Author: Mary Balogh\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.873Z",
+      "updated_at": "2026-09-22T06:24:05.873Z"
+    },
+    "ol_OL3457678W": {
+      "id": "ol_OL3457678W",
+      "external_id": "/works/OL3457678W",
+      "media_type": "book",
+      "title": "Christmas Wishes",
+      "release_year": "2003",
+      "creator": "Betty Neels",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/222020-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Christmas Wishes\nMedium: Book\nCreator/Author: Betty Neels\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.874Z",
+      "updated_at": "2026-09-22T06:24:05.874Z"
+    },
+    "ol_OL27810W": {
+      "id": "ol_OL27810W",
+      "external_id": "/works/OL27810W",
+      "media_type": "book",
+      "title": "The Proposal",
+      "release_year": "1999",
+      "creator": "Katherine Applegate",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/12656533-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: The Proposal\nMedium: Book\nCreator/Author: Katherine Applegate\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.874Z",
+      "updated_at": "2026-09-22T06:24:05.874Z"
+    },
+    "ol_OL15095540W": {
+      "id": "ol_OL15095540W",
+      "external_id": "/works/OL15095540W",
+      "media_type": "book",
+      "title": "Novels (Screwtape Letters / Screwtape Proposes a Toast)",
+      "release_year": "1955",
+      "creator": "C. S. Lewis",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/6602818-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Novels (Screwtape Letters / Screwtape Proposes a Toast)\nMedium: Book\nCreator/Author: C. S. Lewis\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.875Z",
+      "updated_at": "2026-09-22T06:24:05.875Z"
+    },
+    "ol_OL3238757W": {
+      "id": "ol_OL3238757W",
+      "external_id": "/works/OL3238757W",
+      "media_type": "book",
+      "title": "The Proposal",
+      "release_year": "1998",
+      "creator": "Margaret Evans Porter",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/1988239-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: The Proposal\nMedium: Book\nCreator/Author: Margaret Evans Porter\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.875Z",
+      "updated_at": "2026-09-22T06:24:05.875Z"
+    },
+    "ol_OL3498586W": {
+      "id": "ol_OL3498586W",
+      "external_id": "/works/OL3498586W",
+      "media_type": "book",
+      "title": "The Pregnancy Proposal",
+      "release_year": "2003",
+      "creator": "Helen Bianchin",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/214933-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: The Pregnancy Proposal\nMedium: Book\nCreator/Author: Helen Bianchin\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.876Z",
+      "updated_at": "2026-09-22T06:24:05.876Z"
+    },
+    "ol_OL3803113W": {
+      "id": "ol_OL3803113W",
+      "external_id": "/works/OL3803113W",
+      "media_type": "book",
+      "title": "The Ruthless Marriage Proposal",
+      "release_year": "2007",
+      "creator": "Miranda Lee",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/1185950-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: The Ruthless Marriage Proposal\nMedium: Book\nCreator/Author: Miranda Lee\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T06:24:05.876Z",
+      "updated_at": "2026-09-22T06:24:05.876Z"
+    },
+    "tmdb_tv_17995": {
+      "id": "tmdb_tv_17995",
+      "external_id": "17995",
+      "media_type": "tv",
+      "title": "Isse Kehte Hai Golmaal Ghar",
+      "release_year": "N/A",
+      "creator": "",
+      "synopsis": "Isse Kehte Hai Golmaal Ghar is an Indian soap opera that aired on Sahara One channel in 2004. The series premiered on October 30, 2004, and aired on every Saturday at 8:30pm IST, starring Gauri Pradhan & Manav Gohil as the main protagonists.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [
+        "Drama"
+      ],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Isse Kehte Hai Golmaal Ghar is an Indian soap opera that aired on Sahara One channel in 2004. The series premiered on October 30, 2004, and aired on every Saturday at 8:30pm IST, starring Gauri Pradhan & Manav Gohil as the main protagonists.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:26:56.397Z",
+      "updated_at": "2026-09-22T20:51:31.311Z"
+    },
+    "ol_OL19739602W": {
+      "id": "ol_OL19739602W",
+      "external_id": "/works/OL19739602W",
+      "media_type": "book",
+      "title": "Golmaal again!!!",
+      "release_year": "2017",
+      "creator": "Yunus Sajawal, Farhad Sajid",
+      "synopsis": "No preview available.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Golmaal again!!!\nMedium: Book\nCreator/Author: Yunus Sajawal, Farhad Sajid\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:26:56.400Z",
+      "updated_at": "2026-09-22T13:26:56.400Z"
+    },
+    "tmdb_movie_48988": {
+      "id": "tmdb_movie_48988",
+      "external_id": 48988,
+      "media_type": "movie",
+      "title": "Hall Pass",
+      "release_year": "2011",
+      "creator": "",
+      "synopsis": "When best buds Rick and Fred begin to show signs of restlessness at home, their wives take a bold approach to revitalize their marriages, they grant the guys a 'hall pass'—one week of freedom to do whatever they want. At first, it seems like a dream come true, but they quickly discover that their expectations of the single life—and themselves—are completely and hilariously out of sync with reality.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/eol3uD6whQKOKCmmhF7z39fq2Pe.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Hall Pass\nMedium: Movie\nThemes: \nPlot Summary: When best buds Rick and Fred begin to show signs of restlessness at home, their wives take a bold approach to revitalize their marriages, they grant the guys a 'hall pass'—one week of freedom to do whatever they want. At first, it seems like a dream come true, but they quickly discover that their expectations of the single life—and themselves—are completely and hilariously out of sync with reality.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.229Z",
+      "updated_at": "2026-09-22T13:29:22.229Z"
+    },
+    "tmdb_movie_1028589": {
+      "id": "tmdb_movie_1028589",
+      "external_id": 1028589,
+      "media_type": "movie",
+      "title": "Hall Pass Nightmare",
+      "release_year": "2022",
+      "creator": "",
+      "synopsis": "Carrie and Justin Palmer are the perfect couple to everyone around them. Or so it seems. They recently celebrated ten years of marriage and are talking about starting a family. After a wine filled evening, Carrie's girlfriends press her to share who her \"hall pass\" would be. Carrie admits that she has had a crush on famed rocker, Dante Jones, since she was in college but would never betray Justin if given the opportunity. After a business trip to Vegas and a chance meeting with Dante himself after his concert, her obsession suddenly becomes his. Carrie does everything in her power to keep her secret away from her friends and more importantly, Justin, but Dante's stalking and relentless infatuation becomes all-consuming and far too dangerous to hide.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/YoaNq0A0VPyA5zEtsbvy9cQCe8.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Hall Pass Nightmare\nMedium: Movie\nThemes: \nPlot Summary: Carrie and Justin Palmer are the perfect couple to everyone around them. Or so it seems. They recently celebrated ten years of marriage and are talking about starting a family. After a wine filled evening, Carrie's girlfriends press her to share who her \"hall pass\" would be. Carrie admits that she has had a crush on famed rocker, Dante Jones, since she was in college but would never betray Justin if given the opportunity. After a business trip to Vegas and a chance meeting with Dante himself after his concert, her obsession suddenly becomes his. Carrie does everything in her power to keep her secret away from her friends and more importantly, Justin, but Dante's stalking and relentless infatuation becomes all-consuming and far too dangerous to hide.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.231Z",
+      "updated_at": "2026-09-22T13:29:22.231Z"
+    },
+    "tmdb_movie_1397266": {
+      "id": "tmdb_movie_1397266",
+      "external_id": 1397266,
+      "media_type": "movie",
+      "title": "The Hall Pass",
+      "release_year": "N/A",
+      "creator": "",
+      "synopsis": "An insecure boyfriend believes the love of his life is cheating on him after she reveals she'd want her \"hall pass\" to be with her buff yoga instructor.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/eI7cP9rW6tgr11bx2sZAoRcOFtK.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: The Hall Pass\nMedium: Movie\nThemes: \nPlot Summary: An insecure boyfriend believes the love of his life is cheating on him after she reveals she'd want her \"hall pass\" to be with her buff yoga instructor.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.233Z",
+      "updated_at": "2026-09-22T13:29:22.233Z"
+    },
+    "tmdb_movie_1662273": {
+      "id": "tmdb_movie_1662273",
+      "external_id": 1662273,
+      "media_type": "movie",
+      "title": "Hall Pass Enforcement",
+      "release_year": "2026",
+      "creator": "",
+      "synopsis": "The HPE isn't ICE, yes sure they have an integrated system with the DHS, but like it's completely different! This satire was made for an AP Language and Composition class. The prompt was to satirize something currently important in society today. The amazing group you are watching, wrote the script in under a day, and then shot it, thirty minutes a day, for two weeks. Special thanks to Layla Booker and Lucas Selesnick as this was not their projects and they helped out our crew. I hope you enjoy this student film, consider subscribing so we can all go to college, much love.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/38E4SudZUv4aCuZlGEC9rghO7Fe.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Hall Pass Enforcement\nMedium: Movie\nThemes: \nPlot Summary: The HPE isn't ICE, yes sure they have an integrated system with the DHS, but like it's completely different! This satire was made for an AP Language and Composition class. The prompt was to satirize something currently important in society today. The amazing group you are watching, wrote the script in under a day, and then shot it, thirty minutes a day, for two weeks. Special thanks to Layla Booker and Lucas Selesnick as this was not their projects and they helped out our crew. I hope you enjoy this student film, consider subscribing so we can all go to college, much love.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.234Z",
+      "updated_at": "2026-09-22T13:29:22.234Z"
+    },
+    "tmdb_movie_717643": {
+      "id": "tmdb_movie_717643",
+      "external_id": 717643,
+      "media_type": "movie",
+      "title": "Homerooms And Hall Passes",
+      "release_year": "N/A",
+      "creator": "",
+      "synopsis": "Follows a group of young adventurers who exist in a fantasy world. During the day they embark on quests and battle evil wizards and when they get home from their busy day of slaying, they unwind by engaging in a role-playing aptly titled game “Homerooms and Hall Passes” where they assume the identities of average eighth-graders. All is fun and games until an ancient curse sends the young adventurers into a world of mundane suburbia. While there, they must band together to survive their toughest adventure yet: middle school.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Homerooms And Hall Passes\nMedium: Movie\nThemes: \nPlot Summary: Follows a group of young adventurers who exist in a fantasy world. During the day they embark on quests and battle evil wizards and when they get home from their busy day of slaying, they unwind by engaging in a role-playing aptly titled game “Homerooms and Hall Passes” where they assume the identities of average eighth-graders. All is fun and games until an ancient curse sends the young adventurers into a world of mundane suburbia. While there, they must band together to survive their toughest adventure yet: middle school.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.236Z",
+      "updated_at": "2026-09-22T13:29:22.236Z"
+    },
+    "tmdb_movie_784872": {
+      "id": "tmdb_movie_784872",
+      "external_id": 784872,
+      "media_type": "movie",
+      "title": "Passenger: From the Royal Albert Hall",
+      "release_year": "2021",
+      "creator": "",
+      "synopsis": "An exclusive film of Passenger performing a set from his extensive back catalogue at the iconic Royal Albert Hall in London.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/x9PDBwn0WbOvxgUYqSfdQDp1zCa.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Passenger: From the Royal Albert Hall\nMedium: Movie\nThemes: \nPlot Summary: An exclusive film of Passenger performing a set from his extensive back catalogue at the iconic Royal Albert Hall in London.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.238Z",
+      "updated_at": "2026-09-22T13:29:22.238Z"
+    },
+    "tmdb_movie_277221": {
+      "id": "tmdb_movie_277221",
+      "external_id": 277221,
+      "media_type": "movie",
+      "title": "Ryan Hall - Passing the Guard",
+      "release_year": "N/A",
+      "creator": "",
+      "synopsis": "Ryan Halls new Passing the Guard DVDs breaks that trend and teaches that all guard passing should use same key principals, regardless if your fighting an opponent using the Spider, X-Guard, Cross Guard, Half-Guard and so on. The basis of Ryan’s system is to effectively control the opponent on the bottom; creating a defense that is so impenetrable, it forces your opponent into making critical mistakes. Learn to stop even the most elaborate guard sweeps, reversals and submissions by controlling every move and effectively stopping the attack before it can even begin.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Ryan Hall - Passing the Guard\nMedium: Movie\nThemes: \nPlot Summary: Ryan Halls new Passing the Guard DVDs breaks that trend and teaches that all guard passing should use same key principals, regardless if your fighting an opponent using the Spider, X-Guard, Cross Guard, Half-Guard and so on. The basis of Ryan’s system is to effectively control the opponent on the bottom; creating a defense that is so impenetrable, it forces your opponent into making critical mistakes. Learn to stop even the most elaborate guard sweeps, reversals and submissions by controlling every move and effectively stopping the attack before it can even begin.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.240Z",
+      "updated_at": "2026-09-22T13:29:22.240Z"
+    },
+    "tmdb_movie_1482940": {
+      "id": "tmdb_movie_1482940",
+      "external_id": 1482940,
+      "media_type": "movie",
+      "title": "PassCode MEGA VEGAS 2023 at Kobe World Memorial Hall",
+      "release_year": "2023",
+      "creator": "",
+      "synopsis": "PassCode MEGA VEGAS 2023 at Kobe World Memorial Hall",
+      "poster_url": "https://image.tmdb.org/t/p/w500/hV0cNav5OC8KGHSzprPgwo58j9r.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: PassCode MEGA VEGAS 2023 at Kobe World Memorial Hall\nMedium: Movie\nThemes: \nPlot Summary: PassCode MEGA VEGAS 2023 at Kobe World Memorial Hall",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.241Z",
+      "updated_at": "2026-09-22T13:29:22.241Z"
+    },
+    "ol_OL2645476W": {
+      "id": "ol_OL2645476W",
+      "external_id": "/works/OL2645476W",
+      "media_type": "book",
+      "title": "Passing",
+      "release_year": "1929",
+      "creator": "Nella Larsen, Matthew Hodgson",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/11145883-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Passing\nMedium: Book\nCreator/Author: Nella Larsen, Matthew Hodgson\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.242Z",
+      "updated_at": "2026-09-22T13:29:22.242Z"
+    },
+    "ol_OL20523275W": {
+      "id": "ol_OL20523275W",
+      "external_id": "/works/OL20523275W",
+      "media_type": "book",
+      "title": "Homerooms and Hall Passes",
+      "release_year": "2019",
+      "creator": "Tom O'Donnell",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/9173918-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Homerooms and Hall Passes\nMedium: Book\nCreator/Author: Tom O'Donnell\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.243Z",
+      "updated_at": "2026-09-22T13:29:22.243Z"
+    },
+    "ol_OL4331897W": {
+      "id": "ol_OL4331897W",
+      "external_id": "/works/OL4331897W",
+      "media_type": "book",
+      "title": "Hall Pass (Nightmares)",
+      "release_year": "1995",
+      "creator": "Robert Hawks",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/1057956-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Hall Pass (Nightmares)\nMedium: Book\nCreator/Author: Robert Hawks\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.244Z",
+      "updated_at": "2026-09-22T13:29:22.244Z"
+    },
+    "ol_OL4331896W": {
+      "id": "ol_OL4331896W",
+      "external_id": "/works/OL4331896W",
+      "media_type": "book",
+      "title": "Hall pass",
+      "release_year": "1993",
+      "creator": "Robert Hawks",
+      "synopsis": "No preview available.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Hall pass\nMedium: Book\nCreator/Author: Robert Hawks\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.245Z",
+      "updated_at": "2026-09-22T13:29:22.245Z"
+    },
+    "ol_OL35757818W": {
+      "id": "ol_OL35757818W",
+      "external_id": "/works/OL35757818W",
+      "media_type": "book",
+      "title": "Monster Hall Pass",
+      "release_year": "2023",
+      "creator": "Bru Baker, Emily Y. Chan",
+      "synopsis": "No preview available.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Monster Hall Pass\nMedium: Book\nCreator/Author: Bru Baker, Emily Y. Chan\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.247Z",
+      "updated_at": "2026-09-22T13:29:22.247Z"
+    },
+    "ol_OL38386247W": {
+      "id": "ol_OL38386247W",
+      "external_id": "/works/OL38386247W",
+      "media_type": "book",
+      "title": "Freeuse Hall Pass",
+      "release_year": "2024",
+      "creator": "Lacey Cross",
+      "synopsis": "No preview available.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Freeuse Hall Pass\nMedium: Book\nCreator/Author: Lacey Cross\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.248Z",
+      "updated_at": "2026-09-22T13:29:22.248Z"
+    },
+    "ol_OL40421004W": {
+      "id": "ol_OL40421004W",
+      "external_id": "/works/OL40421004W",
+      "media_type": "book",
+      "title": "Hall Pass",
+      "release_year": "2016",
+      "creator": "Dyphia Blount, Gemini Phoenix",
+      "synopsis": "No preview available.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Hall Pass\nMedium: Book\nCreator/Author: Dyphia Blount, Gemini Phoenix\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.249Z",
+      "updated_at": "2026-09-22T13:29:22.249Z"
+    },
+    "ol_OL137500W": {
+      "id": "ol_OL137500W",
+      "external_id": "/works/OL137500W",
+      "media_type": "book",
+      "title": "Please pass the guilt",
+      "release_year": "1973",
+      "creator": "Rex Stout",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/1922058-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Please pass the guilt\nMedium: Book\nCreator/Author: Rex Stout\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.250Z",
+      "updated_at": "2026-09-22T13:29:22.250Z"
+    },
+    "ol_OL30416697W": {
+      "id": "ol_OL30416697W",
+      "external_id": "/works/OL30416697W",
+      "media_type": "book",
+      "title": "Hall Pass",
+      "release_year": "2019",
+      "creator": "Michael Manyara",
+      "synopsis": "No preview available.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Hall Pass\nMedium: Book\nCreator/Author: Michael Manyara\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.251Z",
+      "updated_at": "2026-09-22T13:29:22.251Z"
+    },
+    "ol_OL41392083W": {
+      "id": "ol_OL41392083W",
+      "external_id": "/works/OL41392083W",
+      "media_type": "book",
+      "title": "Hall Pass",
+      "release_year": "2018",
+      "creator": "Zoe Waters",
+      "synopsis": "No preview available.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [],
+        "moods": [],
+        "tropes": []
+      },
+      "narrative_profile": "Title: Hall Pass\nMedium: Book\nCreator/Author: Zoe Waters\nThemes: \nPlot Summary: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T13:29:22.252Z",
+      "updated_at": "2026-09-22T13:29:22.252Z"
+    },
+    "tmdb_movie_553610": {
+      "id": "tmdb_movie_553610",
+      "external_id": "553610",
+      "media_type": "movie",
+      "title": "Mobile Suit Gundam Narrative",
+      "release_year": "2018",
+      "creator": "",
+      "synopsis": "U.C. 0097, one year after the opening of \"Laplace's Box\". Despite the revelation of the Universal Century Charter that acknowledges the existence and rights of Newtypes, the framework of the world has not been greatly altered. The conflict later dubbed the \"Laplace Incident\" is thought to have ended with the downfall of the Neo Zeon remnants known as the Sleeves. In its final battle, two full psycho-frame mobile suits displayed power beyond human understanding. The white unicorn and the black lion were sealed away to remove this danger from people's consciousness, and they should now be completely forgotten. However, the RX-0 Unicorn Gundam 03, which disappeared two years earlier, is now about to show itself in the Earth Sphere once more. A golden phoenix… named Phenex.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/rX0jSZIPbCRL1Qg7kM1gI88L9Hw.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: U.C. 0097, one year after the opening of \"Laplace's Box\". Despite the revelation of the Universal Century Charter that acknowledges the existence and rights of Newtypes, the framework of the world has not been greatly altered. The conflict later dubbed the \"Laplace Incident\" is thought to have ended with the downfall of the Neo Zeon remnants known as the Sleeves. In its final battle, two full psycho-frame mobile suits displayed power beyond human understanding. The white unicorn and the black lion were sealed away to remove this danger from people's consciousness, and they should now be completely forgotten. However, the RX-0 Unicorn Gundam 03, which disappeared two years earlier, is now about to show itself in the Earth Sphere once more. A golden phoenix… named Phenex.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.604Z",
+      "updated_at": "2026-09-22T20:51:32.109Z"
+    },
+    "tmdb_movie_1134412": {
+      "id": "tmdb_movie_1134412",
+      "external_id": "1134412",
+      "media_type": "movie",
+      "title": "Narrative",
+      "release_year": "2023",
+      "creator": "",
+      "synopsis": "Adam's hooked on the idea that you only live once. Jenny on the other hand sees life as a gift. They share a connection-issue and neither of them have been in a real relationship. Adam wants to figure out why a smart girl like Jenny, would not even applying for the college she's most interested in attending.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/zFSoZugIuMLJvIkbwYgE1Daumqq.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Adam's hooked on the idea that you only live once. Jenny on the other hand sees life as a gift. They share a connection-issue and neither of them have been in a real relationship. Adam wants to figure out why a smart girl like Jenny, would not even applying for the college she's most interested in attending.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.606Z",
+      "updated_at": "2026-09-22T20:51:32.110Z"
+    },
+    "tmdb_movie_1567132": {
+      "id": "tmdb_movie_1567132",
+      "external_id": "1567132",
+      "media_type": "movie",
+      "title": "Narrative",
+      "release_year": "2025",
+      "creator": "",
+      "synopsis": "In 2010, more than 90 civilians were killed and 2,000 injured during crackdowns on pro-democracy protests in Bangkok; to date, Thai authorities have not held any government or military officials accountable. The film reframes the experiences of survivors by filming them sharing their stories in facilitated workshops and discussing how to seek justice for their family members with a human rights lawyer.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Morality & Corruption"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Morality & Corruption"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Morality & Corruption\nTone & Atmosphere: Dramatic\nStory Essence: In 2010, more than 90 civilians were killed and 2,000 injured during crackdowns on pro-democracy protests in Bangkok; to date, Thai authorities have not held any government or military officials accountable. The film reframes the experiences of survivors by filming them sharing their stories in facilitated workshops and discussing how to seek justice for their family members with a human rights lawyer.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.608Z",
+      "updated_at": "2026-09-22T20:51:32.112Z"
+    },
+    "tmdb_movie_1604449": {
+      "id": "tmdb_movie_1604449",
+      "external_id": "1604449",
+      "media_type": "movie",
+      "title": "The Narrative",
+      "release_year": "2026",
+      "creator": "",
+      "synopsis": "As long as Kweku Adoboli is making millions for UBS in London, his future seems golden. But when the young trader takes responsibility for a $2.3 billion loss, the narrative shifts dramatically.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jX8gITOhad4YotQNgG3AbK336IM.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Sacrifice & Parental Grief"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Sacrifice & Parental Grief"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Sacrifice & Parental Grief\nTone & Atmosphere: Dramatic\nStory Essence: As long as Kweku Adoboli is making millions for UBS in London, his future seems golden. But when the young trader takes responsibility for a $2.3 billion loss, the narrative shifts dramatically.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.610Z",
+      "updated_at": "2026-09-22T20:51:32.113Z"
+    },
+    "tmdb_movie_1307072": {
+      "id": "tmdb_movie_1307072",
+      "external_id": "1307072",
+      "media_type": "movie",
+      "title": "Dust Narrative",
+      "release_year": "2013",
+      "creator": "",
+      "synopsis": "An audiovisual work that consists of 6593 frames of dust collected and scanned over a 2 month process by Nan Wang into an animated work combined with digital footage.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/2NzmJZm2fBudgcJ2L9gCiCyKKPj.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: An audiovisual work that consists of 6593 frames of dust collected and scanned over a 2 month process by Nan Wang into an animated work combined with digital footage.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.611Z",
+      "updated_at": "2026-09-22T20:51:32.114Z"
+    },
+    "tmdb_movie_516340": {
+      "id": "tmdb_movie_516340",
+      "external_id": "516340",
+      "media_type": "movie",
+      "title": "National Narrative",
+      "release_year": "2018",
+      "creator": "",
+      "synopsis": "“Hi, what are you up to?” On the video chat, Periscope, the exchange of images can be enriched by text messages and/or a flow of hearts allowing people who are streaming their video live to see strangers’ comments on their appearance or their conversations. Entirely constructed using these exchanges, National Narrative probes the exhibitionist norm of the enhanced selfie. Spontaneous poetry (“Your eyes they wanna drive me bananas”), a burlesque scene between two loafers who are unable to make out which of them is receiving mocking comments as they confuse left and right on the screen… Far from sparking derision, this montage instead points up the users’ self-derision and the paradoxical coyness of a space where people claim to show everything, from breasts to vomit. How does the immediacy of a chat between strangers integrate into its playful and intentionally exaggerated quotidian, the incommensurable horror when a tragic event intervenes?",
+      "poster_url": "https://image.tmdb.org/t/p/w500/nAWapXHAxXsc7hZ4IsrFQogv0Ek.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Bleak & Melancholic"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Bleak & Melancholic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Bleak & Melancholic\nStory Essence: “Hi, what are you up to?” On the video chat, Periscope, the exchange of images can be enriched by text messages and/or a flow of hearts allowing people who are streaming their video live to see strangers’ comments on their appearance or their conversations. Entirely constructed using these exchanges, National Narrative probes the exhibitionist norm of the enhanced selfie. Spontaneous poetry (“Your eyes they wanna drive me bananas”), a burlesque scene between two loafers who are unable to make out which of them is receiving mocking comments as they confuse left and right on the screen… Far from sparking derision, this montage instead points up the users’ self-derision and the paradoxical coyness of a space where people claim to show everything, from breasts to vomit. How does the immediacy of a chat between strangers integrate into its playful and intentionally exaggerated quotidian, the incommensurable horror when a tragic event intervenes?",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.613Z",
+      "updated_at": "2026-09-22T20:51:32.116Z"
+    },
+    "tmdb_movie_717179": {
+      "id": "tmdb_movie_717179",
+      "external_id": "717179",
+      "media_type": "movie",
+      "title": "Dramatic Narrative",
+      "release_year": "2020",
+      "creator": "",
+      "synopsis": "No synopsis available.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/uKPdGkp282uK6PGQTlctJRWvZ3L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: No synopsis available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.615Z",
+      "updated_at": "2026-09-22T20:51:32.118Z"
+    },
+    "tmdb_movie_1505392": {
+      "id": "tmdb_movie_1505392",
+      "external_id": "1505392",
+      "media_type": "movie",
+      "title": "Marital Narrative",
+      "release_year": "2018",
+      "creator": "",
+      "synopsis": "No synopsis available.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/g6rIrzMvRdY8hRwYvYORBFxvt6C.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: No synopsis available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.616Z",
+      "updated_at": "2026-09-22T20:51:32.120Z"
+    },
+    "tmdb_movie_797489": {
+      "id": "tmdb_movie_797489",
+      "external_id": "797489",
+      "media_type": "movie",
+      "title": "Narrative Devices",
+      "release_year": "2016",
+      "creator": "",
+      "synopsis": "Prompts of a far too real present, Narrative Devices by DIS and Babak Radboy reflects the “post-contemporary”: the future as familiar, predictable, immutable, a simulacrum of the past. It is the present that is unknowable, unpredictable and incomprehensible. In a post-Trump, post-truth, “alternative facts” reality, Narrative Devices suggests fantasy is more influential and effective than reality.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/TLy2CV3iq3sAMlNSpLnGZjgnrn.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Prompts of a far too real present, Narrative Devices by DIS and Babak Radboy reflects the “post-contemporary”: the future as familiar, predictable, immutable, a simulacrum of the past. It is the present that is unknowable, unpredictable and incomprehensible. In a post-Trump, post-truth, “alternative facts” reality, Narrative Devices suggests fantasy is more influential and effective than reality.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.617Z",
+      "updated_at": "2026-09-22T20:51:32.121Z"
+    },
+    "tmdb_movie_963909": {
+      "id": "tmdb_movie_963909",
+      "external_id": "963909",
+      "media_type": "movie",
+      "title": "Narrative Information",
+      "release_year": "1986",
+      "creator": "",
+      "synopsis": "\"Narrative Information is an exhibition of four of my short story computer-video sculptures. Abortion, language, relationships, and war are my subject matter. I endeavor to get the viewer involved in my interplay between the simple and the complex, between the child and adult narrative viewpoints, and between the image and the technology that produces it all wrapped up in my simmering dark humor.\" -CFG",
+      "poster_url": "https://image.tmdb.org/t/p/w500/zl48gsru8FT0sWbuZCUza9EN7Ij.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Dark & Gritty"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dark & Gritty"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dark & Gritty\nStory Essence: \"Narrative Information is an exhibition of four of my short story computer-video sculptures. Abortion, language, relationships, and war are my subject matter. I endeavor to get the viewer involved in my interplay between the simple and the complex, between the child and adult narrative viewpoints, and between the image and the technology that produces it all wrapped up in my simmering dark humor.\" -CFG",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.618Z",
+      "updated_at": "2026-09-22T20:51:32.124Z"
+    },
+    "tmdb_tv_275235": {
+      "id": "tmdb_tv_275235",
+      "external_id": "275235",
+      "media_type": "tv",
+      "title": "Narrative Telephone",
+      "release_year": "2020",
+      "creator": "",
+      "synopsis": "Much like the game of telephone we all played in elementary school, Narrative Telephone involves a group of friends telling and re-telling a short story from one person to the next; with only their memory to help them recount what they heard. As the story inevitably changes and distorts it becomes more and more outlandish and hilarious. They then gather to watch the results and react, comment, commiserate, and joke about the chaos that ensues.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/rxl2yAAMLf9rk2FLy6kcMS8EzWl.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Much like the game of telephone we all played in elementary school, Narrative Telephone involves a group of friends telling and re-telling a short story from one person to the next; with only their memory to help them recount what they heard. As the story inevitably changes and distorts it becomes more and more outlandish and hilarious. They then gather to watch the results and react, comment, commiserate, and joke about the chaos that ensues.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.619Z",
+      "updated_at": "2026-09-22T20:51:32.126Z"
+    },
+    "tmdb_tv_54467": {
+      "id": "tmdb_tv_54467",
+      "external_id": "54467",
+      "media_type": "tv",
+      "title": "The Mokhtar Narrative",
+      "release_year": "2010",
+      "creator": "",
+      "synopsis": "The Mokhtar Narrative is an Epic/History television series directed by Davood Mirbagheri, based on the life of Al-Mokhtar. Over 140 actors were cast in it. Mokhtar Saqafi was a Shiite Muslim leader who sets up a rebellion movement in 686 A.D in the town of Kufa to avenge the martyrdom of Hussain (grandson of Islamic Prophet Muhammad).",
+      "poster_url": "https://image.tmdb.org/t/p/w500/6zUdATUbXzmUwozQjvQZe6MEQRl.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Power & Political Intrigue",
+        "Rebellion & Anti-Totalitarianism"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Power & Political Intrigue",
+          "Rebellion & Anti-Totalitarianism"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Power & Political Intrigue; Rebellion & Anti-Totalitarianism\nTone & Atmosphere: Dramatic\nStory Essence: The Mokhtar Narrative is an Epic/History television series directed by Davood Mirbagheri, based on the life of Al-Mokhtar. Over 140 actors were cast in it. Mokhtar Saqafi was a Shiite Muslim leader who sets up a rebellion movement in 686 A.D in the town of Kufa to avenge the martyrdom of Hussain (grandson of Islamic Prophet Muhammad).",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.620Z",
+      "updated_at": "2026-09-22T20:51:32.127Z"
+    },
+    "tmdb_tv_155200": {
+      "id": "tmdb_tv_155200",
+      "external_id": 155200,
+      "media_type": "tv",
+      "title": "Japanese Narrative Art",
+      "release_year": "1991",
+      "creator": "",
+      "synopsis": "This program introduces Japanese comic narratives performed by well-known comic storytellers.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/bkCkgAkOz1ah1M9lvsH31y7011a.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: This program introduces Japanese comic narratives performed by well-known comic storytellers.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.621Z",
+      "updated_at": "2026-09-22T16:21:11.289Z"
+    },
+    "tmdb_tv_274541": {
+      "id": "tmdb_tv_274541",
+      "external_id": 274541,
+      "media_type": "tv",
+      "title": "The Narrative of The Revolution",
+      "release_year": "1999",
+      "creator": "",
+      "synopsis": "Iranian series",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Iranian series",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.622Z",
+      "updated_at": "2026-09-22T16:21:11.290Z"
+    },
+    "tmdb_tv_332290": {
+      "id": "tmdb_tv_332290",
+      "external_id": 332290,
+      "media_type": "tv",
+      "title": "Seeing is Believing: The Story of Narrative Art",
+      "release_year": "2026",
+      "creator": "",
+      "synopsis": "A documentary series commissioned for the Lucas Museum, Seeing is Believing: The Story of Narrative Art explores the collective human desire to tell stories through images.",
+      "poster_url": null,
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: A documentary series commissioned for the Lucas Museum, Seeing is Believing: The Story of Narrative Art explores the collective human desire to tell stories through images.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.624Z",
+      "updated_at": "2026-09-22T16:21:11.291Z"
+    },
+    "tmdb_tv_280353": {
+      "id": "tmdb_tv_280353",
+      "external_id": 280353,
+      "media_type": "tv",
+      "title": "Reframed: Next Gen Narratives",
+      "release_year": "2025",
+      "creator": "",
+      "synopsis": "Six visionary filmmakers reimagine classic movies with a contemporary perspective, addressing modern issues of identity and culture.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gRKsiS1YPVwXjI9PTDFjFIXlFaY.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: Six visionary filmmakers reimagine classic movies with a contemporary perspective, addressing modern issues of identity and culture.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.625Z",
+      "updated_at": "2026-09-22T16:21:11.292Z"
+    },
+    "tmdb_tv_49073": {
+      "id": "tmdb_tv_49073",
+      "external_id": 49073,
+      "media_type": "tv",
+      "title": "Unchained Memories: Readings from the Slave Narratives",
+      "release_year": "N/A",
+      "creator": "",
+      "synopsis": "Unchained Memories is a 2003 documentary film about the stories of former slaves interviewed during the 1930s as part of the Federal Writers' Project. This HBO film interpretation directed by Ed Bell and Thomas Lennon is a compilation of slave narratives, narrated by actors, emulating the original conversation with the interviewer. The slave narratives may be the most accurate in terms of the everyday activities of the enslaved, serving as personal memoirs of more than two thousand former slaves. The documentary depicts the emotions of the slaves and what they endured. The \"Master\" had the opportunity to sell, trade, or kill the enslaved, for retribution should one slave not obey.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/5CyTvHvpn1nAMzWhNowRsZvHBUG.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Unchained Memories is a 2003 documentary film about the stories of former slaves interviewed during the 1930s as part of the Federal Writers' Project. This HBO film interpretation directed by Ed Bell and Thomas Lennon is a compilation of slave narratives, narrated by actors, emulating the original conversation with the interviewer. The slave narratives may be the most accurate in terms of the everyday activities of the enslaved, serving as personal memoirs of more than two thousand former slaves. The documentary depicts the emotions of the slaves and what they endured. The \"Master\" had the opportunity to sell, trade, or kill the enslaved, for retribution should one slave not obey.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:01.626Z",
+      "updated_at": "2026-09-22T16:21:11.293Z"
+    },
+    "ol_OL69178W": {
+      "id": "ol_OL69178W",
+      "external_id": "OL69178W",
+      "media_type": "book",
+      "title": "Narrative of the life of Frederick Douglass",
+      "release_year": "1845",
+      "creator": "Frederick Douglass",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/8247724-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.412Z",
+      "updated_at": "2026-09-22T20:51:32.129Z"
+    },
+    "ol_OL480820W": {
+      "id": "ol_OL480820W",
+      "external_id": "OL480820W",
+      "media_type": "book",
+      "title": "America",
+      "release_year": "1984",
+      "creator": "George Brown Tindall, David Emory Shi",
+      "synopsis": "A Narrative History",
+      "poster_url": "https://covers.openlibrary.org/b/id/253170-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: A Narrative History",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.413Z",
+      "updated_at": "2026-09-22T20:51:32.131Z"
+    },
+    "ol_OL14745W": {
+      "id": "ol_OL14745W",
+      "external_id": "OL14745W",
+      "media_type": "book",
+      "title": "A history of narrative film",
+      "release_year": "1981",
+      "creator": "David A. Cook",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/253205-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.414Z",
+      "updated_at": "2026-09-22T20:51:32.133Z"
+    },
+    "ol_OL743333W": {
+      "id": "ol_OL743333W",
+      "external_id": "OL743333W",
+      "media_type": "book",
+      "title": "The life of Olaudah Equiano, or Gustavus Vassa, the African",
+      "release_year": "1789",
+      "creator": "Olaudah Equiano",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/2074044-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.415Z",
+      "updated_at": "2026-09-22T20:51:32.135Z"
+    },
+    "ol_OL2622593W": {
+      "id": "ol_OL2622593W",
+      "external_id": "OL2622593W",
+      "media_type": "book",
+      "title": "The Frontiersmen",
+      "release_year": "1967",
+      "creator": "Allan W. Eckert",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/721175-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.417Z",
+      "updated_at": "2026-09-22T20:51:32.136Z"
+    },
+    "ol_OL40962W": {
+      "id": "ol_OL40962W",
+      "external_id": "OL40962W",
+      "media_type": "book",
+      "title": "The Narrative of Arthur Gordon Pym",
+      "release_year": "1838",
+      "creator": "Edgar Allan Poe",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/7160877-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.418Z",
+      "updated_at": "2026-09-22T20:51:32.138Z"
+    },
+    "ol_OL20283W": {
+      "id": "ol_OL20283W",
+      "external_id": "OL20283W",
+      "media_type": "book",
+      "title": "Writing Fiction",
+      "release_year": "1982",
+      "creator": "Janet Burroway, Susan Weinberg",
+      "synopsis": "A Guide to Narrative Craft",
+      "poster_url": "https://covers.openlibrary.org/b/id/9546176-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: A Guide to Narrative Craft",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.419Z",
+      "updated_at": "2026-09-22T20:51:32.139Z"
+    },
+    "ol_OL2824010W": {
+      "id": "ol_OL2824010W",
+      "external_id": "OL2824010W",
+      "media_type": "book",
+      "title": "Visual Explanations",
+      "release_year": "1997",
+      "creator": "Edward R. Tufte",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/725043-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.421Z",
+      "updated_at": "2026-09-22T20:51:32.141Z"
+    },
+    "ol_OL77958W": {
+      "id": "ol_OL77958W",
+      "external_id": "OL77958W",
+      "media_type": "book",
+      "title": "The Last of the Mohicans",
+      "release_year": "1826",
+      "creator": "James Fenimore Cooper",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/8236937-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.423Z",
+      "updated_at": "2026-09-22T20:51:32.143Z"
+    },
+    "ol_OL503424W": {
+      "id": "ol_OL503424W",
+      "external_id": "OL503424W",
+      "media_type": "book",
+      "title": "Quo Vadis? Powieść z czasów Nerona",
+      "release_year": "1895",
+      "creator": "Henryk Sienkiewicz",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/833096-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:39:07.425Z",
+      "updated_at": "2026-09-22T20:51:32.145Z"
+    },
+    "ol_OL19713513W": {
+      "id": "ol_OL19713513W",
+      "external_id": "/works/OL19713513W",
+      "media_type": "book",
+      "title": "They Both Die at the End",
+      "release_year": "2017",
+      "creator": "Adam Silvera",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/9280553-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:41:06.215Z",
+      "updated_at": "2026-09-22T15:41:06.215Z"
+    },
+    "ol_OL4637604W": {
+      "id": "ol_OL4637604W",
+      "external_id": "/works/OL4637604W",
+      "media_type": "book",
+      "title": "Mission: impossible",
+      "release_year": "1996",
+      "creator": "Peter Barsocchini",
+      "synopsis": "No preview available.",
+      "poster_url": "https://covers.openlibrary.org/b/id/4257536-M.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: No preview available.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T15:43:13.135Z",
+      "updated_at": "2026-09-22T15:43:13.135Z"
+    },
+    "tmdb_tv_224377": {
+      "id": "tmdb_tv_224377",
+      "external_id": 224377,
+      "media_type": "tv",
+      "title": "Harry Potter",
+      "release_year": "2026",
+      "creator": "",
+      "synopsis": "There is nothing special about Harry Potter - at least that's what his Aunt Petunia always says. On his 11th birthday, a letter of admittance to Hogwarts School of Witchcraft and Wizardry opens up a hidden world for Harry: one of fun, friendship and magic. But with this new adventure comes great risk as Harry is forced to face a dangerous enemy from his past.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/SJCnXVBJZh7X7ePLt6XMp6TZAj.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w1280/g0VmjKGMyipJSlPwlQvlLBvXTAQ.jpg",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure",
+        "Family"
+      ],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: There is nothing special about Harry Potter - at least that's what his Aunt Petunia always says. On his 11th birthday, a letter of admittance to Hogwarts School of Witchcraft and Wizardry opens up a hidden world for Harry: one of fun, friendship and magic. But with this new adventure comes great risk as Harry is forced to face a dangerous enemy from his past.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T16:38:37.745Z",
+      "updated_at": "2026-09-22T16:38:37.745Z"
+    },
+    "seed_movie_the_proposal": {
+      "id": "seed_movie_the_proposal",
+      "external_id": "18240",
+      "media_type": "movie",
+      "title": "The Proposal",
+      "release_year": "2009",
+      "creator": "Anne Fletcher",
+      "synopsis": "A high-powered book editor faces deportation to Canada and convinces her harried assistant to marry her in order to keep her visa, only for the two to travel to Alaska and discover genuine intimacy under a facade of convenience.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/8gV2A6b4g1p1i6j7c1b3f6j9a2.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: A high-powered book editor faces deportation to Canada and convinces her harried assistant to marry her in order to keep her visa, only for the two to travel to Alaska and discover genuine intimacy under a facade of convenience.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T19:29:47.935Z",
+      "updated_at": "2026-09-22T20:37:32.865Z"
+    },
+    "seed_movie_tropic_thunder": {
+      "id": "seed_movie_tropic_thunder",
+      "external_id": "7446",
+      "media_type": "movie",
+      "title": "Tropic Thunder",
+      "release_year": "2008",
+      "creator": "Ben Stiller",
+      "synopsis": "While shooting a big-budget Vietnam War epic, a group of self-absorbed actors are dropped into the real jungle by their frustrated director, completely unaware they are facing real heroin-producing militia.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/zAurB9mN0BmwqlqNyV5e92vQp9g.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "tags": [
+        "Hollywood Satire",
+        "Action Parody",
+        "Meta-Cinema",
+        "Absurdist Comedy",
+        "Method Acting"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: While shooting a big-budget Vietnam War epic, a group of self-absorbed actors are dropped into the real jungle by their frustrated director, completely unaware they are facing real heroin-producing militia.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T19:29:47.937Z",
+      "updated_at": "2026-09-22T19:29:47.937Z"
+    },
+    "seed_movie_pride_and_prejudice": {
+      "id": "seed_movie_pride_and_prejudice",
+      "external_id": "4348",
+      "media_type": "movie",
+      "title": "Pride & Prejudice",
+      "release_year": "2005",
+      "creator": "Joe Wright",
+      "synopsis": "Sparks fly when spirited Elizabeth Bennet meets single, rich, and proud Mr. Darcy. But Mr. Darcy reluctantly finds himself falling in love with a woman beneath his class.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/i2xgh9l1F0eDkH0sN4v1lQ.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "tags": [
+        "Enemies to Lovers",
+        "Class Divide",
+        "Social Expectations",
+        "Repressed Passion",
+        "Regency England"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Sparks fly when spirited Elizabeth Bennet meets single, rich, and proud Mr. Darcy. But Mr. Darcy reluctantly finds himself falling in love with a woman beneath his class.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T19:29:47.939Z",
+      "updated_at": "2026-09-22T19:29:47.939Z"
+    },
+    "seed_movie_when_harry_met_sally": {
+      "id": "seed_movie_when_harry_met_sally",
+      "external_id": "239",
+      "media_type": "movie",
+      "title": "When Harry Met Sally...",
+      "release_year": "1989",
+      "creator": "Rob Reiner",
+      "synopsis": "Harry and Sally have known each other for years and are very good friends, but they fear that sleeping together would ruin their friendship.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3w8PqV4q8O3K2gP1h5g9k.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "tags": [
+        "Friends to Lovers",
+        "Witty Banter",
+        "Intimacy & Timing",
+        "Modern Romance"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Harry and Sally have known each other for years and are very good friends, but they fear that sleeping together would ruin their friendship.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T19:29:47.941Z",
+      "updated_at": "2026-09-22T19:29:47.941Z"
+    },
+    "seed_tv_fleabag": {
+      "id": "seed_tv_fleabag",
+      "external_id": "67070",
+      "media_type": "tv",
+      "title": "Fleabag",
+      "release_year": "2016",
+      "creator": "Phoebe Waller-Bridge",
+      "synopsis": "A sharp-witted, dry-humored woman navigating life and love in London while trying to cope with tragedy, intimacy, and forbidden connections.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/i9o3z0J6A8r3.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "tags": [
+        "Witty Banter",
+        "Vulnerability",
+        "Forbidden Love",
+        "Emotional Depth",
+        "Fourth Wall"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: A sharp-witted, dry-humored woman navigating life and love in London while trying to cope with tragedy, intimacy, and forbidden connections.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T19:29:47.955Z",
+      "updated_at": "2026-09-22T19:29:47.955Z"
+    },
+    "seed_tv_breaking_bad": {
+      "id": "seed_tv_breaking_bad",
+      "external_id": "1396",
+      "media_type": "tv",
+      "title": "Breaking Bad",
+      "release_year": "2008",
+      "creator": "Vince Gilligan",
+      "synopsis": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's financial future.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "tags": [
+        "Morality & Corruption",
+        "Tense & Claustrophobic"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Morality & Corruption"
+        ],
+        "moods": [
+          "Tense & Claustrophobic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: TV Show\nThemes: Morality & Corruption\nTone & Atmosphere: Tense & Claustrophobic\nStory Essence: A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's financial future.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T19:29:47.961Z",
+      "updated_at": "2026-09-22T19:29:47.961Z"
+    },
+    "seed_book_pride_and_prejudice": {
+      "id": "seed_book_pride_and_prejudice",
+      "external_id": "ol_OL66554W",
+      "media_type": "book",
+      "title": "Pride and Prejudice",
+      "release_year": "1813",
+      "creator": "Jane Austen",
+      "synopsis": "The turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner, exploring pride, social decorum, and genuine emotional affinity.",
+      "poster_url": "https://covers.openlibrary.org/b/id/8226191-L.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Classic Literature",
+        "Romance",
+        "Social Satire"
+      ],
+      "tags": [
+        "Enemies to Lovers",
+        "Social Satire",
+        "Class Nuance",
+        "Witty Dialogue",
+        "Repressed Passion"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: The turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner, exploring pride, social decorum, and genuine emotional affinity.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T19:29:47.963Z",
+      "updated_at": "2026-09-22T19:29:47.963Z"
+    },
+    "tmdb_movie_122906": {
+      "id": "tmdb_movie_122906",
+      "external_id": "122906",
+      "media_type": "movie",
+      "title": "About Time",
+      "release_year": "2013",
+      "creator": "",
+      "synopsis": "The night after another unsatisfactory New Year's party, Tim's father reveals to him that the men in their family have the ability to travel through time. They can't change history, but they can change what happens and has happened in their own lives. Thus begins the start of a lesson in learning to appreciate life itself as it is, as it comes, and most importantly, the people living alongside us.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ls6zswrOZVhCXQBh96DlbnLBajM.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: The night after another unsatisfactory New Year's party, Tim's father reveals to him that the men in their family have the ability to travel through time. They can't change history, but they can change what happens and has happened in their own lives. Thus begins the start of a lesson in learning to appreciate life itself as it is, as it comes, and most importantly, the people living alongside us.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T19:42:13.582Z",
+      "updated_at": "2026-09-22T19:42:13.582Z"
+    },
+    "tmdb_movie_121986": {
+      "id": "tmdb_movie_121986",
+      "external_id": "121986",
+      "media_type": "movie",
+      "title": "Frances Ha",
+      "release_year": "2013",
+      "creator": "Noah Baumbach",
+      "synopsis": "An aspiring dancer moves to New York City and becomes caught up in a whirlwind of flighty fair-weather friends, diminishing fortunes and career setbacks.",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jrq1NoKvsxWCcffVOjegiYwloFN.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/w1280/oUVd42KgJWW6YnZLfzI7SDTdcPL.jpg",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Movie\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: An aspiring dancer moves to New York City and becomes caught up in a whirlwind of flighty fair-weather friends, diminishing fortunes and career setbacks.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:34:51.064Z",
+      "updated_at": "2026-09-22T20:34:51.064Z"
+    },
+    "ol_OL20841067W": {
+      "id": "ol_OL20841067W",
+      "external_id": "OL20841067W",
+      "media_type": "book",
+      "title": "Please Send Help",
+      "release_year": "2020",
+      "creator": "",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/10149466-L.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "American literature"
+      ],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:15.800Z",
+      "updated_at": "2026-09-22T20:35:15.800Z"
+    },
+    "ol_OL4465073W": {
+      "id": "ol_OL4465073W",
+      "external_id": "OL4465073W",
+      "media_type": "book",
+      "title": "Irrational man",
+      "release_year": "1958",
+      "creator": "William Barrett, William Barrett",
+      "synopsis": "a study in existential philosophy.",
+      "poster_url": "https://covers.openlibrary.org/b/id/238113-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: a study in existential philosophy.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.288Z",
+      "updated_at": "2026-09-22T20:35:16.288Z"
+    },
+    "ol_OL1161181W": {
+      "id": "ol_OL1161181W",
+      "external_id": "OL1161181W",
+      "media_type": "book",
+      "title": "Existentialism Is a Humanism",
+      "release_year": "2007",
+      "creator": "Jean-Paul Sartre",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/2355635-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.290Z",
+      "updated_at": "2026-09-22T20:35:16.290Z"
+    },
+    "ol_OL3955359W": {
+      "id": "ol_OL3955359W",
+      "external_id": "OL3955359W",
+      "media_type": "book",
+      "title": "Existential psychology",
+      "release_year": "1961",
+      "creator": "Rollo May",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/6498798-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.293Z",
+      "updated_at": "2026-09-22T20:35:16.293Z"
+    },
+    "ol_OL2960102W": {
+      "id": "ol_OL2960102W",
+      "external_id": "OL2960102W",
+      "media_type": "book",
+      "title": "The existential pleasures of engineering",
+      "release_year": "1975",
+      "creator": "Samuel C. Florman",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/173711-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.295Z",
+      "updated_at": "2026-09-22T20:35:16.295Z"
+    },
+    "ol_OL8262900W": {
+      "id": "ol_OL8262900W",
+      "external_id": "OL8262900W",
+      "media_type": "book",
+      "title": "Psychotherapy and Existentialism",
+      "release_year": "1967",
+      "creator": "Viktor Emil Frankl",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/5485787-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.297Z",
+      "updated_at": "2026-09-22T20:35:16.297Z"
+    },
+    "ol_OL18168270W": {
+      "id": "ol_OL18168270W",
+      "external_id": "OL18168270W",
+      "media_type": "book",
+      "title": "Existentialism",
+      "release_year": "2001",
+      "creator": "Charles B. Guignon, Derk Pereboom",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/4796967-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.298Z",
+      "updated_at": "2026-09-22T20:35:16.298Z"
+    },
+    "ol_OL2680413W": {
+      "id": "ol_OL2680413W",
+      "external_id": "OL2680413W",
+      "media_type": "book",
+      "title": "Existential psychotherapy",
+      "release_year": "1980",
+      "creator": "Irvin D. Yalom",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/7004995-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.300Z",
+      "updated_at": "2026-09-22T20:35:16.300Z"
+    },
+    "ol_OL145047W": {
+      "id": "ol_OL145047W",
+      "external_id": "OL145047W",
+      "media_type": "book",
+      "title": "The Divided Self",
+      "release_year": "1959",
+      "creator": "R. D. Laing",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/6462672-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.302Z",
+      "updated_at": "2026-09-22T20:35:16.302Z"
+    },
+    "ol_OL1268413W": {
+      "id": "ol_OL1268413W",
+      "external_id": "OL1268413W",
+      "media_type": "book",
+      "title": "... Trotzdem Ja zum Leben sagen",
+      "release_year": "1946",
+      "creator": "Viktor Emil Frankl",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/8516506-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.305Z",
+      "updated_at": "2026-09-22T20:35:16.305Z"
+    },
+    "ol_OL16515532W": {
+      "id": "ol_OL16515532W",
+      "external_id": "OL16515532W",
+      "media_type": "book",
+      "title": "Existentialism",
+      "release_year": "1975",
+      "creator": "Unknown Author",
+      "synopsis": "A notable literary work exploring narrative depth and human condition.",
+      "poster_url": "https://covers.openlibrary.org/b/id/296022-L.jpg",
+      "backdrop_url": null,
+      "genres": [],
+      "tags": [
+        "Existentialism & Identity"
+      ],
+      "thematic_features": {
+        "themes": [
+          "Existentialism & Identity"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Existentialism & Identity\nTone & Atmosphere: Dramatic\nStory Essence: A notable literary work exploring narrative depth and human condition.",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:35:16.307Z",
+      "updated_at": "2026-09-22T20:35:16.307Z"
+    },
+    "ol_OL15527778W": {
+      "id": "ol_OL15527778W",
+      "external_id": "OL15527778W",
+      "media_type": "book",
+      "title": "Memo",
+      "release_year": "2010",
+      "creator": "",
+      "synopsis": "Note to self: when stepping back into your billionaire boss's world: * Remember why you turned him down all those years ago: because infamous playboys like Drake Llewelyn are trouble with a capital T! * He plays to win. You can't afford to take a gamble on love and lose, no matter how much he says he's changed. * So arm yourself against his movie-star looks, devastating charm, intoxicating smile... Oh, no! This is going to be so much harder than I thought!",
+      "poster_url": "https://covers.openlibrary.org/b/id/6537947-L.jpg",
+      "backdrop_url": null,
+      "genres": [
+        "Fiction",
+        "Contemporary Romance",
+        "Man-woman relationships"
+      ],
+      "tags": [],
+      "thematic_features": {
+        "themes": [
+          "Narrative Drama"
+        ],
+        "moods": [
+          "Dramatic"
+        ],
+        "tropes": []
+      },
+      "narrative_profile": "Medium: Book\nThemes: Narrative Drama\nTone & Atmosphere: Dramatic\nStory Essence: Note to self: when stepping back into your billionaire boss's world: * Remember why you turned him down all those years ago: because infamous playboys like Drake Llewelyn are trouble with a capital T! * He plays to win. You can't afford to take a gamble on love and lose, no matter how much he says he's changed. * So arm yourself against his movie-star looks, devastating charm, intoxicating smile... Oh, no! This is going to be so much harder than I thought!",
+      "embedding": null,
+      "raw_metadata": {},
+      "created_at": "2026-09-22T20:36:59.723Z",
+      "updated_at": "2026-09-22T20:36:59.723Z"
+    }
+  },
+  "media_connections": {
+    "seed_movie_interstellar__seed_tv_dark": {
+      "id": "seed_movie_interstellar__seed_tv_dark",
+      "source_id": "seed_movie_interstellar",
+      "target_id": "seed_tv_dark",
+      "similarity_score": 0.88,
+      "connection_reason": "Time travel, generational loops, and deep emotional stakes.",
+      "created_at": "2026-09-22T19:29:47.979Z"
+    },
+    "seed_movie_interstellar__seed_book_three_body_problem": {
+      "id": "seed_movie_interstellar__seed_book_three_body_problem",
+      "source_id": "seed_movie_interstellar",
+      "target_id": "seed_book_three_body_problem",
+      "similarity_score": 0.92,
+      "connection_reason": "Cosmic scale, theoretical physics, and humanity's survival.",
+      "created_at": "2026-09-22T19:29:47.982Z"
+    },
+    "seed_movie_bladerunner2049__seed_tv_severance": {
+      "id": "seed_movie_bladerunner2049__seed_tv_severance",
+      "source_id": "seed_movie_bladerunner2049",
+      "target_id": "seed_tv_severance",
+      "similarity_score": 0.86,
+      "connection_reason": "Artificially conditioned identities and corporate control of consciousness.",
+      "created_at": "2026-09-22T19:29:47.983Z"
+    }
+  }
+}

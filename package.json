@@ -1,0 +1,27 @@
+{
+  "name": "movlib",
+  "version": "1.0.0",
+  "description": "Cross-media story discovery for movies, TV shows, and books",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "keywords": [
+    "cross-media",
+    "movies",
+    "tv-shows",
+    "books",
+    "discovery",
+    "tmdb",
+    "google-books"
+  ],
+  "author": "",
+  "license": "MIT"
+}

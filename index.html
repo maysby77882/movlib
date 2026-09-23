@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>movlib — Cross-Media Story Discovery</title>
+  <meta name="description" content="Discover movies, TV shows, and books connected by shared themes, mood, story, and atmosphere." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="landing-bg-layer" id="landingBg"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" id="navLogo">
+        <span class="brand-name">movlib</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="app">
+    <!-- Hero / Landing Section -->
+    <section class="hero" id="homeSection">
+      <div class="hero-quote-box" id="heroQuoteBox" role="button" tabindex="0" title="Explore Tropic Thunder">
+        <p class="hero-quote-text">“Mother Nature just pissed her pantsuit.”</p>
+        <span class="hero-quote-source">Tropic Thunder</span>
+      </div>
+
+      <div class="search-container">
+        <form class="search-box" id="searchForm" autocomplete="off">
+          <div class="search-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder=""
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button type="button" class="clear-btn hidden" id="clearBtn" title="Clear input">✕</button>
+          <button type="submit" class="search-btn" id="searchSubmitBtn" aria-label="Search">
+            <span>Explore</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Autocomplete Suggestions Dropdown -->
+        <div class="suggestions-dropdown hidden" id="suggestionsDropdown"></div>
+      </div>
+
+      <!-- Search Loading State -->
+      <div class="search-loading hidden" id="searchLoading">
+        <div class="loading-spinner-ring"></div>
+        <p class="loading-text">Searching across cinema, television & literature...</p>
+      </div>
+
+      <!-- Search Empty State -->
+      <div class="search-empty-state hidden" id="searchEmptyState">
+        <div class="empty-icon">✧</div>
+        <h3 class="empty-title">No Stories Found</h3>
+        <p class="empty-desc" id="emptyDesc">We couldn't find any exact matches for your search. Try checking the spelling or searching for another title.</p>
+      </div>
+    </section>
+
+    <!-- Search / Floating Compact Bar when in results -->
+    <div class="results-search-wrapper hidden" id="resultsSearchWrapper">
+      <div class="results-bar-container">
+        <form class="compact-search-box" id="compactSearchForm">
+          <svg class="compact-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input id="compactSearchInput" type="text" placeholder="Search another title..." autocomplete="off" />
+          <button type="submit" class="compact-submit-btn">Search</button>
+        </form>
+
+        <!-- Disambiguation: Same-name Movies, TV Shows, and Books Selector -->
+        <div class="versions-menu-wrapper" id="versionsMenuWrapper">
+          <button type="button" class="versions-toggle-btn hidden" id="versionsToggleBtn" aria-haspopup="true" aria-expanded="false" title="Browse other movies, TV shows, or books with this title">
+            <svg class="versions-btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span class="versions-btn-text" id="versionsBtnText">Other Versions (0)</span>
+            <svg class="versions-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+
+          <div class="versions-dropdown-panel hidden" id="versionsDropdown">
+            <div class="versions-dropdown-header">
+              <span class="versions-dropdown-title">Explore Same-Name Works & Adaptations</span>
+              <span class="versions-dropdown-sub">Select to view discovery recommendations for another medium or release:</span>
+            </div>
+            <div class="versions-list" id="versionsList">
+              <!-- Dynamically populated candidate versions -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendations Results Section -->
+    <section class="results hidden" id="results">
+      <!-- Selected Title Card -->
+      <div class="selected-wrapper">
+        <div class="section-label">Source Work</div>
+        <div class="selected-card" id="selectedTitle"></div>
+      </div>
+
+      <!-- Transition Banner -->
+      <div class="discovery-header">
+        <div class="discovery-title-group">
+          <h2>Connected Works</h2>
+          <p class="discovery-subtitle">Cross-media thematic parallels identified by story content and atmosphere.</p>
+        </div>
+      </div>
+
+      <!-- Three Media Categories -->
+      <div class="categories-grid">
+        <!-- Cinema Category -->
+        <section class="category-block" aria-labelledby="cat-movies-heading">
+          <div class="category-heading">
+            <div class="category-title-wrap">
+              <span class="category-num">01</span>
+              <h3 id="cat-movies-heading">Cinema</h3>
+              <span class="category-desc">Film parallels</span>
+            </div>
+            <span class="category-count" id="moviesCount">3 titles</span>
+          </div>
+          <div class="cards-grid" id="movies"></div>
+        </section>
+
+        <!-- Television Category -->
+        <section class="category-block" aria-labelledby="cat-tv-heading">
+          <div class="category-heading">
+            <div class="category-title-wrap">
+              <span class="category-num">02</span>
+              <h3 id="cat-tv-heading">Television</h3>
+              <span class="category-desc">Episodic depths</span>
+            </div>
+            <span class="category-count" id="tvCount">3 titles</span>
+          </div>
+          <div class="cards-grid" id="tv"></div>
+        </section>
+
+        <!-- Literature Category -->
+        <section class="category-block" aria-labelledby="cat-books-heading">
+          <div class="category-heading">
+            <div class="category-title-wrap">
+              <span class="category-num">03</span>
+              <h3 id="cat-books-heading">Literature</h3>
+              <span class="category-desc">Foundational texts</span>
+            </div>
+            <span class="category-count" id="booksCount">3 titles</span>
+          </div>
+          <div class="cards-grid" id="books"></div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Details View Section -->
+    <section class="details hidden" id="details">
+      <button class="back-btn" id="backButton">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to recommendations</span>
+      </button>
+      <div id="detailsContent"></div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
