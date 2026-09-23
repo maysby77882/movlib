@@ -3,15 +3,18 @@
  * Real-time discovery for Cinema (Movies) and Television (TV Series)
  */
 
-const TMDB_BASE_URL = "https://api.themoviedb.org/3";
+const TMDB_PRIMARY_BASE = "https://api.tmdb.org/3";
+const TMDB_FALLBACK_BASE = "https://api.themoviedb.org/3";
 const TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
 const TMDB_BACKDROP_BASE = "https://image.tmdb.org/t/p/w1280";
 
 /**
- * Helper to build auth headers/params for TMDB
+ * Resilient TMDB Fetch helper with primary/fallback hostnames and timeout
  */
-function getAuthOptions(config = {}) {
+async function tmdbFetch(endpointPath, config = {}, options = {}) {
   const { apiKey = "", accessToken = "" } = config;
+  if (!apiKey && !accessToken) return null;
+
   const headers = {
     "Accept": "application/json",
     "Content-Type": "application/json"
@@ -19,14 +22,39 @@ function getAuthOptions(config = {}) {
 
   if (accessToken) {
     headers["Authorization"] = `Bearer ${accessToken}`;
-    return { headers, queryParam: "" };
   }
 
-  if (apiKey) {
-    return { headers, queryParam: `api_key=${apiKey}` };
+  const querySep = endpointPath.includes("?") ? "&" : "?";
+  const authQuery = (!accessToken && apiKey) ? `${querySep}api_key=${apiKey}` : "";
+  const fullRelative = `${endpointPath}${authQuery}`;
+
+  const hosts = [TMDB_PRIMARY_BASE, TMDB_FALLBACK_BASE];
+
+  for (const base of hosts) {
+    try {
+      const url = `${base}${fullRelative}`;
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 6000);
+
+      const res = await fetch(url, {
+        headers,
+        signal: controller.signal,
+        ...options
+      });
+      clearTimeout(timeoutId);
+
+      if (res.ok) {
+        return await res.json();
+      }
+      if (res.status === 404) {
+        return null;
+      }
+    } catch (err) {
+      // Try next host
+    }
   }
 
-  return { headers, queryParam: "" };
+  return null;
 }
 
 /**
@@ -34,29 +62,18 @@ function getAuthOptions(config = {}) {
  */
 export async function searchMulti(query, config = {}) {
   if (!query || !query.trim()) return { movies: [], tv: [] };
-  const { apiKey = "", accessToken = "" } = config;
-  if (!apiKey && !accessToken) return { movies: [], tv: [] };
+  const clean = encodeURIComponent(query.trim());
 
   try {
-    const { headers, queryParam } = getAuthOptions(config);
-    const paramStr = queryParam ? `&${queryParam}` : "";
-    const url = `${TMDB_BASE_URL}/search/multi?query=${encodeURIComponent(query.trim())}&include_adult=false&language=en-US&page=1${paramStr}`;
+    const data = await tmdbFetch(`/search/multi?query=${clean}&include_adult=false&language=en-US&page=1`, config);
+    if (!data || !data.results) return { movies: [], tv: [] };
 
-    const res = await fetch(url, { headers });
-    if (!res.ok) {
-      console.error(`TMDb Multi-Search HTTP Error: ${res.status} ${res.statusText}`);
-      return { movies: [], tv: [] };
-    }
-
-    const data = await res.json();
-    const results = data.results || [];
-
-    const movies = results
+    const movies = data.results
       .filter(item => item.media_type === "movie" && !item.adult)
       .slice(0, 10)
       .map(normalizeMovie);
 
-    const tv = results
+    const tv = data.results
       .filter(item => item.media_type === "tv" && !item.adult)
       .slice(0, 10)
       .map(normalizeTV);
@@ -73,18 +90,12 @@ export async function searchMulti(query, config = {}) {
  */
 export async function searchMovies(query, config = {}) {
   if (!query || !query.trim()) return [];
-  const { apiKey = "", accessToken = "" } = typeof config === "string" ? { apiKey: config } : config;
-  if (!apiKey && !accessToken) return [];
+  const cfg = typeof config === "string" ? { apiKey: config } : config;
+  const clean = encodeURIComponent(query.trim());
 
   try {
-    const { headers, queryParam } = getAuthOptions({ apiKey, accessToken });
-    const paramStr = queryParam ? `&${queryParam}` : "";
-    const url = `${TMDB_BASE_URL}/search/movie?query=${encodeURIComponent(query.trim())}&include_adult=false&language=en-US&page=1${paramStr}`;
-
-    const res = await fetch(url, { headers });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return (data.results || []).slice(0, 10).map(normalizeMovie);
+    const data = await tmdbFetch(`/search/movie?query=${clean}&include_adult=false&language=en-US&page=1`, cfg);
+    return (data?.results || []).slice(0, 10).map(normalizeMovie);
   } catch (error) {
     console.error("TMDb Movie Search Error:", error.message);
     return [];
@@ -96,18 +107,12 @@ export async function searchMovies(query, config = {}) {
  */
 export async function searchTV(query, config = {}) {
   if (!query || !query.trim()) return [];
-  const { apiKey = "", accessToken = "" } = typeof config === "string" ? { apiKey: config } : config;
-  if (!apiKey && !accessToken) return [];
+  const cfg = typeof config === "string" ? { apiKey: config } : config;
+  const clean = encodeURIComponent(query.trim());
 
   try {
-    const { headers, queryParam } = getAuthOptions({ apiKey, accessToken });
-    const paramStr = queryParam ? `&${queryParam}` : "";
-    const url = `${TMDB_BASE_URL}/search/tv?query=${encodeURIComponent(query.trim())}&include_adult=false&language=en-US&page=1${paramStr}`;
-
-    const res = await fetch(url, { headers });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return (data.results || []).slice(0, 10).map(normalizeTV);
+    const data = await tmdbFetch(`/search/tv?query=${clean}&include_adult=false&language=en-US&page=1`, cfg);
+    return (data?.results || []).slice(0, 10).map(normalizeTV);
   } catch (error) {
     console.error("TMDb TV Search Error:", error.message);
     return [];
@@ -115,30 +120,30 @@ export async function searchTV(query, config = {}) {
 }
 
 /**
- * Get Movie Details + Keywords + Credits
+ * Get Movie Details + Keywords + Credits + TMDb Recommendations
  */
 export async function getMovieDetails(id, config = {}) {
-  const { apiKey = "", accessToken = "" } = typeof config === "string" ? { apiKey: config } : config;
-  if (!apiKey && !accessToken) return null;
+  const cfg = typeof config === "string" ? { apiKey: config } : config;
+  const rawId = String(id).replace("tmdb_movie_", "");
 
   try {
-    const rawId = String(id).replace("tmdb_movie_", "");
-    const { headers, queryParam } = getAuthOptions({ apiKey, accessToken });
-    const paramStr = queryParam ? `&${queryParam}` : "";
-    const url = `${TMDB_BASE_URL}/movie/${rawId}?append_to_response=keywords,credits&language=en-US${paramStr}`;
-
-    const res = await fetch(url, { headers });
-    if (!res.ok) return null;
-    const data = await res.json();
+    const data = await tmdbFetch(`/movie/${rawId}?append_to_response=keywords,credits,recommendations,similar&language=en-US`, cfg);
+    if (!data) return null;
 
     const director = data.credits?.crew?.find(c => c.job === "Director")?.name || "";
     const cast = (data.credits?.cast || []).slice(0, 5).map(c => c.name);
     const keywords = (data.keywords?.keywords || []).map(k => k.name);
     const genres = (data.genres || []).map(g => g.name);
 
+    const tmdbRecs = [
+      ...(data.recommendations?.results || []),
+      ...(data.similar?.results || [])
+    ].map(normalizeMovie);
+
     return {
       id: `tmdb_movie_${data.id}`,
       externalId: String(data.id),
+      tmdbId: data.id,
       source: "tmdb",
       title: data.title,
       type: "Movie",
@@ -152,9 +157,10 @@ export async function getMovieDetails(id, config = {}) {
       backdropUrl: data.backdrop_path ? `${TMDB_BACKDROP_BASE}${data.backdrop_path}` : null,
       genres,
       keywords,
-      tags: [...genres, ...keywords].slice(0, 6),
+      tags: [...genres, ...keywords].slice(0, 8),
       voteAverage: data.vote_average || null,
-      externalUrl: `https://www.themoviedb.org/movie/${data.id}`
+      externalUrl: `https://www.themoviedb.org/movie/${data.id}`,
+      rawRecommendations: tmdbRecs
     };
   } catch (error) {
     console.error("TMDb Movie Details Error:", error.message);
@@ -163,30 +169,30 @@ export async function getMovieDetails(id, config = {}) {
 }
 
 /**
- * Get TV Details + Keywords + Credits
+ * Get TV Details + Keywords + Credits + TMDb Recommendations
  */
 export async function getTVDetails(id, config = {}) {
-  const { apiKey = "", accessToken = "" } = typeof config === "string" ? { apiKey: config } : config;
-  if (!apiKey && !accessToken) return null;
+  const cfg = typeof config === "string" ? { apiKey: config } : config;
+  const rawId = String(id).replace("tmdb_tv_", "");
 
   try {
-    const rawId = String(id).replace("tmdb_tv_", "");
-    const { headers, queryParam } = getAuthOptions({ apiKey, accessToken });
-    const paramStr = queryParam ? `&${queryParam}` : "";
-    const url = `${TMDB_BASE_URL}/tv/${rawId}?append_to_response=keywords,credits&language=en-US${paramStr}`;
-
-    const res = await fetch(url, { headers });
-    if (!res.ok) return null;
-    const data = await res.json();
+    const data = await tmdbFetch(`/tv/${rawId}?append_to_response=keywords,credits,recommendations,similar&language=en-US`, cfg);
+    if (!data) return null;
 
     const creator = data.created_by?.map(c => c.name).join(", ") || "";
     const cast = (data.credits?.cast || []).slice(0, 5).map(c => c.name);
     const keywords = (data.keywords?.results || []).map(k => k.name);
     const genres = (data.genres || []).map(g => g.name);
 
+    const tmdbRecs = [
+      ...(data.recommendations?.results || []),
+      ...(data.similar?.results || [])
+    ].map(normalizeTV);
+
     return {
       id: `tmdb_tv_${data.id}`,
       externalId: String(data.id),
+      tmdbId: data.id,
       source: "tmdb",
       title: data.name,
       type: "TV Show",
@@ -199,14 +205,41 @@ export async function getTVDetails(id, config = {}) {
       backdropUrl: data.backdrop_path ? `${TMDB_BACKDROP_BASE}${data.backdrop_path}` : null,
       genres,
       keywords,
-      tags: [...genres, ...keywords].slice(0, 6),
+      tags: [...genres, ...keywords].slice(0, 8),
       voteAverage: data.vote_average || null,
-      externalUrl: `https://www.themoviedb.org/tv/${data.id}`
+      externalUrl: `https://www.themoviedb.org/tv/${data.id}`,
+      rawRecommendations: tmdbRecs
     };
   } catch (error) {
     console.error("TMDb TV Details Error:", error.message);
     return null;
   }
+}
+
+/**
+ * Discover Movies with specific genre/keyword parameters
+ */
+export async function discoverMovies(params = {}, config = {}) {
+  const queryParts = ["include_adult=false", "language=en-US", "sort_by=popularity.desc", "page=1"];
+  if (params.withGenres) queryParts.push(`with_genres=${encodeURIComponent(params.withGenres)}`);
+  if (params.withKeywords) queryParts.push(`with_keywords=${encodeURIComponent(params.withKeywords)}`);
+
+  const path = `/discover/movie?${queryParts.join("&")}`;
+  const data = await tmdbFetch(path, config);
+  return (data?.results || []).slice(0, 15).map(normalizeMovie);
+}
+
+/**
+ * Discover TV Shows with specific genre/keyword parameters
+ */
+export async function discoverTV(params = {}, config = {}) {
+  const queryParts = ["include_adult=false", "language=en-US", "sort_by=popularity.desc", "page=1"];
+  if (params.withGenres) queryParts.push(`with_genres=${encodeURIComponent(params.withGenres)}`);
+  if (params.withKeywords) queryParts.push(`with_keywords=${encodeURIComponent(params.withKeywords)}`);
+
+  const path = `/discover/tv?${queryParts.join("&")}`;
+  const data = await tmdbFetch(path, config);
+  return (data?.results || []).slice(0, 15).map(normalizeTV);
 }
 
 function normalizeMovie(item) {
@@ -222,6 +255,7 @@ function normalizeMovie(item) {
     synopsis: item.overview || "No synopsis available.",
     posterUrl: item.poster_path ? `${TMDB_IMAGE_BASE}${item.poster_path}` : null,
     rating: item.vote_average || 0,
+    genres: [],
     externalUrl: `https://www.themoviedb.org/movie/${item.id}`
   };
 }
@@ -239,6 +273,7 @@ function normalizeTV(item) {
     synopsis: item.overview || "No synopsis available.",
     posterUrl: item.poster_path ? `${TMDB_IMAGE_BASE}${item.poster_path}` : null,
     rating: item.vote_average || 0,
+    genres: [],
     externalUrl: `https://www.themoviedb.org/tv/${item.id}`
   };
 }

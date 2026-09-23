@@ -75,9 +75,13 @@ export function saveMediaItem(item) {
     poster_url: item.posterUrl || item.poster_url || null,
     backdrop_url: item.backdropUrl || item.backdrop_url || null,
     genres: Array.isArray(item.genres) ? item.genres : [],
+    keywords: Array.isArray(item.keywords) ? item.keywords : [],
     tags,
+    isDirectRecommendation: Boolean(item.isDirectRecommendation || existing.isDirectRecommendation),
     thematic_features: profile ? {
       themes: profile.themes,
+      concepts: profile.concepts,
+      settings: profile.settings,
       moods: profile.moods,
       tropes: profile.tropes
     } : (existing.thematic_features || {}),

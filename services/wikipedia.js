@@ -137,12 +137,17 @@ export async function searchWikipedia(query, options = {}) {
     });
 
     const url = `${WIKIPEDIA_API_BASE}?${params.toString()}`;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
+
     const res = await fetch(url, {
+      signal: controller.signal,
       headers: {
         "User-Agent": WIKIPEDIA_USER_AGENT,
         "Accept": "application/json"
       }
     });
+    clearTimeout(timeoutId);
 
     if (!res.ok) {
       console.warn(`Wikipedia search API returned HTTP ${res.status}`);
@@ -246,12 +251,17 @@ export async function getWikipediaDetails(pageIdOrTitle) {
     }
 
     const url = `${WIKIPEDIA_API_BASE}?${params.toString()}`;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
+
     const res = await fetch(url, {
+      signal: controller.signal,
       headers: {
         "User-Agent": WIKIPEDIA_USER_AGENT,
         "Accept": "application/json"
       }
     });
+    clearTimeout(timeoutId);
 
     if (!res.ok) return null;
     const data = await res.json();

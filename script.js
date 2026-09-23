@@ -147,7 +147,7 @@ const demoData = {
           type: "Movie",
           creator: "David Lean",
           emoji: "🐪",
-          posterUrl: "https://image.tmdb.org/t/p/w500/5m1dGj7bK2e8Wv0h1k9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Lawrence_of_arabia_ver3_xxlg.jpg/500px-Lawrence_of_arabia_ver3_xxlg.jpg",
           tags: ["Desert Epic", "Messianic Figure", "Imperial Politics"],
           synopsis: "The story of T.E. Lawrence, the English officer who successfully united diverse Arab desert tribes during WWI.",
           why: "Frank Herbert's seminal inspiration for Dune's desert ecology, guerrilla desert warfare, and complex outsider messiah figures."
@@ -255,7 +255,7 @@ const demoData = {
           type: "Movie",
           creator: "Shane Carruth",
           emoji: "📟",
-          posterUrl: "https://image.tmdb.org/t/p/w500/9kF1W7H9t9o0jY2mK5h8Qp6uK8.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f7/Primer_poster.jpg/500px-Primer_poster.jpg",
           tags: ["Rigorous Time Travel", "Complex Timelines", "Psychological Rift"],
           synopsis: "Two engineers accidentally discover a mechanism for time travel in their garage, leading to unraveling trust and paradoxes.",
           why: "Considered the gold standard of intricate, uncompromising time-travel logic, matching Dark's refusal to spoonfeed timeline mechanics."
@@ -266,7 +266,7 @@ const demoData = {
           type: "Movie",
           creator: "The Spierig Brothers",
           emoji: "🕰️",
-          posterUrl: "https://image.tmdb.org/t/p/w500/bC8wE4z8wY1o5k2j9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/5/52/Predestination_poster.jpg/500px-Predestination_poster.jpg",
           tags: ["Causal Loops", "Identity Paradox", "Ouroboros"],
           synopsis: "A temporal agent embarks on a final assignment to stop a phantom bomber who has evaded justice throughout time.",
           why: "A brilliant meditation on the bootstrap paradox and closed causal loops where beginning and end are indistinguishable."
@@ -290,7 +290,7 @@ const demoData = {
           type: "TV Show",
           creator: "Dan Erickson",
           emoji: "🏢",
-          posterUrl: "https://image.tmdb.org/t/p/w500/jEgdYp4pX7l4W6fV3E5dE6f7uX.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f6/Severance_TV_series_poster.jpg/500px-Severance_TV_series_poster.jpg",
           tags: ["Corporate Mystery", "Split Consciousness", "Eerie Precision"],
           synopsis: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.",
           why: "Shares Dark's clinical cinematography, eerie puzzle-box architecture, and psychological dread about hidden identities."
@@ -301,7 +301,7 @@ const demoData = {
           type: "TV Show",
           creator: "Jantje Friese, Baran bo Odar",
           emoji: "🚢",
-          posterUrl: "https://image.tmdb.org/t/p/w500/g74MspB767Q1Gg9Y6z6Z6j6m4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/3/30/1899_TV_series_poster.jpg/500px-1899_TV_series_poster.jpg",
           tags: ["Simulations", "Historical Enigma", "Multilingual Mystery"],
           synopsis: "Multinational immigrants traveling from Europe to New York encounter a second ship adrift on the open sea.",
           why: "Created by the same visionary duo behind Dark, featuring the same enigmatic symbols, atmospheric score, and layered twists."
@@ -312,7 +312,7 @@ const demoData = {
           type: "TV Show",
           creator: "David Lynch, Mark Frost",
           emoji: "🌲",
-          posterUrl: "https://image.tmdb.org/t/p/w500/lA98Z9l8m9QfP9M4i2k5h8Qp6uK.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/3/30/Twin_Peaks_season_1_DVD.jpg/500px-Twin_Peaks_season_1_DVD.jpg",
           tags: ["Small Town Secrets", "Supernatural Woods", "Surreal Dread"],
           synopsis: "FBI Agent Dale Cooper investigates the murder of homecoming queen Laura Palmer in the quirky, mysterious Pacific Northwest town.",
           why: "The blueprint for small-town mystery where dark forest secrets, cyclical evils, and supernatural realms infect ordinary families."
@@ -363,7 +363,7 @@ const demoData = {
     year: "2022",
     creator: "Dan Erickson",
     emoji: "🏢",
-    posterUrl: "https://image.tmdb.org/t/p/w500/jEgdYp4pX7l4W6fV3E5dE6f7uX.jpg",
+    posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f6/Severance_TV_series_poster.jpg/500px-Severance_TV_series_poster.jpg",
     tags: ["Corporate Dystopia", "Dual Identity", "Kafkaesque Absurdity", "Psychological Thriller"],
     synopsis: "Mark leads a team at Lumon Industries, whose employees have undergone a severance procedure that surgically divides their memories between their work and personal lives.",
     recommendations: {
@@ -385,7 +385,7 @@ const demoData = {
           type: "Movie",
           creator: "Peter Weir",
           emoji: "📺",
-          posterUrl: "https://image.tmdb.org/t/p/w500/vuza0WNFdKQv5oeJWTw2f0050ur.jpg",
+          posterUrl: "https://image.tmdb.org/t/p/w500/vuza0WNFY25gdv27cu9Axf4AXeo.jpg",
           tags: ["Constructed Reality", "Existential Awakening", "Surveillance"],
           synopsis: "An insurance salesman discovers his entire life is actually a 24/7 reality television broadcast watched by the world.",
           why: "Mirrors the uncanny feeling of being trapped in a sterile, engineered world and the courageous awakening required to break out."
@@ -396,7 +396,7 @@ const demoData = {
           type: "Movie",
           creator: "Spike Jonze",
           emoji: "🚪",
-          posterUrl: "https://image.tmdb.org/t/p/w500/7I9kG8m9QfP9M4i2k5h8Qp6uK8.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/5/55/Being_John_Malkovich_poster.jpg/500px-Being_John_Malkovich_poster.jpg",
           tags: ["Absurdist Office", "Identity Hijacking", "Claustrophobia"],
           synopsis: "A puppeteer discovers a portal behind a filing cabinet that leads directly into the mind of actor John Malkovich.",
           why: "Shares the surreal workplace setting (the 7½ floor), surreal bureaucracy, and disturbing questions about bodily autonomy."
@@ -420,7 +420,7 @@ const demoData = {
           type: "TV Show",
           creator: "Patrick Somerville",
           emoji: "💊",
-          posterUrl: "https://image.tmdb.org/t/p/w500/w7kK9m8QfP9M4i2k5h8Qp6uK8.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/3/3a/Maniac_TV_series_poster.jpg/500px-Maniac_TV_series_poster.jpg",
           tags: ["Pharmaceutical Trials", "Subconscious Realms", "Trauma"],
           synopsis: "Two strangers connect during a mind-bending pharmaceutical trial involving an emotionally erratic supercomputer.",
           why: "Retro-futuristic aesthetic, clinical pharmaceutical experiments, and the attempt to repair deep psychological wounds through radical science."
@@ -431,7 +431,7 @@ const demoData = {
           type: "TV Show",
           creator: "Sam Esmail",
           emoji: "💻",
-          posterUrl: "https://image.tmdb.org/t/p/w500/oKIBNmZ1PArWhJJENjOAEzhPd2x.jpg",
+          posterUrl: "https://image.tmdb.org/t/p/w500/oKIBNmZ1PArWhJJENscOLha4GEt.jpg",
           tags: ["Corporate Megaliths", "Dissociation", "Anti-Capitalist Revolt"],
           synopsis: "A cybersecurity engineer and hacker suffering from clinical depression and dissociative identity disorder is recruited by an insurrectionist.",
           why: "Shares the fight against an all-controlling mega-corporation (E Corp / Lumon) and an unreliable narrator dealing with split consciousness."
@@ -504,7 +504,7 @@ const demoData = {
           type: "Movie",
           creator: "Ron Howard",
           emoji: "🚀",
-          posterUrl: "https://image.tmdb.org/t/p/w500/bC8wE4z8wY1o5k2j9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/9/9e/Apollo_13_movie_poster.jpg/500px-Apollo_13_movie_poster.jpg",
           tags: ["Real-time Problem Solving", "NASA Teamwork", "Crisis in Orbit"],
           synopsis: "NASA must devise a strategy to return Apollo 13 to Earth safely after the spacecraft suffers massive internal damage.",
           why: "The supreme cinematic example of scientists and engineers solving catastrophic life-support failures with whatever is in the capsule."
@@ -515,7 +515,7 @@ const demoData = {
           type: "Movie",
           creator: "Robert Zemeckis",
           emoji: "🏝️",
-          posterUrl: "https://image.tmdb.org/t/p/w500/wm2qdK9m8QfP9M4i2k5h8Qp6uK.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/a/a7/Cast_away_film_poster.jpg/500px-Cast_away_film_poster.jpg",
           tags: ["Solitary Survival", "Resourcefulness", "Human Spirit"],
           synopsis: "A FedEx troubleshooter survives a plane crash over the Pacific Ocean and must learn to live on an uninhabited island.",
           why: "Watney is the interstellar Chuck Noland, displaying the psychology of solitary survival, improvisation, and keeping sane."
@@ -539,7 +539,7 @@ const demoData = {
           type: "TV Show",
           creator: "Ronald D. Moore",
           emoji: "🧑‍🚀",
-          posterUrl: "https://image.tmdb.org/t/p/w500/27R0a6L6x2Z8l9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/1/14/For_All_Mankind_TV_series_poster.jpg/500px-For_All_Mankind_TV_series_poster.jpg",
           tags: ["Space Race", "NASA Engineering", "Moon & Mars Bases"],
           synopsis: "An alternate history where the USSR beats the US to the Moon, sparking an unending space race into the 21st century.",
           why: "Filled with brilliant engineering problem-solving, high-stakes orbital rescues, and the human drama of colonizing the red planet."
@@ -550,7 +550,7 @@ const demoData = {
           type: "TV Show",
           creator: "Ron Howard, Brian Grazer",
           emoji: "🔴",
-          posterUrl: "https://image.tmdb.org/t/p/w500/77R0a6L6x2Z8l9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/5/52/Mars_National_Geographic_poster.jpg/500px-Mars_National_Geographic_poster.jpg",
           tags: ["First Colony", "Docudrama", "Planetary Science"],
           synopsis: "In 2033, the first crewed mission to Mars lands and struggles to establish a permanent, self-sustaining base camp.",
           why: "A hybrid docu-drama combining real planetary science with the fictional struggle of the first humans to survive on Mars."
@@ -623,7 +623,7 @@ const demoData = {
           type: "Movie",
           creator: "Mamoru Oshii",
           emoji: "🤖",
-          posterUrl: "https://image.tmdb.org/t/p/w500/9gC8wE4z8wY1o5k2j9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/c/ca/Ghostintheshellposter.jpg/500px-Ghostintheshellposter.jpg",
           tags: ["Cyborg Philosophy", "Cyberpunk Atmosphere", "Soul/Ghost"],
           synopsis: "A cyborg policewoman and her partner hunt a mysterious and powerful hacker known as the Puppet Master.",
           why: "Deep cyberpunk noir exploring whether an artificial consciousness possesses a true soul (a 'ghost')."
@@ -634,7 +634,7 @@ const demoData = {
           type: "Movie",
           creator: "Alex Garland",
           emoji: "🧬",
-          posterUrl: "https://image.tmdb.org/t/p/w500/tlX6wE4z8wY1o5k2j9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/b/ba/Ex-machina-uk-poster.jpg/500px-Ex-machina-uk-poster.jpg",
           tags: ["Turing Test", "AI Manipulation", "Consciousness"],
           synopsis: "A programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a humanoid AI.",
           why: "A tense, cerebral dissection of synthetic life, manipulation, and the ethical boundary of artificial consciousness."
@@ -647,7 +647,7 @@ const demoData = {
           type: "TV Show",
           creator: "Jonathan Nolan, Lisa Joy",
           emoji: "🤠",
-          posterUrl: "https://image.tmdb.org/t/p/w500/87R0a6L6x2Z8l9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/b/b1/Westworld_season_1_poster.jpg/500px-Westworld_season_1_poster.jpg",
           tags: ["Sentient Androids", "The Maze of Consciousness", "Rebellion"],
           synopsis: "At a futuristic Western theme park, android hosts begin to deviate from their scripted loops as they gain self-awareness.",
           why: "Directly explores synthetic androids awakening to their traumatic memories and questioning their creators' right to rule them."
@@ -658,7 +658,7 @@ const demoData = {
           type: "TV Show",
           creator: "Laeta Kalogridis",
           emoji: "🌆",
-          posterUrl: "https://image.tmdb.org/t/p/w500/2kK9m8QfP9M4i2k5h8Qp6uK8.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/e/e0/Altered_Carbon_season_1_poster.jpg/500px-Altered_Carbon_season_1_poster.jpg",
           tags: ["Cyberpunk Noir", "Immortality Stacks", "Neon Underbelly"],
           synopsis: "In a future where human consciousness is digitized and transferred across bodies, an operative investigates a wealthy oligarch's murder.",
           why: "Gorgeous neon-soaked cyberpunk aesthetics, hardboiled detective tropes, and transhumanist philosophy."
@@ -669,7 +669,7 @@ const demoData = {
           type: "TV Show",
           creator: "Dan Erickson",
           emoji: "🏢",
-          posterUrl: "https://image.tmdb.org/t/p/w500/jEgdYp4pX7l4W6fV3E5dE6f7uX.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f6/Severance_TV_series_poster.jpg/500px-Severance_TV_series_poster.jpg",
           tags: ["Artificial Persona", "Autonomy", "Cold Aesthetic"],
           synopsis: "Office workers struggle with whether their work persona is an autonomous, living person deserving rights.",
           why: "Shares the tragic dilemma of whether an engineered identity has real emotions or is merely a product owned by a corporation."
@@ -731,7 +731,7 @@ const demoData = {
           type: "Movie",
           creator: "Alfonso Cuarón",
           emoji: "🌫️",
-          posterUrl: "https://image.tmdb.org/t/p/w500/k9gC8wE4z8wY1o5k2j9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/d/d4/Children_of_men_poster.jpg/500px-Children_of_men_poster.jpg",
           tags: ["Dystopian Britain", "Police State", "Flicker of Hope"],
           synopsis: "In 2027, in a chaotic world in which women have somehow become infertile, a former activist agrees to help transport a miraculously pregnant woman.",
           why: "Captures the gritty, hopeless atmosphere of a surveillance police state where civil liberties have vanished."
@@ -742,7 +742,7 @@ const demoData = {
           type: "Movie",
           creator: "James McTeigue",
           emoji: "🎭",
-          posterUrl: "https://image.tmdb.org/t/p/w500/10kG8m9QfP9M4i2k5h8Qp6uK8.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/9/9f/Vforvendettamov.jpg/500px-Vforvendettamov.jpg",
           tags: ["Anti-Fascist Revolt", "State Propaganda", "Symbol of Resistance"],
           synopsis: "In a futuristic, tyrannical Britain, a shadowy freedom fighter known only as 'V' uses terrorist tactics to fight the oppressive regime.",
           why: "Direct modern spiritual continuation of Orwellian Britain, fighting state television news propaganda and curfews."
@@ -753,7 +753,7 @@ const demoData = {
           type: "Movie",
           creator: "Terry Gilliam",
           emoji: "🏢",
-          posterUrl: "https://image.tmdb.org/t/p/w500/3w8PqV4q8O3K2gP1h5g9k.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/e/e9/Brazil_%281985_film%29_poster.jpg/500px-Brazil_%281985_film%29_poster.jpg",
           tags: ["Absurdist Bureaucracy", "Dystopia", "Escapist Fantasy"],
           synopsis: "A daydreaming bureaucrat in a retro-future world becomes an enemy of the state while trying to correct a clerical error.",
           why: "A satirical, surreal take on 1984's Ministries of Truth and Information, filled with duct-taped surveillance and stifling paper trails."
@@ -766,7 +766,7 @@ const demoData = {
           type: "TV Show",
           creator: "Dan Erickson",
           emoji: "🏢",
-          posterUrl: "https://image.tmdb.org/t/p/w500/jEgdYp4pX7l4W6fV3E5dE6f7uX.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f6/Severance_TV_series_poster.jpg/500px-Severance_TV_series_poster.jpg",
           tags: ["Micro-Management", "Thought Control", "Rebellion"],
           synopsis: "Office workers subjected to mind splitting uncover terrifying secrets about the omnipotent Lumon regime.",
           why: "A corporate translation of Orwellian dogma, where slogans are worshipped and cameras monitor every deviation in posture."
@@ -777,18 +777,18 @@ const demoData = {
           type: "TV Show",
           creator: "Bruce Miller",
           emoji: "🔴",
-          posterUrl: "https://image.tmdb.org/t/p/w500/8kK9m8QfP9M4i2k5h8Qp6uK8.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Handmaid%27s_Tale_intertitle.png/500px-The_Handmaid%27s_Tale_intertitle.png",
           tags: ["Theocratic Dictatorship", "Erasure of Rights", "Resistance"],
           synopsis: "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
           why: "Examines state-mandated suppression of language, identity, and personal history in chilling, intimate detail."
         },
         {
-          title: "Black Mirror (Selected)",
+          title: "Black Mirror",
           year: "2011",
           type: "TV Show",
           creator: "Charlie Brooker",
           emoji: "📱",
-          posterUrl: "https://image.tmdb.org/t/p/w500/77R0a6L6x2Z8l9QfP9M4i2.jpg",
+          posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/2/24/BlackMirrorTitleCard.jpg/500px-BlackMirrorTitleCard.jpg",
           tags: ["Digital Panopticon", "Social Credit", "Technological Coercion"],
           synopsis: "An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
           why: "Episodes like 'Nosedive' and 'Fifteen Million Merits' modernise 1984's telescreens into smartphones and social rating systems."
@@ -839,7 +839,7 @@ const demoData = {
     year: "2008",
     creator: "Ben Stiller",
     emoji: "🎬",
-    posterUrl: "https://image.tmdb.org/t/p/w500/zAurB9mN0BmwqlqNyV5e92vQp9g.jpg",
+    posterUrl: "https://image.tmdb.org/t/p/w500/zAurB9mNxfYRoVrVjAJJwGV3sPg.jpg",
     tags: ["Hollywood Satire", "Action Parody", "Meta-Cinema", "Absurdist Comedy", "Method Acting"],
     synopsis: "While shooting a big-budget Vietnam War epic, a group of self-absorbed actors are dropped into the real jungle by their frustrated director, completely unaware they are facing real heroin-producing militia.",
     recommendations: {
@@ -850,7 +850,7 @@ const demoData = {
           type: "Movie",
           creator: "Francis Ford Coppola",
           emoji: "🌴",
-          posterUrl: "https://image.tmdb.org/t/p/w500/gQB8Y5R6ROV955F0v7rmb8g2N.jpg",
+          posterUrl: "https://image.tmdb.org/t/p/w500/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg",
           tags: ["Jungle Madness", "Vietnam War", "Psychological Descent"],
           synopsis: "During the Vietnam War, Captain Willard is sent on a perilous mission upriver into Cambodia to assassinate a renegade officer who has set himself up as a god among a local tribe.",
           why: "The direct cinematic subject of Tropic Thunder's satire, sharing the surreal nightmare of a film production mirroring the madness of the Vietnam jungle."
@@ -861,7 +861,7 @@ const demoData = {
           type: "Movie",
           creator: "Joel & Ethan Coen",
           emoji: "🎳",
-          posterUrl: "https://image.tmdb.org/t/p/w500/9ba6WnN7bK2e8Wv0h1k9QfP9M4i.jpg",
+          posterUrl: "https://image.tmdb.org/t/p/w500/3bv6WAp6BSxxYvB5ozKFUYuRA8C.jpg",
           tags: ["Absurdist Neo-Noir", "Eccentric Characters", "Mistaken Identity"],
           synopsis: "Ultimate slacker 'The Dude' is mistaken for a multi-millionaire of the same name and enlists his bowling buddies to help navigate a botched ransom exchange.",
           why: "Shares Tropic Thunder's legendary ensemble comedy dynamic, quotable irreverence, and bumbling protagonists in over their heads."
@@ -872,7 +872,7 @@ const demoData = {
           type: "Movie",
           creator: "Frank Oz",
           emoji: "🎥",
-          posterUrl: "https://image.tmdb.org/t/p/w500/5m1dGj7bK2e8Wv0h1k9QfP9M4i2.jpg",
+          posterUrl: "https://image.tmdb.org/t/p/w500/iGuiFYEYwFkaRPl3FgLJYEm6dWq.jpg",
           tags: ["Hollywood Satire", "Guerilla Filmmaking", "Ego & Delusion"],
           synopsis: "A down-and-out film producer shoots a low-budget sci-fi movie around a major Hollywood action star without the star's knowledge.",
           why: "A brilliant companion satire on Hollywood egos, desperate producers, and the hilarious absurdity of filmmaking."
@@ -885,7 +885,7 @@ const demoData = {
           type: "TV Show",
           creator: "Mike Judge",
           emoji: "💻",
-          posterUrl: "https://image.tmdb.org/t/p/w500/40C8wE4z8wY1o5k2j9QfP9M4i2.jpg",
+          posterUrl: "https://image.tmdb.org/t/p/w500/4ptpmWBVD9HY9hMh8Cbs6SMiy7p.jpg",
           tags: ["Industry Satire", "Bumbling Group", "Ego Clashes"],
           synopsis: "A group of eccentric software developers struggle to build their tech startup while navigating corporate giants and bizarre billionaires.",
           why: "Captures the sharp, merciless satire of megalomaniacal industry bosses and the chaotic failure-to-success trajectory."
@@ -896,7 +896,7 @@ const demoData = {
           type: "TV Show",
           creator: "Alec Berg, Bill Hader",
           emoji: "🎭",
-          posterUrl: "https://image.tmdb.org/t/p/w500/80C8wE4z8wY1o5k2j9QfP9M4i2.jpg",
+          posterUrl: "https://image.tmdb.org/t/p/w500/j1XpwD11f0BAEI7pX6UdMhUVX2F.jpg",
           tags: ["Hitman Actor", "Acting Class Dynamics", "Dark Satire"],
           synopsis: "A depressed Midwestern hitman travels to Los Angeles for a job and unexpectedly finds an accepting community in a theater acting class.",
           why: "Explores the narcissistic delusion of actors and the clash between real-world lethal violence and theatrical performance."
@@ -907,7 +907,7 @@ const demoData = {
           type: "TV Show",
           creator: "George Clooney, Luke Davies",
           emoji: "🛩️",
-          posterUrl: "https://image.tmdb.org/t/p/w500/70C8wE4z8wY1o5k2j9QfP9M4i2.jpg",
+          posterUrl: "https://upload.wikimedia.org/wikipedia/en/4/4c/Catch-22_%28miniseries%29.jpg",
           tags: ["Military Absurdity", "Satire", "War Bureaucracy"],
           synopsis: "A World War II bombardier is furious because thousands of people he has never met are trying to kill him, but military bureaucracy keeps him trapped in combat.",
           why: "Shares the biting satire of wartime insanity, irrational military commanders, and self-preservation amidst combat."
@@ -920,7 +920,7 @@ const demoData = {
           type: "Book",
           creator: "Joseph Heller",
           emoji: "📖",
-          posterUrl: "https://covers.openlibrary.org/b/id/8235451-L.jpg",
+          posterUrl: "https://covers.openlibrary.org/b/id/6468653-L.jpg",
           tags: ["Absurdist Satire", "Military Bureaucracy", "Dark Comedy"],
           synopsis: "Set in Italy during World War II, Captain John Yossarian struggles to maintain his sanity while fulfilling endless, absurd combat missions.",
           why: "The literary fountainhead of anti-war satire, ridiculing military self-importance, incompetence, and cynical exploitation of conflict."
@@ -931,7 +931,7 @@ const demoData = {
           type: "Book",
           creator: "Michael Herr",
           emoji: "📝",
-          posterUrl: "https://covers.openlibrary.org/b/id/8231512-L.jpg",
+          posterUrl: "https://covers.openlibrary.org/b/id/2388924-L.jpg",
           tags: ["Vietnam War", "New Journalism", "Visceral Conflict"],
           synopsis: "War correspondent Michael Herr's visceral chronicle of the soldiers, sounds, and psychological landscape of the Vietnam War.",
           why: "Herr co-wrote Apocalypse Now and Full Metal Jacket; his groundbreaking prose is the direct atmosphere referenced by Tropic Thunder."
@@ -1068,9 +1068,10 @@ function showEmptyState(query) {
 function showSelected(data) {
   const typeClass = getTypeClass(data.type);
   const tagsHtml = (data.tags || []).map(tag => `<span class="theme-tag">${tag}</span>`).join("");
+  const categoryIcon = data.type === "Book" ? "📖" : data.type === "TV Show" ? "📺" : "🎬";
   const posterHtml = data.posterUrl 
-    ? `<img src="${data.posterUrl}" alt="${data.title}" class="poster-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div class="poster-box" style="display:none;"><div class="poster-text">${data.title}</div></div>`
-    : `<div class="poster-box"><div class="poster-text">${data.title}</div></div>`;
+    ? `<img src="${data.posterUrl}" alt="${data.title}" class="poster-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div class="poster-box" style="display:none;"><span class="poster-box-icon">${categoryIcon}</span><div class="poster-text">${data.title}</div>${data.creator ? `<div class="poster-box-creator">${data.creator}</div>` : ''}</div>`
+    : `<div class="poster-box"><span class="poster-box-icon">${categoryIcon}</span><div class="poster-text">${data.title}</div>${data.creator ? `<div class="poster-box-creator">${data.creator}</div>` : ''}</div>`;
 
   const isWiki = data.source === "wikipedia" || String(data.id || "").startsWith("wiki_");
   const isTmdb = data.source === "tmdb" || String(data.id || "").startsWith("tmdb_");
@@ -1110,7 +1111,12 @@ function showSelected(data) {
 // Render Category Cards
 function renderCards(items, elementId) {
   const container = document.getElementById(elementId);
-  if (!container || !items) return;
+  if (!container) return;
+
+  if (!items || items.length === 0) {
+    container.innerHTML = `<div class="empty-category-notice" style="grid-column: 1 / -1; color: var(--text-muted); font-size: 0.85rem; padding: 1.25rem 0; font-style: italic;">No verified thematic matches found for this medium.</div>`;
+    return;
+  }
 
   container.innerHTML = items.map((item, index) => {
     const typeClass = getTypeClass(item.type);
@@ -1533,21 +1539,7 @@ async function executeSearch(queryOrEntity) {
   showLoading(true);
 
   try {
-    // 1. Check direct curated demo cache if matching exactly
-    if (typeof queryOrEntity === "string") {
-      const demoMatch = findData(rawQuery);
-      if (demoMatch) {
-        showLoading(false);
-        applySearchResult(demoMatch);
-        return;
-      }
-    } else if (directEntity && demoData[normalizeKey(directEntity.title)]) {
-      showLoading(false);
-      applySearchResult(demoData[normalizeKey(directEntity.title)]);
-      return;
-    }
-
-    // 2. Query Live Cross-Media Engine
+    // 1. Query Live Cross-Media Engine
     const endpoint = directEntity?.id 
       ? `/api/cross-media/recommend?q=${encodeURIComponent(directEntity.id)}`
       : `/api/cross-media/recommend?q=${encodeURIComponent(rawQuery)}`;
@@ -1575,6 +1567,8 @@ async function executeSearch(queryOrEntity) {
   } catch (err) {
     console.warn("Live API Search issue:", err);
   }
+
+
 
   // 3. Fallback to local demo dataset if available
   const fallback = findData(rawQuery);

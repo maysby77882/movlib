@@ -154,30 +154,49 @@ app.get("/api/entities/search", async (req, res) => {
 
 /**
  * Unified Cross-Media Recommendation Endpoint across Movies, TV, and Books
- * Usage: GET /api/cross-media/recommend?q=interstellar
+ * Usage: GET /api/cross-media/recommend?q=interstellar&debug=true
+ * Or: GET /api/recommendations?source=tmdb&type=movie&id=18785
  */
-app.get("/api/cross-media/recommend", async (req, res) => {
+async function handleRecommendationRequest(req, res) {
   try {
-    const { q, limit } = req.query;
-    if (!q || !q.trim()) {
-      return res.status(400).json({ error: "Query parameter 'q' is required." });
+    const { q, limit, debug, source: reqSource, type: reqType, id: reqId } = req.query;
+
+    let targetQuery = q;
+    if (!targetQuery && reqId) {
+      if (reqSource === "tmdb" && reqType === "tv") {
+        targetQuery = `tmdb_tv_${reqId}`;
+      } else if (reqSource === "tmdb" || reqType === "movie") {
+        targetQuery = `tmdb_movie_${reqId}`;
+      } else if (reqSource === "wikipedia" || reqType === "wikipedia") {
+        targetQuery = `wiki_${reqId}`;
+      } else if (reqSource === "openlibrary" || reqType === "book") {
+        targetQuery = `ol_${reqId}`;
+      } else {
+        targetQuery = String(reqId);
+      }
     }
 
-    const cacheKey = `cross_media_${q.trim().toLowerCase()}_${limit || 3}`;
+    if (!targetQuery || !targetQuery.trim()) {
+      return res.status(400).json({ error: "Query parameter 'q' or ('source', 'type', 'id') is required." });
+    }
+
+    const isDebug = debug === "true" || debug === "1";
+    const cacheKey = `cross_media_${targetQuery.trim().toLowerCase()}_${limit || 3}_${isDebug}`;
     const cachedResponse = queryCache.get(cacheKey);
     if (cachedResponse) {
       return res.json({ ...cachedResponse, cached: true });
     }
 
-    const data = await getCrossMediaRecommendations(q, {
+    const data = await getCrossMediaRecommendations(targetQuery, {
       tmdbApiKey: TMDB_API_KEY,
       tmdbAccessToken: TMDB_ACCESS_TOKEN,
       googleBooksApiKey: GOOGLE_BOOKS_API_KEY,
-      limitPerCategory: limit ? parseInt(limit, 10) : 3
+      limitPerCategory: limit ? parseInt(limit, 10) : 3,
+      debug: isDebug
     });
 
     if (!data.source) {
-      return res.status(404).json({ error: `Could not find source item for '${q}'.` });
+      return res.status(404).json({ error: `Could not find source item for '${targetQuery}'.` });
     }
 
     // Cache successful response for 30 minutes
@@ -188,7 +207,10 @@ app.get("/api/cross-media/recommend", async (req, res) => {
     console.error("Cross-Media Engine Error:", error);
     res.status(500).json({ error: "Failed to generate recommendations." });
   }
-});
+}
+
+app.get("/api/cross-media/recommend", handleRecommendationRequest);
+app.get("/api/recommendations", handleRecommendationRequest);
 
 /**
  * Recommendation Endpoint by Query / Arbitrary Item

@@ -31,11 +31,16 @@ export async function searchBooks(query, config = {}) {
 export async function searchOpenLibrary(query) {
   try {
     const url = `${OPEN_LIBRARY_SEARCH_URL}?q=${encodeURIComponent(query)}&limit=15`;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+
     const res = await fetch(url, {
+      signal: controller.signal,
       headers: {
         "User-Agent": "movlib/1.0 (https://movlib.discovery; discovery@movlib.internal)"
       }
     });
+    clearTimeout(timeoutId);
 
     if (!res.ok) {
       console.warn(`Open Library Search returned HTTP ${res.status}`);
@@ -82,7 +87,7 @@ export async function searchOpenLibrary(query) {
         year: doc.first_publish_year ? String(doc.first_publish_year) : "N/A",
         creator: authors || "Unknown Author",
         author: authors || "Unknown Author",
-        synopsis: firstSentence || "A notable literary work exploring narrative depth and human condition.",
+        synopsis: firstSentence || "A literary work exploring character dynamics and human themes.",
         posterUrl,
         genres: subjects.slice(0, 3),
         tags: subjects,
@@ -95,7 +100,7 @@ export async function searchOpenLibrary(query) {
 
     return books;
   } catch (error) {
-    console.error("Open Library Search Error:", error.message);
+    // Gracefully handle timeout or network error
     return [];
   }
 }
@@ -129,23 +134,27 @@ async function getOpenLibraryWorkDetails(workId) {
   try {
     const cleanId = workId.replace("/works/", "");
     const url = `${OPEN_LIBRARY_WORKS_BASE}/${cleanId}.json`;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+
     const res = await fetch(url, {
+      signal: controller.signal,
       headers: {
         "User-Agent": "movlib/1.0 (https://movlib.discovery; discovery@movlib.internal)"
       }
     });
+    clearTimeout(timeoutId);
 
     if (!res.ok) return null;
     const data = await res.json();
 
-    let description = "A notable literary work exploring narrative depth and human condition.";
+    let description = "A literary work exploring character dynamics and human themes.";
     if (typeof data.description === "string") {
       description = data.description;
     } else if (data.description && typeof data.description.value === "string") {
       description = data.description.value;
     }
 
-    // Clean markdown/HTML formatting from description
     description = cleanDescription(description);
 
     const covers = data.covers || [];
@@ -161,7 +170,7 @@ async function getOpenLibraryWorkDetails(workId) {
       type: "Book",
       media_type: "book",
       year: data.created?.value ? data.created.value.split("-")[0] : "N/A",
-      creator: "", // Author will be enriched by search metadata or author ref
+      creator: "",
       synopsis: description,
       posterUrl,
       genres: subjects.slice(0, 3),
@@ -169,7 +178,6 @@ async function getOpenLibraryWorkDetails(workId) {
       externalUrl: `https://openlibrary.org/works/${cleanId}`
     };
   } catch (error) {
-    console.error("Open Library Work Details Error:", error.message);
     return null;
   }
 }
@@ -182,14 +190,18 @@ async function searchGoogleBooks(query, apiKey = "") {
     let url = `${GOOGLE_BOOKS_BASE_URL}?q=${encodeURIComponent(query)}&maxResults=10&printType=books`;
     if (apiKey) url += `&key=${apiKey}`;
 
-    const res = await fetch(url);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+
+    const res = await fetch(url, { signal: controller.signal });
+    clearTimeout(timeoutId);
+
     if (!res.ok) return [];
     const data = await res.json();
     if (!data.items || data.items.length === 0) return [];
 
     return data.items.map(item => normalizeGoogleBook(item));
   } catch (error) {
-    console.error("Google Books Search Error:", error.message);
     return [];
   }
 }
@@ -202,12 +214,16 @@ async function getGoogleBookDetails(id, apiKey = "") {
     let url = `${GOOGLE_BOOKS_BASE_URL}/${id}`;
     if (apiKey) url += `&key=${apiKey}`;
 
-    const res = await fetch(url);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+
+    const res = await fetch(url, { signal: controller.signal });
+    clearTimeout(timeoutId);
+
     if (!res.ok) return null;
     const item = await res.json();
     return normalizeGoogleBookDetails(item);
   } catch (error) {
-    console.error("Google Book Details Error:", error.message);
     return null;
   }
 }
@@ -274,7 +290,7 @@ function normalizeGoogleBookDetails(item) {
 }
 
 function cleanDescription(desc) {
-  if (!desc) return "A notable literary work exploring narrative depth and human condition.";
+  if (!desc) return "A literary work exploring character dynamics and human themes.";
   return desc
     .replace(/<[^>]*>?/gm, "")
     .replace(/\[\d+\]/g, "")

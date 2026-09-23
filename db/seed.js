@@ -24,7 +24,7 @@ export const initialSeedData = [
     synopsis: "A high-powered book editor faces deportation to Canada and convinces her harried assistant to marry her in order to keep her visa, only for the two to travel to Alaska and discover genuine intimacy under a facade of convenience.",
     genres: ["Romance", "Comedy", "Drama"],
     tags: ["Fake Relationship", "Enemies to Lovers", "Workplace Romance", "Alaska", "Marriage of Convenience"],
-    posterUrl: "https://image.tmdb.org/t/p/w500/8gV2A6b4g1p1i6j7c1b3f6j9a2.jpg"
+    posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/0/02/The_Proposal.jpg/500px-The_Proposal.jpg"
   },
   {
     id: "seed_movie_tropic_thunder",
@@ -36,7 +36,7 @@ export const initialSeedData = [
     synopsis: "While shooting a big-budget Vietnam War epic, a group of self-absorbed actors are dropped into the real jungle by their frustrated director, completely unaware they are facing real heroin-producing militia.",
     genres: ["Comedy", "Action", "Adventure"],
     tags: ["Hollywood Satire", "Action Parody", "Meta-Cinema", "Absurdist Comedy", "Method Acting"],
-    posterUrl: "https://image.tmdb.org/t/p/w500/zAurB9mN0BmwqlqNyV5e92vQp9g.jpg"
+    posterUrl: "https://image.tmdb.org/t/p/w500/zAurB9mNxfYRoVrVjAJJwGV3sPg.jpg"
   },
   {
     id: "seed_movie_pride_and_prejudice",
@@ -48,7 +48,7 @@ export const initialSeedData = [
     synopsis: "Sparks fly when spirited Elizabeth Bennet meets single, rich, and proud Mr. Darcy. But Mr. Darcy reluctantly finds himself falling in love with a woman beneath his class.",
     genres: ["Romance", "Drama"],
     tags: ["Enemies to Lovers", "Class Divide", "Social Expectations", "Repressed Passion", "Regency England"],
-    posterUrl: "https://image.tmdb.org/t/p/w500/i2xgh9l1F0eDkH0sN4v1lQ.jpg"
+    posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/0/03/Prideandprejudiceposter.jpg/500px-Prideandprejudiceposter.jpg"
   },
   {
     id: "seed_movie_when_harry_met_sally",
@@ -60,7 +60,7 @@ export const initialSeedData = [
     synopsis: "Harry and Sally have known each other for years and are very good friends, but they fear that sleeping together would ruin their friendship.",
     genres: ["Romance", "Comedy", "Drama"],
     tags: ["Friends to Lovers", "Witty Banter", "Intimacy & Timing", "Modern Romance"],
-    posterUrl: "https://image.tmdb.org/t/p/w500/3w8PqV4q8O3K2gP1h5g9k.jpg"
+    posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/1/13/WhenHarryMetSallyPoster.jpg/500px-WhenHarryMetSallyPoster.jpg"
   },
   {
     id: "seed_movie_arrival",
@@ -122,7 +122,7 @@ export const initialSeedData = [
     synopsis: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.",
     genres: ["Drama", "Mystery", "Sci-Fi & Fantasy"],
     tags: ["Corporate Dystopia", "Dual Identity", "Kafkaesque", "Workplace Panopticon", "Psychological Thriller"],
-    posterUrl: "https://image.tmdb.org/t/p/w500/jEgdYp4pX7l4W6fV3E5dE6f7uX.jpg"
+    posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f6/Severance_TV_series_poster.jpg/500px-Severance_TV_series_poster.jpg"
   },
   {
     id: "seed_tv_fleabag",
@@ -134,7 +134,7 @@ export const initialSeedData = [
     synopsis: "A sharp-witted, dry-humored woman navigating life and love in London while trying to cope with tragedy, intimacy, and forbidden connections.",
     genres: ["Comedy", "Drama", "Romance"],
     tags: ["Witty Banter", "Vulnerability", "Forbidden Love", "Emotional Depth", "Fourth Wall"],
-    posterUrl: "https://image.tmdb.org/t/p/w500/i9o3z0J6A8r3.jpg"
+    posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/b/b3/Fleabag_Season_1.jpg/500px-Fleabag_Season_1.jpg"
   },
   {
     id: "seed_tv_the_expanse",
@@ -158,7 +158,7 @@ export const initialSeedData = [
     synopsis: "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's financial future.",
     genres: ["Drama", "Crime", "Thriller"],
     tags: ["Moral Degeneration", "Antihero Journey", "Family & Pride", "High-Stakes Crime", "Psychological Tension"],
-    posterUrl: "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg"
+    posterUrl: "https://thumb.wikimedia.org/wikipedia/en/thumb/6/61/Breaking_Bad_title_card.png/500px-Breaking_Bad_title_card.png"
   },
 
   // BOOKS
@@ -184,7 +184,7 @@ export const initialSeedData = [
     synopsis: "Set against the backdrop of China's Cultural Revolution, a secret military project sends signals into space to establish contact with aliens, leading to a catastrophic chain of events.",
     genres: ["Hard Science Fiction", "Cosmic Philosophy"],
     tags: ["Cosmic Sociology", "Theoretical Physics", "First Contact", "Extinction Threat", "Dimensions"],
-    posterUrl: "https://books.google.com/books/content?id=zyTCAlFPjgYC&printsec=frontcover&img=1&zoom=1"
+    posterUrl: "https://covers.openlibrary.org/b/id/8302196-L.jpg"
   },
   {
     id: "seed_book_project_hail_mary",
@@ -196,7 +196,7 @@ export const initialSeedData = [
     synopsis: "Ryland Grace is the sole survivor on a desperate, last-chance mission—and if he fails, humanity and the earth itself will perish.",
     genres: ["Science Fiction", "Survival Thriller"],
     tags: ["Interstellar Voyage", "Amnesia", "Scientific Problem Solving", "First Contact", "Resourcefulness"],
-    posterUrl: "https://books.google.com/books/content?id=x7_rDwAAQBAJ&printsec=frontcover&img=1&zoom=1"
+    posterUrl: "https://covers.openlibrary.org/b/id/11181467-L.jpg"
   },
   {
     id: "seed_book_1984",
@@ -208,7 +208,7 @@ export const initialSeedData = [
     synopsis: "A dystopian social science fiction novel and cautionary tale about totalitarianism, mass surveillance, and repressive regimentation of persons and behaviors within society.",
     genres: ["Classic Literature", "Dystopian"],
     tags: ["Totalitarianism", "Surveillance State", "Doublethink", "Thought Police", "Psychological Manipulation"],
-    posterUrl: "https://books.google.com/books/content?id=kotPYEqx7kMC&printsec=frontcover&img=1&zoom=1"
+    posterUrl: "https://covers.openlibrary.org/b/id/8575742-L.jpg"
   },
   {
     id: "seed_book_hyperion",
@@ -220,7 +220,7 @@ export const initialSeedData = [
     synopsis: "On the world of Hyperion, the mysterious Time Tombs are opening, and seven pilgrims set forth on a final voyage to uncover their secrets.",
     genres: ["Space Opera", "Literary Sci-Fi"],
     tags: ["Pilgrimage", "Time Tombs", "The Shrike", "Galactic Hegemony", "Poetics"],
-    posterUrl: "https://books.google.com/books/content?id=4y8jDwAAQBAJ&printsec=frontcover&img=1&zoom=1"
+    posterUrl: "https://covers.openlibrary.org/b/id/8231991-L.jpg"
   }
 ];
 
