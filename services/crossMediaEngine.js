@@ -6,6 +6,8 @@ import { getMovieDetails, getTVDetails, searchMovies, searchTV, discoverMovies, 
 import { searchBooks, getBookDetails } from "./books.js";
 import { getWikipediaDetails, searchWikipedia } from "./wikipedia.js";
 
+export const ALGORITHM_VERSION = "story-v4";
+
 const TMDB_MOVIE_GENRE_MAP = {
   "comedy": 35,
   "drama": 18,
@@ -38,7 +40,12 @@ const TMDB_TV_GENRE_MAP = {
   "war & politics": 10768
 };
 
-// Filter out noise keywords to focus on strong story anchors
+// Procedural / Non-narrative keywords and indicators to exclude
+const PROCEDURAL_KEYWORDS = [
+  "police procedural", "investigation of the week", "case of the week", "courtroom procedural",
+  "fbi special agent", "detective team", "forensic science", "talk show", "game show"
+];
+
 const NOISE_KEYWORDS = new Set([
   "duringcreditsstinger", "aftercreditsstinger", "based on novel or book", "woman director",
   "sequel", "prequel", "remake", "stand-up comedy", "parody", "sex doll", "mouth to mouth resuscitation"
@@ -53,7 +60,6 @@ function filterSignificantKeywords(keywords = []) {
 
 /**
  * STEP 1: Search & Entity Identification (Disambiguation)
- * Returns distinct candidate works matching query across movies, TV, and books
  */
 export async function searchEntities(query, config = {}) {
   const { tmdbApiKey = "", tmdbAccessToken = "", googleBooksApiKey = "" } = config;
@@ -61,7 +67,7 @@ export async function searchEntities(query, config = {}) {
 
   const cleanQuery = query.trim();
 
-  // Search across local DB + primary external APIs (with Wikipedia fallback)
+  // Search local DB + primary external APIs
   const localMatches = searchLocalMedia(cleanQuery);
   const searchRes = await performUnifiedSearch(cleanQuery, { tmdbApiKey, tmdbAccessToken, googleBooksApiKey });
 
@@ -107,9 +113,7 @@ export async function searchEntities(query, config = {}) {
 }
 
 /**
- * STEP 2-6: Deep Plot & Story DNA Recommendation Engine
- * Takes an EXACT identified work, constructs its full Story DNA & Plot Representation,
- * and dynamically retrieves and ranks candidates based on deep story and plot similarity.
+ * STEP 2-6: Deep Story-First Recommendation Engine
  */
 export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
   const { tmdbApiKey = "", tmdbAccessToken = "", googleBooksApiKey = "", limitPerCategory = 3, debug = false } = config;
@@ -172,7 +176,7 @@ export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
     };
   }
 
-  // Hydrate full detailed metadata (genres, keywords, director, synopsis, recommendations)
+  // Hydrate full detailed metadata
   let directRecommendations = [];
   try {
     const isMovie = (sourceItem.type === "Movie" || sourceItem.media_type === "movie");
@@ -202,26 +206,44 @@ export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
       const wikiDetails = await getWikipediaDetails(sourceItem.externalId || sourceItem.id);
       if (wikiDetails) sourceItem = { ...sourceItem, ...wikiDetails };
     }
+
+    // Multi-source fallback cascade for sparse descriptions (< 60 chars) or indie releases
+    if (!sourceItem.synopsis || sourceItem.synopsis.length < 60 || sourceItem.synopsis.startsWith("No synopsis")) {
+      const wikiMatches = await searchWikipedia(`${sourceItem.title} ${sourceItem.year !== "N/A" ? sourceItem.year : ""}`.trim()).catch(() => []);
+      if (wikiMatches.length > 0 && wikiMatches[0].synopsis && wikiMatches[0].synopsis.length > 60) {
+        sourceItem.synopsis = wikiMatches[0].synopsis;
+        if (!sourceItem.creator && wikiMatches[0].creator) {
+          sourceItem.creator = wikiMatches[0].creator;
+        }
+      }
+    }
   } catch (e) {
     console.warn("Could not hydrate full details:", e.message);
   }
 
-  // 2. Build Multi-Dimensional Story DNA Profile
+  // 2. Build Structured Story DNA Profile
   const sourceProfile = buildStoryProfile(sourceItem);
   const enrichedSource = {
     ...sourceItem,
     synopsis: sourceProfile?.cleanedSynopsis || sourceItem.synopsis,
     premise: sourceProfile?.premise || "",
+    logline: sourceProfile?.logline || "",
     centralConflict: sourceProfile?.centralConflict || "",
+    protagonistRole: sourceProfile?.protagonistRole || "",
+    protagonistTraits: sourceProfile?.protagonistTraits || [],
     protagonistGoal: sourceProfile?.protagonistGoal || "",
+    protagonistMotivation: sourceProfile?.protagonistMotivation || "",
+    narrativeStructure: sourceProfile?.narrativeStructure || "",
     narrativeType: sourceProfile?.narrativeType || "",
     characterRoles: sourceProfile?.characterRoles || [],
     plotRepresentation: sourceProfile?.plotRepresentation || "",
+    storyRepresentation: sourceProfile?.storyRepresentation || "",
+    themeRepresentation: sourceProfile?.themeRepresentation || "",
     storyDNA: sourceProfile?.storyDNA || "",
     tags: sourceProfile?.allTags || sourceItem.tags || [],
     thematic_features: sourceProfile ? {
       themes: sourceProfile.themes,
-      concepts: sourceProfile.concepts,
+      concepts: sourceProfile.narrativeStructures,
       settings: sourceProfile.settings,
       moods: sourceProfile.moods,
       tropes: sourceProfile.tropes
@@ -231,113 +253,73 @@ export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
 
   saveMediaItem(enrichedSource);
 
-  // 3. Dynamic Candidate Retrieval: Formulate Plot-Driven Targeted Queries
+  // 3. Dynamic Candidate Retrieval: Formulate Plot-Driven & Narrative Structure Queries
   const sourceKeywords = filterSignificantKeywords(Array.isArray(enrichedSource.keywords) ? enrichedSource.keywords : []);
   const sourceGenres = Array.isArray(enrichedSource.genres) ? enrichedSource.genres : [];
   const sourceThemes = enrichedSource.thematic_features?.themes || [];
-  const sourceConcepts = enrichedSource.thematic_features?.concepts || [];
+  const narrativeStructure = enrichedSource.narrativeStructure || "";
 
-  const primaryGenre = sourceGenres[0] || "";
-  const primaryGenreLower = primaryGenre.toLowerCase();
+  const plotSearchPhrases = [];
 
-  // Find most descriptive plot anchors
-  const topAnchor1 = sourceKeywords.find(k => [
-    "bachelor party", "hangover", "las vegas", "atomic bomb", "manhattan project", "nuclear", "physicist",
-    "space", "time dilation", "wormhole", "fraternity", "college", "friendship", "detective", "vigilante",
-    "joker", "gotham", "heist", "superhero", "dystopia", "alien", "robot", "war", "survival"
-  ].some(core => k.toLowerCase().includes(core))) || sourceKeywords[0] || "";
-
-  const topAnchor2 = sourceKeywords.find(k => k !== topAnchor1 && filterSignificantKeywords([k]).length > 0) || "";
+  // Narrative-structure targeted phrases
+  if (narrativeStructure === "Psychological Descent & Urban Alienation") {
+    plotSearchPhrases.push("alienation psychological descent");
+    plotSearchPhrases.push("isolated vigilante loner");
+    plotSearchPhrases.push("urban decay obsession");
+  } else if (narrativeStructure === "Scientific Hubris & Moral Fallout") {
+    plotSearchPhrases.push("atomic bomb physicist moral");
+    plotSearchPhrases.push("scientific hubris fallout");
+  } else if (narrativeStructure === "Relativistic Space Odyssey & Survival") {
+    plotSearchPhrases.push("time dilation deep space");
+    plotSearchPhrases.push("wormhole black hole survival");
+  } else if (narrativeStructure === "Messianic Destiny & Feudal Ecology") {
+    plotSearchPhrases.push("desert world messiah");
+    plotSearchPhrases.push("feudal dynasty rebellion");
+  } else if (narrativeStructure === "Corporate Panopticon & Fractured Identity") {
+    plotSearchPhrases.push("memory division corporate panopticon");
+    plotSearchPhrases.push("totalitarian surveillance identity");
+  } else if (narrativeStructure === "Slacker Brotherhood & Nostalgic Rebellion") {
+    plotSearchPhrases.push("fraternity slacker buddy");
+    plotSearchPhrases.push("recapture youth male friendship");
+  } else if (narrativeStructure === "Chaotic Bachelor Misadventure & Clue Mystery") {
+    plotSearchPhrases.push("bachelor party missing groom");
+    plotSearchPhrases.push("hangover amnesia clues");
+  } else {
+    if (sourceKeywords.length > 0) {
+      plotSearchPhrases.push(sourceKeywords.slice(0, 2).join(" "));
+    }
+    if (sourceThemes.length > 0) {
+      plotSearchPhrases.push(sourceThemes[0]);
+    }
+  }
 
   const newCandidateList = [...directRecommendations];
   const fetchPromises = [];
 
-  // Plot-driven search phrases
-  const plotSearchPhrases = [];
-  if (topAnchor1 && topAnchor2) {
-    plotSearchPhrases.push(`${topAnchor1} ${topAnchor2}`);
-  }
-  if (topAnchor1) {
-    plotSearchPhrases.push(`${topAnchor1} ${primaryGenre}`.trim());
-    plotSearchPhrases.push(topAnchor1);
-  }
-  if (sourceConcepts.length > 0) {
-    plotSearchPhrases.push(sourceConcepts[0]);
-  }
-  if (sourceThemes.length > 0) {
-    plotSearchPhrases.push(sourceThemes[0]);
-  }
-
-  // A. Search TMDB Discover & Search
+  // A. Search TMDB Discover & Search with plot anchors
   if (tmdbApiKey || tmdbAccessToken) {
-    // TV Discover by Genre (Excludes talk shows / reality)
-    const tvGenreId = TMDB_TV_GENRE_MAP[primaryGenreLower];
-    if (tvGenreId) {
-      fetchPromises.push(
-        discoverTV({ withGenres: String(tvGenreId) }, { apiKey: tmdbApiKey, accessToken: tmdbAccessToken })
-          .then(items => items.forEach(it => {
-            if (primaryGenre) it.genres = [primaryGenre];
-            newCandidateList.push(it);
-          }))
-          .catch(() => {})
-      );
-    }
-
-    // Movie Discover by Genre (if source was TV or Book)
-    const movieGenreId = TMDB_MOVIE_GENRE_MAP[primaryGenreLower];
-    if (movieGenreId && enrichedSource.media_type !== "movie") {
-      fetchPromises.push(
-        discoverMovies({ withGenres: String(movieGenreId) }, { apiKey: tmdbApiKey, accessToken: tmdbAccessToken })
-          .then(items => items.forEach(it => {
-            if (primaryGenre) it.genres = [primaryGenre];
-            newCandidateList.push(it);
-          }))
-          .catch(() => {})
-      );
-    }
-
-    // Targeted TV Search with plot anchor
     for (const phrase of plotSearchPhrases.slice(0, 2)) {
       if (phrase) {
         fetchPromises.push(
+          searchMovies(phrase, { apiKey: tmdbApiKey, accessToken: tmdbAccessToken })
+            .then(items => items.forEach(it => newCandidateList.push(it)))
+            .catch(() => {})
+        );
+        fetchPromises.push(
           searchTV(phrase, { apiKey: tmdbApiKey, accessToken: tmdbAccessToken })
-            .then(items => items.forEach(it => {
-              if (primaryGenre) it.genres = [primaryGenre];
-              newCandidateList.push(it);
-            }))
+            .then(items => items.forEach(it => newCandidateList.push(it)))
             .catch(() => {})
         );
       }
     }
-
-    // Targeted Movie Search (if source is not movie or additional movie pool desired)
-    if (enrichedSource.media_type !== "movie" || newCandidateList.length < 5) {
-      for (const phrase of plotSearchPhrases.slice(0, 2)) {
-        if (phrase) {
-          fetchPromises.push(
-            searchMovies(phrase, { apiKey: tmdbApiKey, accessToken: tmdbAccessToken })
-              .then(items => items.forEach(it => {
-                if (primaryGenre) it.genres = [primaryGenre];
-                newCandidateList.push(it);
-              }))
-              .catch(() => {})
-          );
-        }
-      }
-    }
   }
 
-  // B. Literature Retrieval: Search Open Library with plot anchors and themes
+  // B. Literature Retrieval: Search Open Library / Google Books with story phrases
   for (const phrase of plotSearchPhrases.slice(0, 3)) {
     if (phrase) {
       fetchPromises.push(
         searchBooks(phrase, { googleBooksApiKey })
-          .then(items => items.forEach(it => {
-            if (primaryGenre && (!it.genres || it.genres.length === 0)) {
-              it.genres = [primaryGenre];
-            }
-            newCandidateList.push(it);
-          }))
+          .then(items => items.forEach(it => newCandidateList.push(it)))
           .catch(() => {})
       );
     }
@@ -354,37 +336,44 @@ export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
   const { items: allDbCandidates } = getAllMedia({ limit: 5000 });
   const candidatePool = allDbCandidates.filter(item => item.id !== enrichedSource.id);
 
-  // 4. Content-Only Semantic & Hybrid Ranking with Hard Plot Quality Filter
-  const topMovies = rankCandidates(enrichedSource, candidatePool, {
+  // 4. Story-First Content Ranking with Hard Story Gate
+  const movieRanked = rankCandidates(enrichedSource, candidatePool, {
     filterType: "movie",
     limit: limitPerCategory,
-    minScore: 0.05
+    minScore: 0.05,
+    returnRejected: debug
   });
 
-  const topTV = rankCandidates(enrichedSource, candidatePool, {
+  const tvRanked = rankCandidates(enrichedSource, candidatePool, {
     filterType: "tv",
     limit: limitPerCategory,
-    minScore: 0.05
+    minScore: 0.05,
+    returnRejected: debug
   });
 
-  const topBooks = rankCandidates(enrichedSource, candidatePool, {
+  const bookRanked = rankCandidates(enrichedSource, candidatePool, {
     filterType: "book",
     limit: limitPerCategory,
-    minScore: 0.05
+    minScore: 0.05,
+    returnRejected: debug
   });
 
-  // 5. Format response with grounded narrative connections
+  const topMovies = debug ? movieRanked.results : movieRanked;
+  const topTV = debug ? tvRanked.results : tvRanked;
+  const topBooks = debug ? bookRanked.results : bookRanked;
+
+  // 5. Format response with grounded Story DNA connections
   const formatList = (scoredEntries) => scoredEntries.map(entry => {
     const item = entry.item;
-    const matchPct = Math.min(99, Math.max(52, Math.round(entry.similarityScore * 100)));
+    const matchPct = Math.min(99, Math.max(55, Math.round(entry.similarityScore * 100)));
     const shared = entry.sharedThemes || [];
     const whyBullets = entry.whyBullets || [];
-    
-    let whySummary = "Connected by shared narrative premise, plot progression, and core story themes.";
+
+    let whySummary = "Connected by deep story parallels, character arcs, and shared narrative conflict.";
     if (whyBullets.length > 0) {
       whySummary = whyBullets.join(" · ");
     } else if (shared.length > 0) {
-      whySummary = `Explores shared themes and concepts of ${shared.slice(0, 3).join(", ")}.`;
+      whySummary = `Explores shared narrative concepts of ${shared.slice(0, 3).join(", ")}.`;
     }
 
     const payload = {
@@ -412,7 +401,7 @@ export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
     return payload;
   });
 
-  return {
+  const responsePayload = {
     source: {
       id: enrichedSource.id,
       title: enrichedSource.title,
@@ -422,8 +411,11 @@ export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
       creator: enrichedSource.creator || enrichedSource.author || enrichedSource.director || "",
       synopsis: enrichedSource.synopsis || "No synopsis available.",
       premise: enrichedSource.premise || "",
+      logline: enrichedSource.logline || "",
       centralConflict: enrichedSource.centralConflict || "",
+      narrativeStructure: enrichedSource.narrativeStructure || "",
       narrativeType: enrichedSource.narrativeType || "",
+      protagonistRole: enrichedSource.protagonistRole || "",
       posterUrl: enrichedSource.poster_url || enrichedSource.posterUrl || null,
       tags: enrichedSource.tags || [],
       externalUrl: enrichedSource.externalUrl || enrichedSource.sourceUrl || null
@@ -433,6 +425,19 @@ export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
       movies: formatList(topMovies),
       tv: formatList(topTV),
       books: formatList(topBooks)
-    }
+    },
+    algorithmVersion: ALGORITHM_VERSION
   };
+
+  if (debug) {
+    responsePayload.debug = {
+      rejectedCandidates: [
+        ...(movieRanked.rejected || []),
+        ...(tvRanked.rejected || []),
+        ...(bookRanked.rejected || [])
+      ]
+    };
+  }
+
+  return responsePayload;
 }

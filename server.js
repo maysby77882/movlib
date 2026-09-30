@@ -126,7 +126,7 @@ app.get("/api/recommend/:id", (req, res) => {
   });
 });
 
-import { getCrossMediaRecommendations, searchEntities } from "./services/crossMediaEngine.js";
+import { getCrossMediaRecommendations, searchEntities, ALGORITHM_VERSION } from "./services/crossMediaEngine.js";
 import { queryCache } from "./services/cache.js";
 
 /**
@@ -181,7 +181,7 @@ async function handleRecommendationRequest(req, res) {
     }
 
     const isDebug = debug === "true" || debug === "1";
-    const cacheKey = `cross_media_${targetQuery.trim().toLowerCase()}_${limit || 3}_${isDebug}`;
+    const cacheKey = `cross_media_${ALGORITHM_VERSION}_${targetQuery.trim().toLowerCase()}_${limit || 3}_${isDebug}`;
     const cachedResponse = queryCache.get(cacheKey);
     if (cachedResponse) {
       return res.json({ ...cachedResponse, cached: true });
