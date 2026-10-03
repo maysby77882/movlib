@@ -4,180 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="no-referrer" />
-  <title>MOVLIB — Editorial Cross-Media Discovery</title>
-  <meta name="description" content="Discover movies, television and books through meaningful cross-media narrative similarities." />
+  <title>movlib — Cross-Media Story Discovery</title>
+  <meta name="description" content="Discover movies, TV shows, and books connected by shared themes, mood, story, and atmosphere." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4.0" />
+  <link rel="stylesheet" href="styles.css?v=4.1" />
 </head>
 <body>
-  <!-- Full-Bleed Atmospheric Background Layer -->
+  <!-- Full Cinematic Background Layer -->
   <div class="landing-bg-layer" id="landingBg"></div>
-  <div class="ambient-gradient-overlay" aria-hidden="true"></div>
 
-  <!-- Contoured Escalator Couple Hotspot (About Time 2013) -->
-  <div class="about-time-hotspot" id="aboutTimeHotspot" role="button" tabindex="0" aria-label="Explore About Time (2013)" title="Explore About Time (2013)">
+  <!-- Contoured Escalator Hotspot (Rachel McAdams & Domhnall Gleeson) -->
+  <div class="about-time-hotspot" id="aboutTimeHotspot" role="button" tabindex="0" aria-label="Explore About Time (2013)" title="About Time (2013)">
     <span class="hotspot-hint">✦ About Time (2013)</span>
   </div>
 
-  <!-- Editorial Global Navigation -->
-  <header class="site-header" id="siteHeader">
+  <!-- Header Navigation — Clean, Seamless & Transparent -->
+  <header class="site-header">
     <div class="header-container">
-      <div class="header-left">
-        <a href="#" class="brand-logo" id="navLogo" aria-label="MOVLIB Home">
-          <span class="brand-name">MOVLIB</span>
-        </a>
-      </div>
-
-      <nav class="site-nav" id="siteNav" aria-label="Primary Navigation">
-        <a href="#about" class="nav-link" id="navAbout">About</a>
-        <a href="#discover" class="nav-link" id="navDiscover">Discover</a>
-        <a href="#cinema" class="nav-link" id="navMovies">Movies</a>
-        <a href="#television" class="nav-link" id="navTv">TV</a>
-        <a href="#literature" class="nav-link" id="navBooks">Books</a>
-      </nav>
-
-      <div class="header-right">
-        <button type="button" class="nav-search-btn" id="navSearchTrigger" aria-label="Focus Search">
-          <span>Search</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link nav-github" aria-label="GitHub Repository">Archive</a>
-        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu" aria-expanded="false">
-          <span class="menu-bar"></span>
-          <span class="menu-bar"></span>
-        </button>
-      </div>
+      <a href="#" class="brand-logo" id="navLogo">
+        <span class="brand-name">movlib</span>
+      </a>
     </div>
   </header>
 
   <main class="app">
-    <!-- Asymmetric Editorial Hero / Landing Section (Reference 2 Inspired) -->
+    <!-- Hero / Landing Section (Matches Reference Image Exactly) -->
     <section class="hero" id="homeSection">
-      <!-- Fine 1px editorial vertical grid lines -->
-      <div class="hero-grid-guide" aria-hidden="true">
-        <div class="grid-line line-1"></div>
-        <div class="grid-line line-2"></div>
-        <div class="grid-line line-3"></div>
+      <!-- Quote Box (Tropic Thunder) -->
+      <div class="hero-quote-box" id="heroQuoteBox" role="button" tabindex="0" title="Explore Tropic Thunder">
+        <p class="hero-quote-text">“Mother Nature just pissed her pantsuit.”</p>
+        <span class="hero-quote-source">Tropic Thunder</span>
       </div>
 
-      <div class="hero-layout">
-        <!-- Left & Center Column: Main Headline, Philosophy, and Understated Search -->
-        <div class="hero-main-col">
-          <div class="hero-editorial-badge">
-            <span class="badge-index">01</span>
-            <span class="badge-label">Discover Something Different</span>
+      <!-- Search Capsule Bar with Explore Button -->
+      <div class="search-container">
+        <form class="search-box" id="searchForm" autocomplete="off">
+          <div class="search-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
           </div>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder=""
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button type="button" class="clear-btn hidden" id="clearBtn" title="Clear input">✕</button>
+          <button type="submit" class="search-btn" id="searchSubmitBtn" aria-label="Search">
+            <span>Explore</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
 
-          <h1 class="hero-main-title">MOVLIB</h1>
+        <!-- Autocomplete Suggestions Dropdown -->
+        <div class="suggestions-dropdown hidden" id="suggestionsDropdown"></div>
+      </div>
 
-          <p class="hero-editorial-desc">
-            An editorial discovery archive connecting movies, television and literature through meaningful narrative DNA and atmosphere.
-          </p>
+      <!-- Search Loading State -->
+      <div class="search-loading hidden" id="searchLoading">
+        <div class="loading-spinner-ring"></div>
+        <p class="loading-text">Finding connected narratives...</p>
+      </div>
 
-          <!-- Understated Cinematic Search Field -->
-          <div class="search-container">
-            <form class="search-box" id="searchForm" autocomplete="off">
-              <div class="search-input-wrap">
-                <span class="search-prefix-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                  </svg>
-                </span>
-                <input
-                  id="searchInput"
-                  type="search"
-                  placeholder="SEARCH MOVIE, TV SHOW OR BOOK"
-                  autocomplete="off"
-                  spellcheck="false"
-                  aria-label="Search movie, television show or book"
-                />
-                <button type="button" class="clear-btn hidden" id="clearBtn" title="Clear search input">✕</button>
-              </div>
-
-              <button type="submit" class="search-btn" id="searchSubmitBtn" aria-label="Explore narrative connections">
-                <span>Explore</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
-            </form>
-
-            <div class="search-sub-tags">
-              <span class="sub-tag">Movies</span>
-              <span class="sub-sep">/</span>
-              <span class="sub-tag">Television</span>
-              <span class="sub-sep">/</span>
-              <span class="sub-tag">Literature</span>
-            </div>
-
-            <!-- Autocomplete Suggestions Dropdown -->
-            <div class="suggestions-dropdown hidden" id="suggestionsDropdown"></div>
-          </div>
-
-          <!-- Cinematic Animated Loading State -->
-          <div class="search-loading hidden" id="searchLoading" aria-live="polite">
-            <div class="cinematic-loader">
-              <span class="loader-brand">MOVLIB</span>
-              <span class="loader-status">Discovering connected narratives...</span>
-              <div class="loader-line-scanner"></div>
-            </div>
-          </div>
-
-          <!-- Minimal Editorial Empty State -->
-          <div class="search-empty-state hidden" id="searchEmptyState" role="alert">
-            <div class="empty-kicker">ARCHIVE RESULT</div>
-            <h3 class="empty-title">Nothing Found</h3>
-            <p class="empty-desc" id="emptyDesc">Try another title, author, actor, director or narrative keyword.</p>
-          </div>
-        </div>
-
-        <!-- Right Column: Asymmetric Editorial Floating Panel (Reference 2 Inspired) -->
-        <aside class="hero-sidebar-col" aria-label="Featured Story Archive">
-          <div class="sidebar-block">
-            <span class="sidebar-label">Archive Scope</span>
-            <div class="sidebar-value">Cross-Media Similarity Engine</div>
-          </div>
-
-          <div class="sidebar-block">
-            <span class="sidebar-label">Index Categories</span>
-            <div class="sidebar-value">Cinema · TV · Foundational Texts</div>
-          </div>
-
-          <!-- Interactive Tropic Thunder Quote Card -->
-          <div class="sidebar-featured-card hero-quote-box" id="heroQuoteBox" role="button" tabindex="0" title="Explore Tropic Thunder (2008)">
-            <div class="card-kicker-row">
-              <span class="card-kicker">Featured Dialogue</span>
-              <span class="card-action-arrow">↗</span>
-            </div>
-            <p class="hero-quote-text">“Mother Nature just pissed her pantsuit.”</p>
-            <div class="card-meta-line">
-              <span class="hero-quote-source">Tropic Thunder</span>
-              <span class="card-year">2008 · Ben Stiller</span>
-            </div>
-          </div>
-
-          <!-- About Time Archive Still Preview -->
-          <div class="sidebar-still-card" id="aboutTimeSidebarCard" role="button" tabindex="0" title="Explore About Time (2013)">
-            <div class="card-kicker-row">
-              <span class="card-kicker">Cinematic Still</span>
-              <span class="card-action-arrow">↗</span>
-            </div>
-            <div class="still-title">About Time</div>
-            <p class="still-desc">Richard Curtis’s romantic time-loop masterwork on the beauty of ordinary days.</p>
-            <span class="still-pill">Explore Escalator Couple</span>
-          </div>
-        </aside>
+      <!-- Search Empty State -->
+      <div class="search-empty-state hidden" id="searchEmptyState">
+        <div class="empty-icon">✧</div>
+        <h3 class="empty-title">No Stories Found</h3>
+        <p class="empty-desc" id="emptyDesc">We couldn't find any exact matches for your search. Try checking the spelling or searching for another title.</p>
       </div>
     </section>
 
-    <!-- Compact Sticky Bar When In Results View -->
+    <!-- Search / Floating Compact Bar when in results -->
     <div class="results-search-wrapper hidden" id="resultsSearchWrapper">
       <div class="results-bar-container">
         <form class="compact-search-box" id="compactSearchForm">
@@ -185,7 +90,7 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input id="compactSearchInput" type="text" placeholder="Search another movie, TV show, or book..." autocomplete="off" aria-label="Search another title" />
+          <input id="compactSearchInput" type="text" placeholder="Search another title..." autocomplete="off" />
           <button type="submit" class="compact-submit-btn">Search</button>
         </form>
 
@@ -204,8 +109,8 @@
 
           <div class="versions-dropdown-panel hidden" id="versionsDropdown">
             <div class="versions-dropdown-header">
-              <span class="versions-dropdown-title">Alternative Versions & Adaptations</span>
-              <span class="versions-dropdown-sub">Select a release to generate cross-media parallels:</span>
+              <span class="versions-dropdown-title">Explore Same-Name Works & Adaptations</span>
+              <span class="versions-dropdown-sub">Select to view discovery recommendations for another medium or release:</span>
             </div>
             <div class="versions-list" id="versionsList"></div>
           </div>
@@ -215,7 +120,7 @@
 
     <!-- Recommendations & Discovery Results Section -->
     <section class="results hidden" id="results">
-      <!-- Selected Source Work Showcase (Reference 1 + 2 Asymmetric Layout) -->
+      <!-- Selected Source Work Showcase (Reference 1 Asymmetric Layout) -->
       <div class="selected-wrapper">
         <div class="source-work-header">
           <span class="source-label">Source Work</span>
@@ -241,7 +146,7 @@
             <div class="category-title-wrap">
               <span class="category-num">01</span>
               <h3 id="cat-movies-heading">Cinema</h3>
-              <span class="category-desc">Thematic film parallels</span>
+              <span class="category-desc">Film parallels</span>
             </div>
             <span class="category-count" id="moviesCount">3 titles</span>
           </div>
@@ -254,7 +159,7 @@
             <div class="category-title-wrap">
               <span class="category-num">02</span>
               <h3 id="cat-tv-heading">Television</h3>
-              <span class="category-desc">Episodic character depths</span>
+              <span class="category-desc">Episodic depths</span>
             </div>
             <span class="category-count" id="tvCount">3 titles</span>
           </div>
@@ -267,7 +172,7 @@
             <div class="category-title-wrap">
               <span class="category-num">03</span>
               <h3 id="cat-books-heading">Literature</h3>
-              <span class="category-desc">Foundational narrative texts</span>
+              <span class="category-desc">Foundational texts</span>
             </div>
             <span class="category-count" id="booksCount">3 titles</span>
           </div>
@@ -276,10 +181,10 @@
       </div>
     </section>
 
-    <!-- Full Details View Section -->
+    <!-- Details View Section -->
     <section class="details hidden" id="details">
       <div class="details-nav-bar">
-        <button class="back-btn" id="backButton" aria-label="Back to discovery recommendations">
+        <button class="back-btn" id="backButton">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
@@ -291,7 +196,6 @@
     </section>
   </main>
 
-  <!-- Editorial Minimal Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-left">
@@ -299,7 +203,6 @@
         <p class="footer-tagline">An editorial digital archive for cross-media story discovery.</p>
         <span class="footer-copy">Movies · Television · Literature</span>
       </div>
-
       <div class="footer-right">
         <div class="footer-nav-col">
           <span class="footer-col-title">Index</span>
@@ -307,20 +210,10 @@
           <a href="#television" class="footer-link">Television</a>
           <a href="#literature" class="footer-link">Literature</a>
         </div>
-        <div class="footer-nav-col">
-          <span class="footer-col-title">Archive</span>
-          <a href="#" class="footer-link" id="footerAboutLink">About MOVLIB</a>
-          <a href="https://en.wikipedia.org" target="_blank" rel="noopener noreferrer" class="footer-link">Wikipedia API</a>
-          <a href="https://openlibrary.org" target="_blank" rel="noopener noreferrer" class="footer-link">Open Library</a>
-        </div>
       </div>
-    </div>
-    <div class="footer-bottom-line">
-      <span>Dedicated to the art of cinematic storytelling & narrative discovery.</span>
-      <span>v4.0 Editorial</span>
     </div>
   </footer>
 
-  <script src="script.js?v=4.0"></script>
+  <script src="script.js?v=4.1"></script>
 </body>
 </html>
