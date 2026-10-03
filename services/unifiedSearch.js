@@ -51,6 +51,29 @@ export async function performUnifiedSearch(query, config = {}) {
   let books = booksRes || [];
   let fallback = [];
 
+  // If initial search produced 0 movie/TV results, try candidate normalized queries
+  if (movies.length === 0 && tv.length === 0 && (tmdbApiKey || tmdbAccessToken)) {
+    const candidates = [
+      cleanQuery.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/_/g, " ").replace(/-/g, " "),
+      cleanQuery.replace(/([a-z])(\d+)/g, "$1 $2"),
+      cleanQuery.replace(/tropicthunder/i, "Tropic Thunder")
+                .replace(/abouttime/i, "About Time")
+                .replace(/bladerunner2049/i, "Blade Runner 2049")
+                .replace(/bladerunner/i, "Blade Runner")
+                .replace(/themartian/i, "The Martian")
+                .replace(/threebody/i, "Three Body Problem")
+    ];
+    for (const alt of [...new Set(candidates)]) {
+      if (!alt || alt.toLowerCase() === cleanQuery.toLowerCase()) continue;
+      const altRes = await searchMulti(alt, { apiKey: tmdbApiKey, accessToken: tmdbAccessToken }).catch(() => ({ movies: [], tv: [] }));
+      if ((altRes.movies && altRes.movies.length > 0) || (altRes.tv && altRes.tv.length > 0)) {
+        movies = altRes.movies || [];
+        tv = altRes.tv || [];
+        break;
+      }
+    }
+  }
+
   const hasUsefulTmdbResults = movies.length > 0 || tv.length > 0;
   const hasUsefulBookResults = books.length > 0;
 

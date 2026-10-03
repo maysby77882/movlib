@@ -4,7 +4,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 
-import { searchMovies, searchTV, getMovieDetails, getTVDetails } from "./services/tmdb.js";
+import { searchMovies, searchTV, getMovieDetails, getTVDetails, getCredits } from "./services/tmdb.js";
+import { resolveActorImage, resolveCastImages } from "./services/actorImageService.js";
 import { searchBooks, getBookDetails } from "./services/books.js";
 import { searchWikipedia, getWikipediaDetails } from "./services/wikipedia.js";
 import { performUnifiedSearch } from "./services/unifiedSearch.js";
@@ -379,6 +380,70 @@ app.get("/api/details", async (req, res) => {
     res.json(details);
   } catch (error) {
     res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * Principal Cast Endpoint
+ * Usage: GET /api/works/:type/:id/cast, GET /api/tmdb/:type/:id/credits, or GET /api/cast?type=movie&id=122906
+ */
+app.get(["/api/works/:type/:id/cast", "/api/tmdb/:type/:id/credits", "/api/cast"], async (req, res) => {
+  try {
+    const type = req.params.type || req.query.type;
+    const id = req.params.id || req.query.id;
+
+    if (!type || !id) {
+      return res.status(400).json({ error: "Both 'type' (movie|tv) and 'id' are required.", cast: [] });
+    }
+
+    const normType = String(type).toLowerCase();
+    if (normType === "book") {
+      return res.json({ cast: [] });
+    }
+
+    const result = await getCredits(normType, id, { apiKey: TMDB_API_KEY, accessToken: TMDB_ACCESS_TOKEN }, 8);
+    res.json(result);
+  } catch (error) {
+    console.error("Cast API Error:", error.message);
+    res.status(500).json({ error: error.message, cast: [] });
+  }
+});
+
+/**
+ * Single Actor Image Resolution (IMDb First -> Pinterest -> Fallback)
+ * Usage: GET /api/person/:id/image?name=Rachel+McAdams&workTitle=About+Time
+ */
+app.get(["/api/person/:id/image", "/api/actors/:id/image"], async (req, res) => {
+  try {
+    const id = req.params.id;
+    const { name, character, profilePath, workTitle, workType } = req.query;
+
+    const actor = {
+      id,
+      name: name || "Actor",
+      character: character || "",
+      profilePath: profilePath || null
+    };
+
+    const work = {
+      title: workTitle || "",
+      type: workType || "movie"
+    };
+
+    const imageInfo = await resolveActorImage(actor, work, { apiKey: TMDB_API_KEY, accessToken: TMDB_ACCESS_TOKEN });
+    res.json({
+      personId: id,
+      name: actor.name,
+      character: actor.character,
+      image: imageInfo
+    });
+  } catch (error) {
+    console.error("Actor Image API Error:", error.message);
+    res.status(500).json({
+      personId: req.params.id,
+      error: error.message,
+      image: { url: null, source: "fallback" }
+    });
   }
 });
 

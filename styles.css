@@ -92,6 +92,62 @@ body.in-results .landing-bg-layer {
 }
 
 /* ==============================================================================
+   About Time (2013) Bottom-Left Background Hotspot (Entire Left Escalator & Couple Area)
+   ============================================================================== */
+.about-time-hotspot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: clamp(300px, 42vw, 600px);
+  height: clamp(360px, 70vh, 720px);
+  z-index: 5;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 28px;
+  pointer-events: auto;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.about-time-hotspot .hotspot-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(9, 10, 13, 0.85);
+  border: 1px solid rgba(251, 191, 36, 0.45);
+  color: #fbbf24;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.about-time-hotspot:hover .hotspot-hint,
+.about-time-hotspot:focus-visible .hotspot-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.in-results .about-time-hotspot {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* ==============================================================================
    Header Navigation — Clean, Seamless & Transparent
    ============================================================================== */
 .site-header {
@@ -159,6 +215,8 @@ body.in-results .landing-bg-layer {
 
 /* Cinematic Poster Tagline Quote */
 .hero-quote-box {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,6 +275,7 @@ body.in-results .landing-bg-layer {
    ============================================================================== */
 .search-container {
   position: relative;
+  z-index: 10;
   width: min(640px, 100%);
 }
 
@@ -841,6 +900,171 @@ body.in-results .landing-bg-layer {
   color: #01b4e4;
 }
 
+/* ==============================================================================
+   About Time (2013) Cast Gallery & Encyclopedic Reference Links
+   ============================================================================== */
+.selected-links-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 8px;
+}
+
+.special-ext-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(10px);
+}
+
+.special-ext-link .ext-icon {
+  flex-shrink: 0;
+}
+
+.special-ext-link.wikipedia-link {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.special-ext-link.wikipedia-link:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.special-ext-link.letterboxd-link {
+  background: rgba(0, 224, 84, 0.1);
+  border: 1px solid rgba(0, 224, 84, 0.35);
+  color: #00e054;
+}
+
+.special-ext-link.letterboxd-link:hover {
+  background: rgba(0, 224, 84, 0.2);
+  border-color: rgba(0, 224, 84, 0.65);
+  transform: translateY(-2px);
+  color: #00e054;
+  box-shadow: 0 4px 14px rgba(0, 224, 84, 0.25);
+}
+
+.special-ext-link.imdb-link {
+  background: rgba(245, 197, 24, 0.1);
+  border: 1px solid rgba(245, 197, 24, 0.35);
+  color: #f5c518;
+}
+
+.special-ext-link.imdb-link:hover {
+  background: rgba(245, 197, 24, 0.2);
+  border-color: rgba(245, 197, 24, 0.6);
+  transform: translateY(-2px);
+  color: #f5c518;
+  box-shadow: 0 4px 14px rgba(245, 197, 24, 0.25);
+}
+
+.special-ext-link.tmdb-link {
+  background: rgba(1, 180, 228, 0.1);
+  border: 1px solid rgba(1, 180, 228, 0.35);
+  color: #01b4e4;
+}
+
+.special-ext-link.tmdb-link:hover {
+  background: rgba(1, 180, 228, 0.2);
+  border-color: rgba(1, 180, 228, 0.6);
+  transform: translateY(-2px);
+  color: #01b4e4;
+}
+
+.special-ext-link.ol-link {
+  background: rgba(224, 159, 62, 0.1);
+  border: 1px solid rgba(224, 159, 62, 0.35);
+  color: #e09f3e;
+}
+
+.special-ext-link.ol-link:hover {
+  background: rgba(224, 159, 62, 0.2);
+  border-color: rgba(224, 159, 62, 0.6);
+  transform: translateY(-2px);
+  color: #e09f3e;
+}
+
+.special-ext-link.google-books-link {
+  background: rgba(66, 133, 244, 0.1);
+  border: 1px solid rgba(66, 133, 244, 0.35);
+  color: #8ab4f8;
+}
+
+.special-ext-link.google-books-link:hover {
+  background: rgba(66, 133, 244, 0.2);
+  border-color: rgba(66, 133, 244, 0.6);
+  transform: translateY(-2px);
+  color: #8ab4f8;
+}
+
+.about-time-cast-section,
+.work-cast-section {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  width: 100%;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.about-time-cast-section h4,
+.work-cast-section h4 {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.about-time-cast-grid,
+.work-cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .work-cast-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    gap: 10px;
+  }
+
+  .work-cast-grid::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .work-cast-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+  }
+
+  .work-cast-card,
+  .cast-skeleton-card {
+    flex: 0 0 115px;
+    scroll-snap-align: start;
+  }
+}
+
 .source-badge.ol-badge {
   background: rgba(224, 159, 62, 0.08);
   border-color: rgba(224, 159, 62, 0.25);
@@ -1382,6 +1606,266 @@ body.in-results .landing-bg-layer {
   color: #090a0d;
 }
 
+/* ==============================================================================
+   Principal Cast / Actor Cards & External Reference Links
+   ============================================================================== */
+.work-cast-section {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.work-cast-section h4 {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.work-cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+}
+
+.work-cast-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  color: var(--text-primary);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.work-cast-card:hover {
+  border-color: var(--border-focus);
+  background: var(--bg-surface-raised);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.cast-photo-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 8px;
+  border-radius: calc(var(--radius-sm) - 2px);
+  overflow: hidden;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.cast-photo-link:focus-visible {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.cast-photo-wrap {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: calc(var(--radius-sm) - 2px);
+  overflow: hidden;
+  background: #141720;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cast-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
+}
+
+.cast-photo-link:hover .cast-photo-wrap img {
+  transform: scale(1.06);
+  filter: brightness(1.06);
+}
+
+.cast-photo-static {
+  margin-bottom: 8px;
+  cursor: default;
+}
+
+.cast-avatar-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, #181c26 0%, #10131a 100%);
+  color: var(--text-muted);
+}
+
+.cast-avatar-fallback svg {
+  width: 36px;
+  height: 36px;
+  opacity: 0.6;
+}
+
+.cast-info-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.cast-name-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 2px;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.cast-name-link:hover,
+.cast-name-link:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cast-role {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  user-select: text;
+  cursor: default;
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Cast Skeleton Loading State */
+.cast-skeleton-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cast-skeleton-avatar {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: calc(var(--radius-sm) - 2px);
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 75%);
+  background-size: 200% 100%;
+  animation: castShimmer 1.5s infinite;
+  margin-bottom: 8px;
+}
+
+.cast-skeleton-name {
+  height: 12px;
+  width: 80%;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.06);
+  margin-bottom: 4px;
+}
+
+.cast-skeleton-role {
+  height: 10px;
+  width: 60%;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.04);
+}
+
+@keyframes castShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* External Discovery Links in Hero & Details */
+.selected-links-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.special-ext-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-xs);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.special-ext-link:hover {
+  background: var(--bg-surface-raised);
+  border-color: var(--border-focus);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.letterboxd-link:hover {
+  border-color: #00E054;
+  color: #ffffff;
+}
+
+.wikipedia-link:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.imdb-link:hover {
+  border-color: #f5c518;
+  color: #f5c518;
+}
+
+.tmdb-link:hover {
+  border-color: #01b4e4;
+  color: #01b4e4;
+}
+
+.ol-link:hover, .google-books-link:hover {
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
 
 
 /* Utility Classes */
@@ -1469,5 +1953,18 @@ body.in-results .landing-bg-layer {
     padding: 24px;
   }
 
+  .work-cast-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
 
+  .work-cast-card, .cast-skeleton-card {
+    flex: 0 0 100px;
+    scroll-snap-align: start;
+  }
 }
+

@@ -3,6 +3,8 @@
  * Real-time discovery for Cinema (Movies) and Television (TV Series)
  */
 
+import { resolveCastImages } from "./actorImageService.js";
+
 const TMDB_PRIMARY_BASE = "https://api.tmdb.org/3";
 const TMDB_FALLBACK_BASE = "https://api.themoviedb.org/3";
 const TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
@@ -124,14 +126,40 @@ export async function searchTV(query, config = {}) {
  */
 export async function getMovieDetails(id, config = {}) {
   const cfg = typeof config === "string" ? { apiKey: config } : config;
-  const rawId = String(id).replace("tmdb_movie_", "");
+  let rawId = String(id || "").replace(/^(tmdb_movie_|movie_)/, "").trim();
+
+  if (!rawId) return null;
+
+  if (isNaN(Number(rawId))) {
+    try {
+      const searchRes = await searchMovies(rawId.replace(/_/g, " "), cfg);
+      if (searchRes && searchRes.length > 0) {
+        rawId = String(searchRes[0].id).replace(/^(tmdb_movie_|movie_)/, "").trim();
+      } else {
+        return null;
+      }
+    } catch (e) {
+      return null;
+    }
+  }
 
   try {
     const data = await tmdbFetch(`/movie/${rawId}?append_to_response=keywords,credits,recommendations,similar&language=en-US`, cfg);
     if (!data) return null;
 
     const director = data.credits?.crew?.find(c => c.job === "Director")?.name || "";
-    const cast = (data.credits?.cast || []).slice(0, 5).map(c => c.name);
+    const rawCast = (data.credits?.cast || []).slice(0, 8);
+    const cast = rawCast.map(c => c.name);
+    const baseMembers = rawCast.map(c => ({
+      id: c.id,
+      name: c.name,
+      character: c.character || "",
+      profilePath: c.profile_path || null,
+      profileUrl: null,
+      wikiUrl: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(c.name)}`
+    }));
+
+    const castMembers = await resolveCastImages(baseMembers, { title: data.title }, 8, cfg);
     const keywords = (data.keywords?.keywords || []).map(k => k.name);
     const genres = (data.genres || []).map(g => g.name);
 
@@ -152,6 +180,7 @@ export async function getMovieDetails(id, config = {}) {
       creator: director,
       director,
       cast,
+      castMembers,
       tagline: data.tagline || "",
       synopsis: data.overview || data.tagline || "No synopsis available.",
       posterUrl: data.poster_path ? `${TMDB_IMAGE_BASE}${data.poster_path}` : null,
@@ -174,14 +203,40 @@ export async function getMovieDetails(id, config = {}) {
  */
 export async function getTVDetails(id, config = {}) {
   const cfg = typeof config === "string" ? { apiKey: config } : config;
-  const rawId = String(id).replace("tmdb_tv_", "");
+  let rawId = String(id || "").replace(/^(tmdb_tv_|tv_)/, "").trim();
+
+  if (!rawId) return null;
+
+  if (isNaN(Number(rawId))) {
+    try {
+      const searchRes = await searchTV(rawId.replace(/_/g, " "), cfg);
+      if (searchRes && searchRes.length > 0) {
+        rawId = String(searchRes[0].id).replace(/^(tmdb_tv_|tv_)/, "").trim();
+      } else {
+        return null;
+      }
+    } catch (e) {
+      return null;
+    }
+  }
 
   try {
     const data = await tmdbFetch(`/tv/${rawId}?append_to_response=keywords,credits,recommendations,similar&language=en-US`, cfg);
     if (!data) return null;
 
     const creator = data.created_by?.map(c => c.name).join(", ") || "";
-    const cast = (data.credits?.cast || []).slice(0, 5).map(c => c.name);
+    const rawCast = (data.credits?.cast || []).slice(0, 8);
+    const cast = rawCast.map(c => c.name);
+    const baseMembers = rawCast.map(c => ({
+      id: c.id,
+      name: c.name,
+      character: c.character || "",
+      profilePath: c.profile_path || null,
+      profileUrl: null,
+      wikiUrl: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(c.name)}`
+    }));
+
+    const castMembers = await resolveCastImages(baseMembers, { title: data.name }, 8, cfg);
     const keywords = (data.keywords?.results || []).map(k => k.name);
     const genres = (data.genres || []).map(g => g.name);
 
@@ -201,6 +256,7 @@ export async function getTVDetails(id, config = {}) {
       year: data.first_air_date ? data.first_air_date.split("-")[0] : "N/A",
       creator,
       cast,
+      castMembers,
       tagline: data.tagline || "",
       synopsis: data.overview || data.tagline || "No synopsis available.",
       posterUrl: data.poster_path ? `${TMDB_IMAGE_BASE}${data.poster_path}` : null,
@@ -279,3 +335,92 @@ function normalizeTV(item) {
     externalUrl: `https://www.themoviedb.org/tv/${item.id}`
   };
 }
+
+/**
+ * Get Principal Cast / Credits for a Movie or TV Show
+ * Usage: getCredits('movie', 122906, config)
+ */
+export async function getCredits(type, id, config = {}, limit = 8) {
+  const cfg = typeof config === "string" 
+    ? (config.startsWith("eyJ") ? { accessToken: config } : { apiKey: config }) 
+    : config;
+  const normType = String(type).toLowerCase() === "tv" || String(type).toLowerCase() === "tv show" ? "tv" : "movie";
+  let rawId = String(id || "").replace(/^(tmdb_movie_|tmdb_tv_|movie_|tv_|seed_movie_|seed_tv_)/, "").trim();
+
+  if (!rawId) {
+    return { cast: [] };
+  }
+
+  // If rawId is not a numeric TMDb ID, resolve it via TMDb search
+  if (isNaN(Number(rawId))) {
+    try {
+      const candidates = [
+        rawId,
+        rawId.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/_/g, " ").replace(/-/g, " "),
+        rawId.replace(/([a-z])(\d+)/g, "$1 $2"),
+        // Common concatenated title word splitters
+        rawId.replace(/tropicthunder/i, "Tropic Thunder")
+             .replace(/abouttime/i, "About Time")
+             .replace(/bladerunner2049/i, "Blade Runner 2049")
+             .replace(/bladerunner/i, "Blade Runner")
+             .replace(/themartian/i, "The Martian")
+             .replace(/threebody/i, "Three Body Problem")
+      ];
+
+      let foundId = null;
+      for (const queryStr of [...new Set(candidates)]) {
+        if (!queryStr) continue;
+        const searchResults = normType === "tv" ? await searchTV(queryStr, cfg) : await searchMovies(queryStr, cfg);
+        if (searchResults && searchResults.length > 0) {
+          foundId = String(searchResults[0].id).replace(/^(tmdb_movie_|tmdb_tv_|movie_|tv_)/, "").trim();
+          break;
+        }
+      }
+
+      if (foundId) {
+        rawId = foundId;
+      } else {
+        return { cast: [] };
+      }
+    } catch (searchErr) {
+      return { cast: [] };
+    }
+  }
+
+  try {
+    const data = await tmdbFetch(`/${normType}/${rawId}/credits?language=en-US`, cfg);
+    if (!data || !data.cast) {
+      return { cast: [] };
+    }
+
+    const seenIds = new Set();
+    const cast = [];
+
+    // Sort by TMDB cast order
+    const sorted = [...data.cast].sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+
+    for (const c of sorted) {
+      if (!c.id || !c.name || seenIds.has(c.id)) continue;
+      seenIds.add(c.id);
+
+      cast.push({
+        id: c.id,
+        name: c.name.trim(),
+        character: (c.character || "").trim(),
+        profilePath: c.profile_path || null,
+        profileUrl: null,
+        wikiUrl: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(c.name.trim())}`,
+        order: c.order ?? cast.length
+      });
+
+      if (cast.length >= limit) break;
+    }
+
+    const enrichedCast = await resolveCastImages(cast, { title: data.title || data.name || "" }, limit, cfg);
+    return { cast: enrichedCast };
+  } catch (err) {
+    console.error(`TMDb Credits error for ${normType}/${rawId}:`, err.message);
+    return { cast: [] };
+  }
+}
+

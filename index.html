@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="no-referrer" />
   <title>movlib — Cross-Media Story Discovery</title>
   <meta name="description" content="Discover movies, TV shows, and books connected by shared themes, mood, story, and atmosphere." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3.0" />
 </head>
 <body>
   <div class="landing-bg-layer" id="landingBg"></div>
+  <div class="about-time-hotspot" id="aboutTimeHotspot" role="button" tabindex="0" aria-label="Explore About Time (2013)" title="About Time (2013)">
+    <span class="hotspot-hint">✦ About Time (2013)</span>
+  </div>
 
   <!-- Header Navigation -->
   <header class="site-header">
@@ -183,8 +187,6 @@
     </section>
   </main>
 
-
-
-  <script src="script.js"></script>
+  <script src="script.js?v=3.0"></script>
 </body>
 </html>

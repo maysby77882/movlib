@@ -415,8 +415,11 @@ export async function getCrossMediaRecommendations(queryOrItem, config = {}) {
       centralConflict: enrichedSource.centralConflict || "",
       narrativeStructure: enrichedSource.narrativeStructure || "",
       narrativeType: enrichedSource.narrativeType || "",
-      protagonistRole: enrichedSource.protagonistRole || "",
       posterUrl: enrichedSource.poster_url || enrichedSource.posterUrl || null,
+      externalId: enrichedSource.externalId || null,
+      tmdbId: enrichedSource.tmdbId || null,
+      cast: enrichedSource.cast || [],
+      castMembers: enrichedSource.castMembers || [],
       tags: enrichedSource.tags || [],
       externalUrl: enrichedSource.externalUrl || enrichedSource.sourceUrl || null
     },

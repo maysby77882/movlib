@@ -842,6 +842,168 @@ const demoData = {
     posterUrl: "https://image.tmdb.org/t/p/w500/zAurB9mNxfYRoVrVjAJJwGV3sPg.jpg",
     tags: ["Hollywood Satire", "Action Parody", "Meta-Cinema", "Absurdist Comedy", "Method Acting"],
     synopsis: "While shooting a big-budget Vietnam War epic, a group of self-absorbed actors are dropped into the real jungle by their frustrated director, completely unaware they are facing real heroin-producing militia.",
+    castMembers: [
+      {
+        id: 7399,
+        imdbId: "nm0001774",
+        name: "Ben Stiller",
+        character: "Tugg Speedman",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMzY1NDE3OTk2NV5BMl5BanBnXkFtZTcwMjU4ODIzNw@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMzY1NDE3OTk2NV5BMl5BanBnXkFtZTcwMjU4ODIzNw@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMzY1NDE3OTk2NV5BMl5BanBnXkFtZTcwMjU4ODIzNw@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm0001774/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Ben_Stiller",
+          title: "Ben Stiller"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm0001774/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Ben_Stiller"
+      },
+      {
+        id: 3223,
+        imdbId: "nm0000375",
+        name: "Robert Downey Jr.",
+        character: "Kirk Lazarus",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MTE@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MTE@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MTE@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm0000375/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Robert_Downey_Jr.",
+          title: "Robert Downey Jr."
+        },
+        sourceUrl: "https://www.imdb.com/name/nm0000375/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Robert_Downey_Jr."
+      },
+      {
+        id: 70851,
+        imdbId: "nm0085312",
+        name: "Jack Black",
+        character: "Jeff Portnoy",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMjA3Njg2NzM4OV5BMl5BanBnXkFtZTcwMzg5NTM2Mw@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMjA3Njg2NzM4OV5BMl5BanBnXkFtZTcwMzg5NTM2Mw@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMjA3Njg2NzM4OV5BMl5BanBnXkFtZTcwMzg5NTM2Mw@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm0085312/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Jack_Black",
+          title: "Jack Black"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm0085312/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Jack_Black"
+      },
+      {
+        id: 449,
+        imdbId: "nm0059431",
+        name: "Jay Baruchel",
+        character: "Kevin Sandusky",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BOTczNzk2OTIzN15BMl5BanBnXkFtZTgwNTQ2Nzk4MjE@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BOTczNzk2OTIzN15BMl5BanBnXkFtZTgwNTQ2Nzk4MjE@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BOTczNzk2OTIzN15BMl5BanBnXkFtZTgwNTQ2Nzk4MjE@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm0059431/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Jay_Baruchel",
+          title: "Jay Baruchel"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm0059431/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Jay_Baruchel"
+      },
+      {
+        id: 53336,
+        imdbId: "nm1430948",
+        name: "Brandon T. Jackson",
+        character: "Alpa Chino",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMTY3NTY1NDM3M15BMl5BanBnXkFtZTcwMjE5NjQyMg@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTY3NTY1NDM3M15BMl5BanBnXkFtZTcwMjE5NjQyMg@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTY3NTY1NDM3M15BMl5BanBnXkFtZTcwMjE5NjQyMg@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm1430948/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Brandon_T._Jackson",
+          title: "Brandon T. Jackson"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm1430948/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Brandon_T._Jackson"
+      },
+      {
+        id: 1115122,
+        imdbId: "nm2508821",
+        name: "Brandon Soo Hoo",
+        character: "Tran",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMTY1OTM1NjE2Nl5BMl5BanBnXkFtZTcwMTg2MjEyOA@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTY1OTM1NjE2Nl5BMl5BanBnXkFtZTcwMTg2MjEyOA@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTY1OTM1NjE2Nl5BMl5BanBnXkFtZTcwMTg2MjEyOA@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm2508821/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Brandon_Soo_Hoo",
+          title: "Brandon Soo Hoo"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm2508821/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Brandon_Soo_Hoo"
+      },
+      {
+        id: 10297,
+        imdbId: "nm0000190",
+        name: "Matthew McConaughey",
+        character: "Rick Peck",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm0000190/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Matthew_McConaughey",
+          title: "Matthew McConaughey"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm0000190/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Matthew_McConaughey"
+      },
+      {
+        id: 500,
+        imdbId: "nm0000129",
+        name: "Tom Cruise",
+        character: "Les Grossman",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMjA3NDcyOTUzN15BMl5BanBnXkFtZTcwNzUwMDQ3NA@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMjA3NDcyOTUzN15BMl5BanBnXkFtZTcwNzUwMDQ3NA@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMjA3NDcyOTUzN15BMl5BanBnXkFtZTcwNzUwMDQ3NA@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm0000129/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Tom_Cruise",
+          title: "Tom Cruise"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm0000129/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Tom_Cruise"
+      }
+    ],
     recommendations: {
       movies: [
         {
@@ -949,6 +1111,287 @@ const demoData = {
         }
       ]
     }
+  },
+
+  abouttime: {
+    id: "abouttime",
+    title: "About Time",
+    type: "Movie",
+    year: "2013",
+    creator: "Richard Curtis",
+    emoji: "⏳",
+    posterUrl: "https://image.tmdb.org/t/p/w500/ls6zswrOZVhCXQBh96DlbnLBajM.jpg",
+    tags: ["Time Travel Romance", "Father-Son Bond", "Cherishing the Present", "British Charm", "Bittersweet Wisdom"],
+    synopsis: "At the age of 21, Tim Lake discovers a family secret: the men in his family have the ability to travel back in time to alter events in their own lives. As Tim tries to win the heart of Mary and guide his loved ones through life's triumphs and tragedies, he discovers that the ultimate lesson is learning to live each day as if it were the final, beautiful masterpiece of ordinary existence.",
+    castMembers: [
+      {
+        id: 93210,
+        imdbId: "nm1727304",
+        name: "Domhnall Gleeson",
+        character: "Tim Lake",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExDF5BMl5BanBnXkFtZTcwNGY1NTk2Mw@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExDF5BMl5BanBnXkFtZTcwNGY1NTk2Mw@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExDF5BMl5BanBnXkFtZTcwNGY1NTk2Mw@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm1727304/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Domhnall_Gleeson",
+          title: "Domhnall Gleeson"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm1727304/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Domhnall_Gleeson"
+      },
+      {
+        id: 53714,
+        imdbId: "nm1046097",
+        name: "Rachel McAdams",
+        character: "Mary",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm1046097/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Rachel_McAdams",
+          title: "Rachel McAdams"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm1046097/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Rachel_McAdams"
+      },
+      {
+        id: 2440,
+        imdbId: "nm0631490",
+        name: "Bill Nighy",
+        character: "Dad",
+        image: {
+          url: "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTgyMl5BMl5BanBnXkFtZTcwNzg2ODg4Nw@@._V1_.jpg",
+          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTgyMl5BMl5BanBnXkFtZTcwNzg2ODg4Nw@@._V1_.jpg",
+          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTgyMl5BMl5BanBnXkFtZTcwNzg2ODg4Nw@@._V1_.jpg",
+          sourceUrl: "https://www.imdb.com/name/nm0631490/",
+          source: "imdb",
+          attribution: "IMDb"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Bill_Nighy",
+          title: "Bill Nighy"
+        },
+        sourceUrl: "https://www.imdb.com/name/nm0631490/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Bill_Nighy"
+      },
+      {
+        id: 2441,
+        imdbId: "nm0390903",
+        name: "Tom Hollander",
+        character: "Harry",
+        image: {
+          url: "https://i.pinimg.com/736x/88/c5/4b/88c54b52ff0923be2a9ea78b88eb30d4.jpg",
+          thumbnailUrl: "https://i.pinimg.com/736x/88/c5/4b/88c54b52ff0923be2a9ea78b88eb30d4.jpg",
+          fullImageUrl: "https://i.pinimg.com/originals/88/c5/4b/88c54b52ff0923be2a9ea78b88eb30d4.jpg",
+          sourceUrl: "https://www.pinterest.com/pin/1032872620779774619/",
+          source: "pinterest",
+          attribution: "Pinterest"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Tom_Hollander",
+          title: "Tom Hollander"
+        },
+        sourceUrl: "https://www.pinterest.com/pin/1032872620779774619/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Tom_Hollander"
+      },
+      {
+        id: 234352,
+        imdbId: "nm3053338",
+        name: "Margot Robbie",
+        character: "Charlotte",
+        image: {
+          url: "https://i.pinimg.com/736x/2c/31/59/2c31599818816c7cf5ce2cfaeecce867.jpg",
+          thumbnailUrl: "https://i.pinimg.com/736x/2c/31/59/2c31599818816c7cf5ce2cfaeecce867.jpg",
+          fullImageUrl: "https://i.pinimg.com/originals/2c/31/59/2c31599818816c7cf5ce2cfaeecce867.jpg",
+          sourceUrl: "https://www.pinterest.com/pin/687440656683838491/",
+          source: "pinterest",
+          attribution: "Pinterest"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Margot_Robbie",
+          title: "Margot Robbie"
+        },
+        sourceUrl: "https://www.pinterest.com/pin/687440656683838491/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Margot_Robbie"
+      },
+      {
+        id: 1095524,
+        imdbId: "nm3804825",
+        name: "Lydia Wilson",
+        character: "Kit Kat",
+        image: {
+          url: "https://i.pinimg.com/736x/a2/ec/64/a2ec647d6e492ae2180029b4b0e557b7.jpg",
+          thumbnailUrl: "https://i.pinimg.com/736x/a2/ec/64/a2ec647d6e492ae2180029b4b0e557b7.jpg",
+          fullImageUrl: "https://i.pinimg.com/originals/a2/ec/64/a2ec647d6e492ae2180029b4b0e557b7.jpg",
+          sourceUrl: "https://www.pinterest.com/pin/47850814782982829/",
+          source: "pinterest",
+          attribution: "Pinterest"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Lydia_Wilson",
+          title: "Lydia Wilson"
+        },
+        sourceUrl: "https://www.pinterest.com/pin/47850814782982829/",
+        wikiUrl: "https://en.wikipedia.org/wiki/Lydia_Wilson"
+      },
+      {
+        id: 30083,
+        imdbId: "nm0242023",
+        name: "Lindsay Duncan",
+        character: "Mum",
+        image: {
+          url: null,
+          thumbnailUrl: null,
+          fullImageUrl: null,
+          sourceUrl: null,
+          source: "fallback",
+          attribution: "Movlib"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Lindsay_Duncan",
+          title: "Lindsay Duncan"
+        },
+        sourceUrl: null,
+        wikiUrl: "https://en.wikipedia.org/wiki/Lindsay_Duncan"
+      },
+      {
+        id: 156356,
+        imdbId: "nm0179471",
+        name: "Richard Cordery",
+        character: "Uncle D",
+        image: {
+          url: null,
+          thumbnailUrl: null,
+          fullImageUrl: null,
+          sourceUrl: null,
+          source: "fallback",
+          attribution: "Movlib"
+        },
+        wikipedia: {
+          url: "https://en.wikipedia.org/wiki/Richard_Cordery",
+          title: "Richard Cordery"
+        },
+        sourceUrl: null,
+        wikiUrl: "https://en.wikipedia.org/wiki/Richard_Cordery"
+      }
+    ],
+    recommendations: {
+      movies: [
+        {
+          title: "Midnight in Paris",
+          year: "2011",
+          type: "Movie",
+          creator: "Woody Allen",
+          emoji: "✨",
+          posterUrl: "https://image.tmdb.org/t/p/w500/77yUbs2yWn2Yv3Csd7vEw84W8d.jpg",
+          tags: ["Time Slip Romance", "Nostalgia vs Reality", "Parisian Whimsy"],
+          synopsis: "While on a trip to Paris with his fiancée's family, a nostalgic screenwriter finds himself mysteriously traveling back to the 1920s every night at midnight.",
+          why: "Shares About Time's magical realist romance, witty dialogue, and ultimate realization that longing for another era cannot substitute for fully embracing the present."
+        },
+        {
+          title: "The Time Traveler's Wife",
+          year: "2009",
+          type: "Movie",
+          creator: "Robert Schwentke",
+          emoji: "🕰️",
+          posterUrl: "https://image.tmdb.org/t/p/w500/z6h3JgD1s00kY74b9jA6fRz2X3D.jpg",
+          tags: ["Temporal Love", "Bittersweet Fate", "Unconditional Devotion"],
+          synopsis: "A Chicago librarian suffers from a rare genetic disorder causing him to drift uncontrollably through time, complicating his lifelong love with his soulmate.",
+          why: "Explores the deep emotional complexity and vulnerability of loving someone across fractured timelines and inevitable mortal limitations."
+        },
+        {
+          title: "Groundhog Day",
+          year: "1993",
+          type: "Movie",
+          creator: "Harold Ramis",
+          emoji: "❄️",
+          posterUrl: "https://image.tmdb.org/t/p/w500/vXSpjhnbBgP51hQk4O2zL8zZ8tU.jpg",
+          tags: ["Time Loop Redemption", "Humor & Humanity", "Living Each Day"],
+          synopsis: "An arrogant television weatherman finds himself trapped in a continuous time loop, repeating February 2nd over and over until he learns empathy and kindness.",
+          why: "The foundational comedic counterpart exploring how temporal repetition transforms a self-absorbed man into someone who cherishes every human interaction."
+        }
+      ],
+      tv: [
+        {
+          title: "Russian Doll",
+          year: "2019",
+          type: "TV Show",
+          creator: "Natasha Lyonne, Leslye Headland, Amy Poehler",
+          emoji: "🔄",
+          posterUrl: "https://image.tmdb.org/t/p/w500/y73KjPzQ1oN9b7jO6uWvU3R1pD2.jpg",
+          tags: ["Time Loop Healing", "Existential Comedy", "Human Connection"],
+          synopsis: "A cynical woman repeatedly dies and relives her 36th birthday party in New York City, teaming up with another loop-bound stranger to unravel their trauma.",
+          why: "Uses the metaphysical puzzle of time loops to explore personal healing, emotional accountability, and saving the people around us."
+        },
+        {
+          title: "Outlander",
+          year: "2014",
+          type: "TV Show",
+          creator: "Ronald D. Moore",
+          emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+          posterUrl: "https://image.tmdb.org/t/p/w500/775O3FwVlW0F0YkRkYJ3J2l0F8a.jpg",
+          tags: ["Period Time Travel", "Enduring Romance", "Historical Drama"],
+          synopsis: "Claire Randall, a married WWII combat nurse, is mysteriously transported back in time to 1743 Scotland, where she is thrust into an unknown world and a passionate love.",
+          why: "Combines time displacement with profound romantic fidelity, heartfelt emotional stakes, and navigating history to protect family."
+        },
+        {
+          title: "Doctor Who",
+          year: "2005",
+          type: "TV Show",
+          creator: "Russell T Davies",
+          emoji: "🌌",
+          posterUrl: "https://image.tmdb.org/t/p/w500/7z0Xq2F3Y9A8K7n4W4B4w6fL1Qe.jpg",
+          tags: ["Joyful Whimsy", "Fleeting Mortality", "Cosmic Adventures"],
+          synopsis: "An eccentric alien Time Lord travels across space and time in the TARDIS, showing human companions the heartbreaking wonder of the universe.",
+          why: "Echoes About Time's core philosophical heart: that the ability to travel across all of time only highlights how precious and irreplaceable each short mortal moment is."
+        }
+      ],
+      books: [
+        {
+          title: "The Time Traveler's Wife",
+          year: "2003",
+          type: "Book",
+          creator: "Audrey Niffenegger",
+          emoji: "📖",
+          posterUrl: "https://covers.openlibrary.org/b/id/8225261-L.jpg",
+          tags: ["Lyrical Romance", "Nonlinear Love Story", "Grief & Devotion"],
+          synopsis: "A deeply moving love story between Henry, who uncontrollably time-travels across decades, and Clare, whose life proceeds in natural chronological order.",
+          why: "The literary benchmark for romance elevated by temporal mechanics, exploring enduring love, intimacy, and the inevitability of loss."
+        },
+        {
+          title: "Replay",
+          year: "1987",
+          type: "Book",
+          creator: "Ken Grimwood",
+          emoji: "🔁",
+          posterUrl: "https://covers.openlibrary.org/b/id/8314120-L.jpg",
+          tags: ["Second Chances", "Philosophical Life Review", "Emotional Journey"],
+          synopsis: "A 43-year-old radio journalist dies of a heart attack in 1988 and wakes up in 1963 as his 18-year-old self with all his memories intact.",
+          why: "Parallels Tim's journey in About Time as the protagonist learns across multiple lifetimes that true fulfillment lies in sincere love and ordinary moments."
+        },
+        {
+          title: "This Is How You Lose the Time War",
+          year: "2019",
+          type: "Book",
+          creator: "Amal El-Mohtar & Max Gladstone",
+          emoji: "💌",
+          posterUrl: "https://covers.openlibrary.org/b/id/9255280-L.jpg",
+          tags: ["Poetic Epistolary", "Rival Timelines", "Cosmic Romance"],
+          synopsis: "Among the ashes of a dying, time-spanning war, two rival agents across opposing temporal factions begin an illicit correspondence that blossoms into love.",
+          why: "A beautifully lyrical celebration of love defying temporal causality, echoing the emotional sincerity of romantic time travel."
+        }
+      ]
+    }
   }
 };
 
@@ -970,7 +1413,11 @@ const aliases = {
   "tropic thunder": "tropicthunder",
   "tropicthunder": "tropicthunder",
   "mother nature": "tropicthunder",
-  "mother nature just pissed her pantsuit": "tropicthunder"
+  "mother nature just pissed her pantsuit": "tropicthunder",
+  "about time": "abouttime",
+  "abouttime": "abouttime",
+  "about time (2013)": "abouttime",
+  "about time 2013": "abouttime"
 };
 
 // DOM Elements
@@ -1064,13 +1511,468 @@ function showEmptyState(query) {
   if (searchLoading) searchLoading.classList.add("hidden");
 }
 
+// ==============================================================================
+// Principal Cast & Credits Discovery Engine (Dynamic TMDB Credits + Progressive Loading)
+// ==============================================================================
+const PRINCIPAL_CAST_LIMIT = 8;
+const castCache = new Map();
+
+/**
+ * Fetch Principal Cast dynamically from TMDB API credits endpoint or stored cache
+ */
+async function fetchPrincipalCast(work) {
+  if (!work) return [];
+  const isBook = work.type === "Book" || work.media_type === "book";
+  if (isBook) return [];
+
+  const normType = (work.type === "TV Show" || work.media_type === "tv") ? "tv" : "movie";
+  const idOrTitle = String(work.title || work.externalId || work.tmdbId || work.id || "").replace(/^(tmdb_movie_|tmdb_tv_|movie_|tv_|seed_movie_|seed_tv_)/, "").trim();
+  const cacheKey = `${normType}_${idOrTitle || work.title || work.id}`;
+
+  if (castCache.has(cacheKey)) {
+    return castCache.get(cacheKey);
+  }
+
+  // 1. If work or demoData already has structured castMembers array with valid profiles
+  const normTitleKey = work.title ? normalizeKey(work.title) : "";
+  const existingCast = (work.castMembers && Array.isArray(work.castMembers) && work.castMembers.length > 0)
+    ? work.castMembers
+    : (demoData[work.id]?.castMembers || demoData[normTitleKey]?.castMembers || (aliases[work.id] && demoData[aliases[work.id]]?.castMembers));
+
+  if (existingCast && Array.isArray(existingCast) && existingCast.length > 0) {
+    const normalized = existingCast.slice(0, PRINCIPAL_CAST_LIMIT).map((c, idx) => {
+      const thumbUrl = c.image?.thumbnailUrl || c.image?.url || c.thumbnailUrl || c.profileUrl || c.photoUrl || null;
+      const fullUrl = c.image?.fullImageUrl || c.fullImageUrl || thumbUrl;
+      const name = (c.name || "Cast Member").trim();
+      const wiki = c.wikipedia?.url || c.wikipediaUrl || c.wikiUrl || `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(name)}`;
+      const imdbId = c.imdbId || (c.imdb_id ? String(c.imdb_id) : null);
+      let sourceUrl = c.image?.sourceUrl || c.imageSourceUrl || c.sourceUrl || (imdbId ? `https://www.imdb.com/name/${imdbId}/` : null);
+      if (sourceUrl && (sourceUrl.includes("themoviedb.org") || sourceUrl.includes("/search/"))) {
+        sourceUrl = imdbId ? `https://www.imdb.com/name/${imdbId}/` : null;
+      }
+      const source = c.image?.source || c.imageSource || (
+        sourceUrl?.includes("imdb.com") ? "imdb" :
+        sourceUrl?.includes("pinterest") ? "pinterest" : "fallback"
+      );
+
+      return {
+        id: c.id || idx,
+        name,
+        character: (c.character || "").trim(),
+        order: c.order ?? idx,
+        imdbId,
+        image: {
+          url: thumbUrl,
+          thumbnailUrl: thumbUrl,
+          fullImageUrl: fullUrl,
+          sourceUrl: sourceUrl,
+          source: source,
+          attribution: c.image?.attribution || (source === "imdb" ? "IMDb" : source === "pinterest" ? "Pinterest" : "Movlib")
+        },
+        wikipedia: {
+          url: wiki,
+          title: name
+        },
+        profilePath: null,
+        profileUrl: thumbUrl,
+        photoUrl: thumbUrl,
+        thumbnailUrl: thumbUrl,
+        fullImageUrl: fullUrl,
+        imageSource: source,
+        imageSourceUrl: sourceUrl,
+        sourceUrl: sourceUrl,
+        wikiUrl: wiki,
+        wikipediaUrl: wiki
+      };
+    });
+    castCache.set(cacheKey, normalized);
+    return normalized;
+  }
+
+  // 2. Fetch from Backend TMDB Credits API (with Pinterest-First enrichment & Wikipedia resolution)
+  if (idOrTitle) {
+    try {
+      const res = await fetch(`/api/works/${normType}/${encodeURIComponent(idOrTitle)}/cast`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data && Array.isArray(data.cast) && data.cast.length > 0) {
+          const cast = data.cast.slice(0, PRINCIPAL_CAST_LIMIT).map((c, idx) => {
+            const thumbUrl = c.image?.thumbnailUrl || c.image?.url || c.thumbnailUrl || c.profileUrl || c.photoUrl || null;
+            const fullUrl = c.image?.fullImageUrl || c.fullImageUrl || thumbUrl;
+            const name = (c.name || "Cast Member").trim();
+            const wiki = c.wikipedia?.url || c.wikipediaUrl || c.wikiUrl || `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(name)}`;
+            const imdbId = c.imdbId || (c.imdb_id ? String(c.imdb_id) : null);
+            let sourceUrl = c.image?.sourceUrl || c.imageSourceUrl || c.sourceUrl || (imdbId ? `https://www.imdb.com/name/${imdbId}/` : null);
+            if (sourceUrl && (sourceUrl.includes("themoviedb.org") || sourceUrl.includes("/search/"))) {
+              sourceUrl = imdbId ? `https://www.imdb.com/name/${imdbId}/` : null;
+            }
+            const source = c.image?.source || c.imageSource || (
+              sourceUrl?.includes("imdb.com") ? "imdb" :
+              sourceUrl?.includes("pinterest") ? "pinterest" : "fallback"
+            );
+
+            return {
+              id: c.id || idx,
+              name,
+              character: (c.character || "").trim(),
+              order: c.order ?? idx,
+              imdbId,
+              image: {
+                url: thumbUrl,
+                thumbnailUrl: thumbUrl,
+                fullImageUrl: fullUrl,
+                sourceUrl: sourceUrl,
+                source: source,
+                attribution: c.image?.attribution || (source === "imdb" ? "IMDb" : source === "pinterest" ? "Pinterest" : "Movlib")
+              },
+              wikipedia: {
+                url: wiki,
+                title: name
+              },
+              profilePath: null,
+              profileUrl: thumbUrl,
+              photoUrl: thumbUrl,
+              thumbnailUrl: thumbUrl,
+              fullImageUrl: fullUrl,
+              imageSource: source,
+              imageSourceUrl: sourceUrl,
+              sourceUrl: sourceUrl,
+              wikiUrl: wiki,
+              wikipediaUrl: wiki
+            };
+          });
+          castCache.set(cacheKey, cast);
+          return cast;
+        }
+      }
+    } catch (err) {
+      console.warn(`[Cast Engine] Server credit lookup failed for ${normType}/${idOrTitle}:`, err);
+    }
+  }
+
+  // 3. Fallback: Check if names exist in work.cast
+  if (work.cast && Array.isArray(work.cast) && work.cast.length > 0) {
+    const cast = work.cast.slice(0, PRINCIPAL_CAST_LIMIT).map((actor, idx) => {
+      if (typeof actor === "object" && actor !== null) {
+        const thumbUrl = actor.image?.thumbnailUrl || actor.image?.url || actor.thumbnailUrl || actor.profileUrl || actor.photoUrl || null;
+        const fullUrl = actor.image?.fullImageUrl || actor.fullImageUrl || thumbUrl;
+        const name = (actor.name || "Cast Member").trim();
+        const wiki = actor.wikipedia?.url || actor.wikipediaUrl || actor.wikiUrl || `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(name)}`;
+        const imdbId = actor.imdbId || (actor.imdb_id ? String(actor.imdb_id) : null);
+        let sourceUrl = actor.image?.sourceUrl || actor.imageSourceUrl || actor.sourceUrl || (imdbId ? `https://www.imdb.com/name/${imdbId}/` : null);
+        if (sourceUrl && (sourceUrl.includes("themoviedb.org") || sourceUrl.includes("/search/"))) {
+          sourceUrl = imdbId ? `https://www.imdb.com/name/${imdbId}/` : null;
+        }
+        const source = actor.image?.source || actor.imageSource || (
+          sourceUrl?.includes("imdb.com") ? "imdb" :
+          sourceUrl?.includes("pinterest") ? "pinterest" : "fallback"
+        );
+
+        return {
+          id: actor.id || idx,
+          name,
+          character: (actor.character || "").trim(),
+          order: actor.order ?? idx,
+          imdbId,
+          image: {
+            url: thumbUrl,
+            thumbnailUrl: thumbUrl,
+            fullImageUrl: fullUrl,
+            sourceUrl: sourceUrl,
+            source: source,
+            attribution: actor.image?.attribution || (source === "imdb" ? "IMDb" : source === "pinterest" ? "Pinterest" : "Movlib")
+          },
+          wikipedia: {
+            url: wiki,
+            title: name
+          },
+          profilePath: null,
+          profileUrl: thumbUrl,
+          photoUrl: thumbUrl,
+          thumbnailUrl: thumbUrl,
+          fullImageUrl: fullUrl,
+          imageSource: source,
+          imageSourceUrl: sourceUrl,
+          sourceUrl: sourceUrl,
+          wikiUrl: wiki,
+          wikipediaUrl: wiki
+        };
+      }
+      const rawName = String(actor).trim();
+      const wiki = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(rawName)}`;
+      return {
+        id: idx,
+        name: rawName,
+        character: "",
+        order: idx,
+        imdbId: null,
+        image: {
+          url: null,
+          thumbnailUrl: null,
+          fullImageUrl: null,
+          sourceUrl: null,
+          source: "fallback",
+          attribution: "Movlib"
+        },
+        wikipedia: {
+          url: wiki,
+          title: rawName
+        },
+        profilePath: null,
+        profileUrl: null,
+        photoUrl: null,
+        thumbnailUrl: null,
+        fullImageUrl: null,
+        imageSource: "fallback",
+        imageSourceUrl: null,
+        sourceUrl: null,
+        wikiUrl: wiki,
+        wikipediaUrl: wiki
+      };
+    });
+    castCache.set(cacheKey, cast);
+    return cast;
+  }
+
+  return [];
+}
+
+/**
+ * Render Actor Card Component with Separate Photo Source Link & Wikipedia Link
+ * Priority: IMDb (Primary) -> Pinterest (Secondary) -> Movlib Fallback
+ * Photo click: exact provider source page (or not clickable if fallback)
+ * Name click: exact Wikipedia page
+ * Character: plain text
+ */
+function renderActorCard(actor) {
+  const name = actor.name ? actor.name.trim() : "Cast Member";
+  const character = actor.character ? actor.character.trim() : "";
+  const altText = character ? `${name} as ${character}` : name;
+  const missingAlt = `Profile image unavailable for ${name}`;
+
+  const imageUrl = actor.image?.url || actor.thumbnailUrl || actor.profileUrl || actor.photoUrl || "";
+  let sourceUrl = actor.image?.sourceUrl || actor.imageSourceUrl || actor.sourceUrl || null;
+
+  // Reject generic or search URLs from being linked
+  if (sourceUrl && (
+    sourceUrl === "https://www.pinterest.com/" ||
+    sourceUrl === "https://www.pinterest.com" ||
+    sourceUrl === "https://www.imdb.com/" ||
+    sourceUrl === "https://www.imdb.com" ||
+    sourceUrl.includes("/search/") ||
+    sourceUrl.includes("themoviedb.org")
+  )) {
+    sourceUrl = null;
+  }
+
+  const imageSource = actor.image?.source || actor.imageSource || (
+    sourceUrl?.includes("imdb.com") ? "imdb" :
+    sourceUrl?.includes("pinterest") ? "pinterest" : "fallback"
+  );
+  const wikiUrl = actor.wikipedia?.url || actor.wikipediaUrl || actor.wikiUrl || `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(name)}`;
+  const providerLabel = imageSource === "imdb" ? "IMDb" : imageSource === "pinterest" ? "Pinterest" : "source";
+
+  console.log("[Movlib Actor Image]", {
+    actor: name,
+    imdbId: actor.imdbId || null,
+    provider: imageSource,
+    imageUrl: imageUrl || null,
+    sourceUrl: sourceUrl || null,
+    wikipediaUrl: wikiUrl
+  });
+
+  const avatarFallbackSvg = `
+    <span class="cast-avatar-fallback" role="img" aria-label="${missingAlt}">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+      </svg>
+    </span>
+  `;
+
+  const photoImgHtml = imageUrl
+    ? `<img src="${imageUrl}" alt="${altText}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" /><span style="display:none;" class="cast-avatar-fallback">${avatarFallbackSvg}</span>`
+    : avatarFallbackSvg;
+
+  // Only wrap photo in link if both image and valid sourceUrl exist
+  const photoLinkHtml = (imageUrl && sourceUrl)
+    ? `<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer" class="cast-photo-link" onclick="event.stopPropagation();" title="View image source on ${providerLabel}" aria-label="Open image source page for ${name}">
+        <div class="cast-photo-wrap">
+          ${photoImgHtml}
+        </div>
+      </a>`
+    : `<div class="cast-photo-wrap cast-photo-static">
+        ${photoImgHtml}
+      </div>`;
+
+  return `
+    <article class="work-cast-card" data-actor-name="${name}">
+      ${photoLinkHtml}
+      <div class="cast-info-wrap">
+        <a href="${wikiUrl}" target="_blank" rel="noopener noreferrer" class="cast-name-link" onclick="event.stopPropagation();" title="Read about ${name} on Wikipedia" aria-label="View ${name} on Wikipedia">${name}</a>
+        ${character ? `<span class="cast-role">${character}</span>` : ""}
+      </div>
+    </article>
+  `;
+}
+
+/**
+ * Render Skeleton Loading State for Principal Cast
+ */
+function renderCastSkeletonHtml(count = 6) {
+  return `
+    <div class="work-cast-section" id="principalCastSection">
+      <h4>✦ Principal Cast</h4>
+      <div class="work-cast-grid">
+        ${Array.from({ length: count }).map(() => `
+          <div class="cast-skeleton-card" aria-hidden="true">
+            <div class="cast-skeleton-avatar"></div>
+            <div class="cast-skeleton-name"></div>
+            <div class="cast-skeleton-role"></div>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Progressively fetch and mount Principal Cast into the specified container
+ */
+async function mountPrincipalCast(work, containerEl) {
+  if (!containerEl) return;
+  const isBook = work.type === "Book" || work.media_type === "book";
+  const sectionEl = containerEl.querySelector("#principalCastSection");
+
+  if (isBook) {
+    if (sectionEl) sectionEl.remove();
+    return;
+  }
+
+  try {
+    const cast = await fetchPrincipalCast(work);
+    const currentSection = containerEl.querySelector("#principalCastSection");
+
+    if (!cast || cast.length === 0) {
+      if (currentSection) currentSection.remove();
+      return;
+    }
+
+    const castGridHtml = `
+      <div class="work-cast-section" id="principalCastSection">
+        <h4>✦ Principal Cast</h4>
+        <div class="work-cast-grid">
+          ${cast.map(renderActorCard).join("")}
+        </div>
+      </div>
+    `;
+
+    if (currentSection) {
+      currentSection.outerHTML = castGridHtml;
+    } else {
+      containerEl.insertAdjacentHTML("beforeend", castGridHtml);
+    }
+  } catch (err) {
+    console.error("[Cast] Mount error:", err);
+    const currentSection = containerEl.querySelector("#principalCastSection");
+    if (currentSection) currentSection.remove();
+  }
+}
+
+// Render Universal Encyclopedic & Discovery Links (Letterboxd, Wikipedia, IMDb, TMDb, Open Library)
+function renderWorkLinksHtml(item) {
+  if (!item) return "";
+  const titleEnc = encodeURIComponent(item.title);
+  const titleYearEnc = encodeURIComponent(`${item.title} ${item.year || ""}`);
+  const isMovie = item.type === "Movie" || item.media_type === "movie";
+  const isTV = item.type === "TV Show" || item.media_type === "tv";
+  const isBook = item.type === "Book" || item.media_type === "book";
+
+  const wikiUrl = item.wikiUrl || (String(item.title || "").toLowerCase().includes("about time")
+    ? "https://en.wikipedia.org/wiki/About_Time_(2013_film)"
+    : `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(item.title + (isMovie ? " film" : isTV ? " TV series" : " novel"))}`);
+
+  const letterboxdUrl = item.letterboxdUrl || (String(item.title || "").toLowerCase().includes("about time")
+    ? "https://letterboxd.com/film/about-time/"
+    : `https://letterboxd.com/search/${titleEnc}/`);
+
+  const imdbUrl = item.imdbUrl || `https://www.imdb.com/find/?q=${titleYearEnc}`;
+
+  let links = [];
+
+  if (isMovie) {
+    links.push(`
+      <a href="${wikiUrl}" target="_blank" rel="noopener noreferrer" class="special-ext-link wikipedia-link" title="Read ${item.title} on Wikipedia">
+        <svg class="ext-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+          <path d="M12.09 13.124l2.647-7.258h1.863l-3.642 9.489h-1.74l-2.028-5.59-2.037 5.59H5.41L1.768 5.866h1.863l2.647 7.258 1.942-5.32H6.98l.385-1.07h3.805l.384 1.07H10.15l1.94 5.32zm6.499-7.258h1.863l3.642 9.489h-1.74l-2.028-5.59-2.037 5.59h-1.74l-3.643-9.489h1.864l2.646 7.258 1.943-5.32h-1.24l.385-1.07h3.804l.385 1.07h-1.24l1.94 5.32 2.646-7.258z"/>
+        </svg>
+        <span>Wikipedia</span>
+      </a>
+    `);
+    links.push(`
+      <a href="${letterboxdUrl}" target="_blank" rel="noopener noreferrer" class="special-ext-link letterboxd-link" title="View ${item.title} on Letterboxd">
+        <svg class="ext-icon" viewBox="0 0 24 24" width="15" height="15" fill="none">
+          <circle cx="6" cy="12" r="4.5" fill="#40BCF4"/>
+          <circle cx="12" cy="12" r="4.5" fill="#00E054"/>
+          <circle cx="18" cy="12" r="4.5" fill="#FF8000"/>
+        </svg>
+        <span>Letterboxd</span>
+      </a>
+    `);
+    links.push(`
+      <a href="${imdbUrl}" target="_blank" rel="noopener noreferrer" class="special-ext-link imdb-link" title="View ${item.title} on IMDb">
+        <span>IMDb</span>
+      </a>
+    `);
+  } else if (isTV) {
+    links.push(`
+      <a href="${wikiUrl}" target="_blank" rel="noopener noreferrer" class="special-ext-link wikipedia-link" title="Read ${item.title} on Wikipedia">
+        <svg class="ext-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+          <path d="M12.09 13.124l2.647-7.258h1.863l-3.642 9.489h-1.74l-2.028-5.59-2.037 5.59H5.41L1.768 5.866h1.863l2.647 7.258 1.942-5.32H6.98l.385-1.07h3.805l.384 1.07H10.15l1.94 5.32zm6.499-7.258h1.863l3.642 9.489h-1.74l-2.028-5.59-2.037 5.59h-1.74l-3.643-9.489h1.864l2.646 7.258 1.943-5.32h-1.24l.385-1.07h3.804l.385 1.07h-1.24l1.94 5.32 2.646-7.258z"/>
+        </svg>
+        <span>Wikipedia</span>
+      </a>
+    `);
+    links.push(`
+      <a href="${imdbUrl}" target="_blank" rel="noopener noreferrer" class="special-ext-link imdb-link" title="View ${item.title} on IMDb">
+        <span>IMDb</span>
+      </a>
+    `);
+    links.push(`
+      <a href="https://www.themoviedb.org/search/tv?query=${titleEnc}" target="_blank" rel="noopener noreferrer" class="special-ext-link tmdb-link" title="View ${item.title} on TMDb">
+        <span>TMDb</span>
+      </a>
+    `);
+  } else if (isBook) {
+    links.push(`
+      <a href="${wikiUrl}" target="_blank" rel="noopener noreferrer" class="special-ext-link wikipedia-link" title="Read ${item.title} on Wikipedia">
+        <svg class="ext-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+          <path d="M12.09 13.124l2.647-7.258h1.863l-3.642 9.489h-1.74l-2.028-5.59-2.037 5.59H5.41L1.768 5.866h1.863l2.647 7.258 1.942-5.32H6.98l.385-1.07h3.805l.384 1.07H10.15l1.94 5.32zm6.499-7.258h1.863l3.642 9.489h-1.74l-2.028-5.59-2.037 5.59h-1.74l-3.643-9.489h1.864l2.646 7.258 1.943-5.32h-1.24l.385-1.07h3.804l.385 1.07h-1.24l1.94 5.32 2.646-7.258z"/>
+        </svg>
+        <span>Wikipedia</span>
+      </a>
+    `);
+    links.push(`
+      <a href="https://openlibrary.org/search?q=${titleEnc}" target="_blank" rel="noopener noreferrer" class="special-ext-link ol-link" title="Explore ${item.title} on Open Library">
+        <span>Open Library</span>
+      </a>
+    `);
+    links.push(`
+      <a href="https://www.google.com/search?tbm=bks&q=${encodeURIComponent(item.title + ' ' + (item.creator || 'novel'))}" target="_blank" rel="noopener noreferrer" class="special-ext-link google-books-link" title="Find ${item.title} on Google Books">
+        <span>Google Books</span>
+      </a>
+    `);
+  }
+
+  return `<div class="selected-links-bar">${links.join("")}</div>`;
+}
+
 // Show Selected Title Hero Banner
 function showSelected(data) {
   const typeClass = getTypeClass(data.type);
   const tagsHtml = (data.tags || []).map(tag => `<span class="theme-tag">${tag}</span>`).join("");
   const categoryIcon = data.type === "Book" ? "📖" : data.type === "TV Show" ? "📺" : "🎬";
   const posterHtml = data.posterUrl 
-    ? `<img src="${data.posterUrl}" alt="${data.title}" class="poster-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div class="poster-box" style="display:none;"><span class="poster-box-icon">${categoryIcon}</span><div class="poster-text">${data.title}</div>${data.creator ? `<div class="poster-box-creator">${data.creator}</div>` : ''}</div>`
+    ? `<img src="${data.posterUrl}" alt="${data.title}" class="poster-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div class="poster-box" style="display:none;"><span class="poster-box-icon">${categoryIcon}</span><div class="poster-text">${data.title}</div>${data.creator ? `<div class="poster-box-creator">${data.creator}</div>` : ''}</div>`
     : `<div class="poster-box"><span class="poster-box-icon">${categoryIcon}</span><div class="poster-text">${data.title}</div>${data.creator ? `<div class="poster-box-creator">${data.creator}</div>` : ''}</div>`;
 
   const isWiki = data.source === "wikipedia" || String(data.id || "").startsWith("wiki_");
@@ -1089,6 +1991,10 @@ function showSelected(data) {
     ? `<div class="fallback-source-note"><span>✦ Reference information retrieved via Wikipedia official API</span></div>`
     : "";
 
+  const isBook = data.type === "Book" || data.media_type === "book";
+  const workLinksHtml = renderWorkLinksHtml(data);
+  const castPlaceholderHtml = !isBook ? renderCastSkeletonHtml(6) : "";
+
   selectedTitle.innerHTML = `
     <div class="poster-container-wrap">
       ${posterHtml}
@@ -1103,9 +2009,16 @@ function showSelected(data) {
       <h1>${data.title}</h1>
       <p class="selected-synopsis">${data.synopsis}</p>
       <div class="theme-tags">${tagsHtml}</div>
+      ${workLinksHtml}
       ${wikiFallbackNotice}
     </div>
+    ${castPlaceholderHtml}
   `;
+
+  // Asynchronously mount real TMDB cast for Movie/TV
+  if (!isBook) {
+    mountPrincipalCast(data, selectedTitle);
+  }
 }
 
 // Render Category Cards
@@ -1170,26 +2083,40 @@ function renderCards(items, elementId) {
 // Generate External Information Links (strictly discovery / encyclopedic only)
 function generateExternalLinks(item) {
   const titleEnc = encodeURIComponent(item.title);
-  const titleYearEnc = encodeURIComponent(`${item.title} ${item.year}`);
+  const titleYearEnc = encodeURIComponent(`${item.title} ${item.year || ""}`);
+  const isMovie = item.type === "Movie" || item.media_type === "movie";
+  const isTV = item.type === "TV Show" || item.media_type === "tv";
+  const isBook = item.type === "Book" || item.media_type === "book";
+
+  const wikiUrl = item.wikiUrl || (String(item.title || "").toLowerCase().includes("about time")
+    ? "https://en.wikipedia.org/wiki/About_Time_(2013_film)"
+    : `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(item.title + (isMovie ? " film" : isTV ? " TV series" : " novel"))}`);
+
+  const letterboxdUrl = item.letterboxdUrl || (String(item.title || "").toLowerCase().includes("about time")
+    ? "https://letterboxd.com/film/about-time/"
+    : `https://letterboxd.com/search/${titleEnc}/`);
+
+  const imdbUrl = item.imdbUrl || `https://www.imdb.com/find/?q=${titleYearEnc}`;
+
   const links = [];
 
-  if (item.source === "wikipedia" || item.externalUrl?.includes("wikipedia.org")) {
-    links.push({ name: "Wikipedia Article", url: item.externalUrl || `https://en.wikipedia.org/wiki/${titleEnc}` });
-    links.push({ name: "IMDb Lookup", url: `https://www.imdb.com/find/?q=${titleYearEnc}` });
-  } else if (item.type === "Movie") {
-    links.push({ name: "IMDb", url: `https://www.imdb.com/find/?q=${titleYearEnc}` });
-    links.push({ name: "Letterboxd", url: `https://letterboxd.com/search/${titleEnc}/` });
-    links.push({ name: "Wikipedia", url: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(item.title + " film")}` });
-  } else if (item.type === "TV Show") {
-    links.push({ name: "IMDb", url: `https://www.imdb.com/find/?q=${encodeURIComponent(item.title + " TV series")}` });
+  if (isMovie) {
+    links.push({ name: "Letterboxd", url: letterboxdUrl });
+    links.push({ name: "Wikipedia", url: wikiUrl });
+    links.push({ name: "IMDb", url: imdbUrl });
+    if (item.externalUrl && item.externalUrl.includes("themoviedb.org")) {
+      links.push({ name: "TMDb", url: item.externalUrl });
+    }
+  } else if (isTV) {
+    links.push({ name: "Wikipedia", url: wikiUrl });
+    links.push({ name: "IMDb", url: imdbUrl });
     links.push({ name: "TMDb", url: `https://www.themoviedb.org/search/tv?query=${titleEnc}` });
-    links.push({ name: "Wikipedia", url: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(item.title + " TV series")}` });
-  } else if (item.type === "Book") {
+  } else if (isBook) {
     links.push({ name: "Open Library", url: item.externalUrl || `https://openlibrary.org/search?q=${titleEnc}` });
     links.push({ name: "Google Books", url: `https://www.google.com/search?tbm=bks&q=${encodeURIComponent(item.title + " " + (item.creator || "novel"))}` });
-    links.push({ name: "Wikipedia", url: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(item.title + " novel")}` });
+    links.push({ name: "Wikipedia", url: wikiUrl });
   } else {
-    links.push({ name: "Wikipedia", url: item.externalUrl || `https://en.wikipedia.org/wiki/Special:Search?search=${titleEnc}` });
+    links.push({ name: "Wikipedia", url: wikiUrl });
   }
 
   return links.map(link => `
@@ -1210,7 +2137,7 @@ function showDetails(item) {
   const tagsHtml = (item.tags || []).map(tag => `<span class="highlight-pill">${tag}</span>`).join("");
   const linksHtml = generateExternalLinks(item);
   const posterContent = item.posterUrl 
-    ? `<img src="${item.posterUrl}" alt="${item.title}" class="detail-poster-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div class="detail-poster-wrap" style="display:none;"><div class="detail-poster-title">${item.title}</div></div>`
+    ? `<img src="${item.posterUrl}" alt="${item.title}" class="detail-poster-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div class="detail-poster-wrap" style="display:none;"><div class="detail-poster-title">${item.title}</div></div>`
     : `<div class="detail-poster-wrap"><div class="detail-poster-title">${item.title}</div></div>`;
 
   const isWiki = item.source === "wikipedia" || String(item.id || "").startsWith("wiki_");
@@ -1224,6 +2151,9 @@ function showDetails(item) {
     : isOl
     ? `<span class="source-badge ol-badge">Open Library</span>`
     : "";
+
+  const isBook = item.type === "Book" || item.media_type === "book";
+  const castPlaceholderHtml = !isBook ? renderCastSkeletonHtml(6) : "";
 
   detailsContent.innerHTML = `
     <div class="detail-panel">
@@ -1246,6 +2176,8 @@ function showDetails(item) {
           </div>
         </div>
       </div>
+
+      ${castPlaceholderHtml}
 
       ${item.why || (item.whyBullets && item.whyBullets.length > 0) ? `
       <!-- Connection DNA Section -->
@@ -1272,6 +2204,10 @@ function showDetails(item) {
       </div>
     </div>
   `;
+
+  if (!isBook) {
+    mountPrincipalCast(item, detailsContent.querySelector(".detail-panel"));
+  }
 
   results.classList.add("hidden");
   details.classList.remove("hidden");
@@ -1550,14 +2486,7 @@ async function executeSearch(queryOrEntity) {
       if (data.source && data.recommendations) {
         showLoading(false);
         applySearchResult({
-          id: data.source.id,
-          title: data.source.title,
-          type: data.source.type,
-          year: data.source.year,
-          creator: data.source.creator,
-          synopsis: data.source.synopsis,
-          posterUrl: data.source.posterUrl,
-          tags: data.source.tags,
+          ...data.source,
           recommendations: data.recommendations,
           matchedEntities: data.matchedEntities || []
         });
@@ -1670,7 +2599,7 @@ if (navLogo) {
 const heroQuoteBox = document.getElementById("heroQuoteBox");
 if (heroQuoteBox) {
   const openTropicThunder = () => {
-    executeSearch("tropicthunder");
+    executeSearch(demoData.tropicthunder || "Tropic Thunder");
   };
   heroQuoteBox.addEventListener("click", openTropicThunder);
   heroQuoteBox.addEventListener("keydown", (e) => {
@@ -1680,6 +2609,25 @@ if (heroQuoteBox) {
     }
   });
 }
+
+// About Time (2013) Bottom-Left Background Hotspot
+const aboutTimeHotspot = document.getElementById("aboutTimeHotspot");
+if (aboutTimeHotspot) {
+  const openAboutTime = (e) => {
+    if (e) e.preventDefault();
+    executeSearch("About Time");
+  };
+  aboutTimeHotspot.addEventListener("click", openAboutTime);
+  aboutTimeHotspot.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      openAboutTime();
+    }
+  });
+}
+
+
+
 
 
 
