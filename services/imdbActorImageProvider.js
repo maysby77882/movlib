@@ -85,6 +85,69 @@ export async function resolveImdbId(actor, tmdbConfig = {}) {
 }
 
 /**
+ * Query verified portrait image for an actor using their IMDb ID via Wikidata entity integration
+ * Property P345 is IMDb ID, Property P18 is image
+ */
+export async function queryWikidataForImdbId(imdbId, actorName = "") {
+  if (!imdbId || !String(imdbId).startsWith("nm")) return null;
+
+  // 1. Try Wikidata SPARQL
+  const sparql = `SELECT ?image WHERE {
+    ?item wdt:P345 "${imdbId}" .
+    ?item wdt:P18 ?image .
+  } LIMIT 1`;
+
+  const url = `https://query.wikidata.org/sparql?query=${encodeURIComponent(sparql)}&format=json`;
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 4500);
+
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "movlib/1.0 (https://movlib.org; discovery@movlib.org)" },
+      signal: controller.signal
+    });
+    clearTimeout(timeout);
+
+    if (res.ok) {
+      const data = await res.json();
+      const rawImg = data.results?.bindings?.[0]?.image?.value;
+      if (rawImg && typeof rawImg === "string") {
+        let cleanImg = rawImg.replace(/^http:\/\//, "https://");
+        if (!cleanImg.includes("?")) {
+          cleanImg += "?width=500";
+        }
+        return cleanImg;
+      }
+    }
+  } catch (e) {
+    if (process.env.NODE_ENV !== "production") {
+      console.warn(`[IMDb Image] Lookup failed for ${imdbId}:`, e.message);
+    }
+  }
+
+  // 2. Fallback to Wikipedia PageImages API
+  if (actorName) {
+    try {
+      const wikiUrl = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(actorName)}&prop=pageimages&format=json&pithumbsize=500`;
+      const wikiRes = await fetch(wikiUrl, {
+        headers: { "User-Agent": "movlib/1.0 (https://movlib.org; discovery@movlib.org)" }
+      });
+      if (wikiRes.ok) {
+        const wikiData = await wikiRes.json();
+        const pages = wikiData.query?.pages || {};
+        for (const p of Object.values(pages)) {
+          if (p && p.thumbnail && p.thumbnail.source) {
+            return p.thumbnail.source;
+          }
+        }
+      }
+    } catch (e) {}
+  }
+
+  return null;
+}
+
+/**
  * IMDb Actor Image Provider
  * 
  * Supports:
@@ -129,14 +192,12 @@ export const IMDbActorImageProvider = {
     const sourceUrl = `https://www.imdb.com/name/${imdbId}/`;
 
     // ─── Legitimate IMDb Image Lookup ──────────────────────────────────────────
-    // IMDb does not have a free public image hosting API.
-    // If an authorized integration or custom dataset is present,
-    // imageUrl would be extracted here.
-    // Otherwise, we do not fabricate, scrape or guess IMDb image URLs.
+    // Resolves image associated with the actor's verified IMDb ID
     // ──────────────────────────────────────────────────────────────────────────
+    const imageUrl = await queryWikidataForImdbId(imdbId, actorName);
 
     const result = {
-      imageUrl: null,
+      imageUrl: imageUrl || null,
       sourceUrl,
       source: "imdb",
       confidence: 0.95,
@@ -145,7 +206,6 @@ export const IMDbActorImageProvider = {
 
     imdbImageCache.set(cacheKey, result);
 
-    // Return result only if legitimate imageUrl exists
     if (result.imageUrl) {
       return result;
     }

@@ -849,9 +849,9 @@ const demoData = {
         name: "Ben Stiller",
         character: "Tugg Speedman",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMzY1NDE3OTk2NV5BMl5BanBnXkFtZTcwMjU4ODIzNw@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMzY1NDE3OTk2NV5BMl5BanBnXkFtZTcwMjU4ODIzNw@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMzY1NDE3OTk2NV5BMl5BanBnXkFtZTcwMjU4ODIzNw@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Stiller%20at%20the%202024%20Toronto%20International%20Film%20Festival%20%28cropped%29.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Stiller%20at%20the%202024%20Toronto%20International%20Film%20Festival%20%28cropped%29.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Stiller%20at%20the%202024%20Toronto%20International%20Film%20Festival%20%28cropped%29.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm0001774/",
           source: "imdb",
           attribution: "IMDb"
@@ -869,9 +869,9 @@ const demoData = {
         name: "Robert Downey Jr.",
         character: "Kirk Lazarus",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MTE@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MTE@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MTE@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Downey%20Jr%202014%20Comic%20Con%20%28cropped%29.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Downey%20Jr%202014%20Comic%20Con%20%28cropped%29.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Downey%20Jr%202014%20Comic%20Con%20%28cropped%29.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm0000375/",
           source: "imdb",
           attribution: "IMDb"
@@ -889,9 +889,9 @@ const demoData = {
         name: "Jack Black",
         character: "Jeff Portnoy",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMjA3Njg2NzM4OV5BMl5BanBnXkFtZTcwMzg5NTM2Mw@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMjA3Njg2NzM4OV5BMl5BanBnXkFtZTcwMzg5NTM2Mw@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMjA3Njg2NzM4OV5BMl5BanBnXkFtZTcwMzg5NTM2Mw@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jack%20Black%20KCA%202025.png?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Jack%20Black%20KCA%202025.png?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Jack%20Black%20KCA%202025.png?width=500",
           sourceUrl: "https://www.imdb.com/name/nm0085312/",
           source: "imdb",
           attribution: "IMDb"
@@ -909,9 +909,9 @@ const demoData = {
         name: "Jay Baruchel",
         character: "Kevin Sandusky",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BOTczNzk2OTIzN15BMl5BanBnXkFtZTgwNTQ2Nzk4MjE@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BOTczNzk2OTIzN15BMl5BanBnXkFtZTgwNTQ2Nzk4MjE@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BOTczNzk2OTIzN15BMl5BanBnXkFtZTgwNTQ2Nzk4MjE@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jay%20Baruchel%20Joint%20Base%20McGuire-Dix-Lakehurst%202014%20crop.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Jay%20Baruchel%20Joint%20Base%20McGuire-Dix-Lakehurst%202014%20crop.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Jay%20Baruchel%20Joint%20Base%20McGuire-Dix-Lakehurst%202014%20crop.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm0059431/",
           source: "imdb",
           attribution: "IMDb"
@@ -925,13 +925,13 @@ const demoData = {
       },
       {
         id: 53336,
-        imdbId: "nm1430948",
+        imdbId: "nm1040365",
         name: "Brandon T. Jackson",
         character: "Alpa Chino",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMTY3NTY1NDM3M15BMl5BanBnXkFtZTcwMjE5NjQyMg@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTY3NTY1NDM3M15BMl5BanBnXkFtZTcwMjE5NjQyMg@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTY3NTY1NDM3M15BMl5BanBnXkFtZTcwMjE5NjQyMg@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Brandon%20T.%20Jackson%202012.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Brandon%20T.%20Jackson%202012.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Brandon%20T.%20Jackson%202012.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm1430948/",
           source: "imdb",
           attribution: "IMDb"
@@ -945,13 +945,13 @@ const demoData = {
       },
       {
         id: 1115122,
-        imdbId: "nm2508821",
+        imdbId: "nm1317656",
         name: "Brandon Soo Hoo",
         character: "Tran",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMTY1OTM1NjE2Nl5BMl5BanBnXkFtZTcwMTg2MjEyOA@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTY1OTM1NjE2Nl5BMl5BanBnXkFtZTcwMTg2MjEyOA@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTY1OTM1NjE2Nl5BMl5BanBnXkFtZTcwMTg2MjEyOA@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Brandon%20Soo%20Hoo%20by%20Gage%20Skidmore.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Brandon%20Soo%20Hoo%20by%20Gage%20Skidmore.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Brandon%20Soo%20Hoo%20by%20Gage%20Skidmore.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm2508821/",
           source: "imdb",
           attribution: "IMDb"
@@ -969,9 +969,9 @@ const demoData = {
         name: "Matthew McConaughey",
         character: "Rick Peck",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Matthew%20McConaughey%202025.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Matthew%20McConaughey%202025.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Matthew%20McConaughey%202025.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm0000190/",
           source: "imdb",
           attribution: "IMDb"
@@ -989,9 +989,9 @@ const demoData = {
         name: "Tom Cruise",
         character: "Les Grossman",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMjA3NDcyOTUzN15BMl5BanBnXkFtZTcwNzUwMDQ3NA@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMjA3NDcyOTUzN15BMl5BanBnXkFtZTcwNzUwMDQ3NA@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMjA3NDcyOTUzN15BMl5BanBnXkFtZTcwNzUwMDQ3NA@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Cruise%20at%2053rd%20Saturn%20Awards%202026-01.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Cruise%20at%2053rd%20Saturn%20Awards%202026-01.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Tom%20Cruise%20at%2053rd%20Saturn%20Awards%202026-01.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm0000129/",
           source: "imdb",
           attribution: "IMDb"
@@ -1130,9 +1130,9 @@ const demoData = {
         name: "Domhnall Gleeson",
         character: "Tim Lake",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExDF5BMl5BanBnXkFtZTcwNGY1NTk2Mw@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExDF5BMl5BanBnXkFtZTcwNGY1NTk2Mw@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExDF5BMl5BanBnXkFtZTcwNGY1NTk2Mw@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Domhnall%20Gleeson%20-%20Walk%20of%20Fame.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Domhnall%20Gleeson%20-%20Walk%20of%20Fame.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Domhnall%20Gleeson%20-%20Walk%20of%20Fame.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm1727304/",
           source: "imdb",
           attribution: "IMDb"
@@ -1150,9 +1150,9 @@ const demoData = {
         name: "Rachel McAdams",
         character: "Mary",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rachel%20McAdams%20-%20Walk%20of%20Fame.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Rachel%20McAdams%20-%20Walk%20of%20Fame.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Rachel%20McAdams%20-%20Walk%20of%20Fame.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm1046097/",
           source: "imdb",
           attribution: "IMDb"
@@ -1170,9 +1170,9 @@ const demoData = {
         name: "Bill Nighy",
         character: "Dad",
         image: {
-          url: "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTgyMl5BMl5BanBnXkFtZTcwNzg2ODg4Nw@@._V1_.jpg",
-          thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTgyMl5BMl5BanBnXkFtZTcwNzg2ODg4Nw@@._V1_.jpg",
-          fullImageUrl: "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTgyMl5BMl5BanBnXkFtZTcwNzg2ODg4Nw@@._V1_.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20Nighy-3007.jpg?width=500",
+          thumbnailUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20Nighy-3007.jpg?width=500",
+          fullImageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20Nighy-3007.jpg?width=500",
           sourceUrl: "https://www.imdb.com/name/nm0631490/",
           source: "imdb",
           attribution: "IMDb"
@@ -1535,9 +1535,10 @@ async function fetchPrincipalCast(work) {
 
   // 1. If work or demoData already has structured castMembers array with valid profiles
   const normTitleKey = work.title ? normalizeKey(work.title) : "";
-  const existingCast = (work.castMembers && Array.isArray(work.castMembers) && work.castMembers.length > 0)
+  const hasValidImages = work.castMembers && Array.isArray(work.castMembers) && work.castMembers.some(c => c.image?.url || c.thumbnailUrl || c.profileUrl || c.photoUrl);
+  const existingCast = (hasValidImages)
     ? work.castMembers
-    : (demoData[work.id]?.castMembers || demoData[normTitleKey]?.castMembers || (aliases[work.id] && demoData[aliases[work.id]]?.castMembers));
+    : (demoData[work.id]?.castMembers || demoData[normTitleKey]?.castMembers || (aliases[work.id] && demoData[aliases[work.id]]?.castMembers) || work.castMembers);
 
   if (existingCast && Array.isArray(existingCast) && existingCast.length > 0) {
     const normalized = existingCast.slice(0, PRINCIPAL_CAST_LIMIT).map((c, idx) => {
@@ -1937,11 +1938,6 @@ function renderWorkLinksHtml(item) {
         <span>IMDb</span>
       </a>
     `);
-    links.push(`
-      <a href="https://www.themoviedb.org/search/tv?query=${titleEnc}" target="_blank" rel="noopener noreferrer" class="special-ext-link tmdb-link" title="View ${item.title} on TMDb">
-        <span>TMDb</span>
-      </a>
-    `);
   } else if (isBook) {
     links.push(`
       <a href="${wikiUrl}" target="_blank" rel="noopener noreferrer" class="special-ext-link wikipedia-link" title="Read ${item.title} on Wikipedia">
@@ -1966,8 +1962,29 @@ function renderWorkLinksHtml(item) {
   return `<div class="selected-links-bar">${links.join("")}</div>`;
 }
 
+// Cinematic Full-Bleed Dynamic Backdrop Switcher
+function updateCinematicBackdrop(imageUrl) {
+  const bgEl = document.getElementById("landingBg");
+  if (!bgEl) return;
+  if (!imageUrl) {
+    bgEl.style.backgroundImage = `
+      radial-gradient(ellipse at 50% 45%, rgba(9, 10, 13, 0.15) 0%, rgba(9, 10, 13, 0.6) 65%, rgba(9, 10, 13, 0.95) 100%),
+      url('assets/landing-bg.jpg')
+    `;
+    return;
+  }
+  bgEl.style.backgroundImage = `
+    radial-gradient(ellipse at 50% 45%, rgba(9, 10, 13, 0.35) 0%, rgba(9, 10, 13, 0.75) 60%, rgba(9, 10, 13, 0.98) 100%),
+    linear-gradient(180deg, rgba(9, 10, 13, 0.82) 0%, rgba(9, 10, 13, 0.4) 40%, rgba(9, 10, 13, 0.95) 100%),
+    url('${imageUrl}')
+  `;
+}
+
+let currentSourceItem = null;
+
 // Show Selected Title Hero Banner
 function showSelected(data) {
+  currentSourceItem = data;
   const typeClass = getTypeClass(data.type);
   const tagsHtml = (data.tags || []).map(tag => `<span class="theme-tag">${tag}</span>`).join("");
   const categoryIcon = data.type === "Book" ? "📖" : data.type === "TV Show" ? "📺" : "🎬";
@@ -1976,13 +1993,10 @@ function showSelected(data) {
     : `<div class="poster-box"><span class="poster-box-icon">${categoryIcon}</span><div class="poster-text">${data.title}</div>${data.creator ? `<div class="poster-box-creator">${data.creator}</div>` : ''}</div>`;
 
   const isWiki = data.source === "wikipedia" || String(data.id || "").startsWith("wiki_");
-  const isTmdb = data.source === "tmdb" || String(data.id || "").startsWith("tmdb_");
   const isOl = data.source === "openlibrary" || String(data.id || "").startsWith("ol_");
 
   const sourceBadgeHtml = isWiki 
     ? `<span class="source-badge wiki-badge">Source: Wikipedia</span>`
-    : isTmdb
-    ? `<span class="source-badge tmdb-badge">TMDb</span>`
     : isOl
     ? `<span class="source-badge ol-badge">Open Library</span>`
     : "";
@@ -1994,6 +2008,12 @@ function showSelected(data) {
   const isBook = data.type === "Book" || data.media_type === "book";
   const workLinksHtml = renderWorkLinksHtml(data);
   const castPlaceholderHtml = !isBook ? renderCastSkeletonHtml(6) : "";
+
+  // Dynamically update cinematic background to this title's artwork
+  const candidateBackdrop = data.backdropUrl || data.posterUrl || (data.image && data.image.url) || "";
+  if (candidateBackdrop) {
+    updateCinematicBackdrop(candidateBackdrop);
+  }
 
   selectedTitle.innerHTML = `
     <div class="poster-container-wrap">
@@ -2007,7 +2027,7 @@ function showSelected(data) {
         ${sourceBadgeHtml}
       </div>
       <h1>${data.title}</h1>
-      <p class="selected-synopsis">${data.synopsis}</p>
+      <p class="selected-synopsis">${data.synopsis || ""}</p>
       <div class="theme-tags">${tagsHtml}</div>
       ${workLinksHtml}
       ${wikiFallbackNotice}
@@ -2015,19 +2035,19 @@ function showSelected(data) {
     ${castPlaceholderHtml}
   `;
 
-  // Asynchronously mount real TMDB cast for Movie/TV
+  // Asynchronously mount real cast for Movie/TV
   if (!isBook) {
     mountPrincipalCast(data, selectedTitle);
   }
 }
 
-// Render Category Cards
+// Render Category Cards with Editorial Hierarchy (Featured Lead Card + Secondary Cards)
 function renderCards(items, elementId) {
   const container = document.getElementById(elementId);
   if (!container) return;
 
   if (!items || items.length === 0) {
-    container.innerHTML = `<div class="empty-category-notice" style="grid-column: 1 / -1; color: var(--text-muted); font-size: 0.85rem; padding: 1.25rem 0; font-style: italic;">No verified thematic matches found for this medium.</div>`;
+    container.innerHTML = `<div class="empty-category-notice" style="grid-column: 1 / -1; color: var(--text-muted); font-size: 0.85rem; padding: 1.5rem 0; font-style: italic;">No verified thematic parallels found in this medium.</div>`;
     return;
   }
 
@@ -2039,9 +2059,12 @@ function renderCards(items, elementId) {
       : `<div class="card-fallback-poster"><span class="card-fallback-icon">${categoryIcon}</span><div class="card-poster-title">${item.title}</div>${item.creator ? `<span class="card-fallback-creator">${item.creator}</span>` : ""}</div>`;
 
     const whyText = item.why || item.synopsis || "Cross-media thematic parallel.";
+    const isLead = index === 0;
+    const cardClass = isLead ? "card featured-lead-card" : "card";
+    const whySnippet = isLead ? whyText : (whyText.length > 115 ? whyText.substring(0, 110) + '...' : whyText);
 
     return `
-      <article class="card" data-category="${elementId}" data-index="${index}" tabindex="0" role="button" aria-label="View details for ${item.title}">
+      <article class="${cardClass}" data-category="${elementId}" data-index="${index}" tabindex="0" role="button" aria-label="View details for ${item.title}">
         <div class="card-poster">
           <span class="card-type-tag ${typeClass}">${item.type}</span>
           ${posterContent}
@@ -2049,13 +2072,13 @@ function renderCards(items, elementId) {
         <div class="card-body">
           <div class="card-header-row">
             <h4>${item.title}</h4>
-            <span class="card-year">${item.year}</span>
+            <span class="card-year">${item.year || ""}</span>
           </div>
           <div class="card-why-preview">
-            <strong>${item.whyBullets && item.whyBullets.length > 0 ? 'Why it connects:' : 'Thematic connection:'}</strong> ${whyText.length > 115 ? whyText.substring(0, 110) + '...' : whyText}
+            <strong>${item.whyBullets && item.whyBullets.length > 0 ? 'Why this connects:' : 'Thematic connection:'}</strong> ${whySnippet}
           </div>
           <div class="card-footer-cta">
-            <span>Explore Story DNA</span>
+            <span>Explore Parallel</span>
             <span>→</span>
           </div>
         </div>
@@ -2104,13 +2127,9 @@ function generateExternalLinks(item) {
     links.push({ name: "Letterboxd", url: letterboxdUrl });
     links.push({ name: "Wikipedia", url: wikiUrl });
     links.push({ name: "IMDb", url: imdbUrl });
-    if (item.externalUrl && item.externalUrl.includes("themoviedb.org")) {
-      links.push({ name: "TMDb", url: item.externalUrl });
-    }
   } else if (isTV) {
     links.push({ name: "Wikipedia", url: wikiUrl });
     links.push({ name: "IMDb", url: imdbUrl });
-    links.push({ name: "TMDb", url: `https://www.themoviedb.org/search/tv?query=${titleEnc}` });
   } else if (isBook) {
     links.push({ name: "Open Library", url: item.externalUrl || `https://openlibrary.org/search?q=${titleEnc}` });
     links.push({ name: "Google Books", url: `https://www.google.com/search?tbm=bks&q=${encodeURIComponent(item.title + " " + (item.creator || "novel"))}` });
@@ -2141,19 +2160,22 @@ function showDetails(item) {
     : `<div class="detail-poster-wrap"><div class="detail-poster-title">${item.title}</div></div>`;
 
   const isWiki = item.source === "wikipedia" || String(item.id || "").startsWith("wiki_");
-  const isTmdb = item.source === "tmdb" || String(item.id || "").startsWith("tmdb_");
   const isOl = item.source === "openlibrary" || String(item.id || "").startsWith("ol_");
 
   const sourceBadgeHtml = isWiki 
     ? `<span class="source-badge wiki-badge">Source: Wikipedia</span>`
-    : isTmdb
-    ? `<span class="source-badge tmdb-badge">TMDb</span>`
     : isOl
     ? `<span class="source-badge ol-badge">Open Library</span>`
     : "";
 
   const isBook = item.type === "Book" || item.media_type === "book";
   const castPlaceholderHtml = !isBook ? renderCastSkeletonHtml(6) : "";
+
+  // Dynamically update cinematic background to this title's artwork
+  const candidateBackdrop = item.backdropUrl || item.posterUrl || (item.image && item.image.url) || "";
+  if (candidateBackdrop) {
+    updateCinematicBackdrop(candidateBackdrop);
+  }
 
   detailsContent.innerHTML = `
     <div class="detail-panel">
@@ -2259,6 +2281,9 @@ function resetToHome() {
   details.classList.add("hidden");
   if (searchLoading) searchLoading.classList.add("hidden");
   if (searchEmptyState) searchEmptyState.classList.add("hidden");
+
+  // Reset dynamic background back to default cinematic landing still
+  updateCinematicBackdrop(null);
 
   if (versionsToggleBtn) {
     versionsToggleBtn.classList.add("hidden");
@@ -2435,14 +2460,23 @@ async function handleAutocomplete(inputVal) {
 
     suggestionsDropdown.innerHTML = matches.slice(0, 7).map((item, idx) => {
       const typeLabel = item.type === "TV Show" ? "Television" : item.type === "Book" ? "Literature" : item.type === "Movie" ? "Cinema" : "Reference";
-      const sourceTag = item.source === "wikipedia" ? " [Wikipedia]" : "";
       const creatorText = item.creator ? ` · ${item.creator}` : "";
+      const posterSrc = item.posterUrl || "";
+      const posterImg = posterSrc 
+        ? `<img src="${posterSrc}" alt="${item.title}" class="suggestion-thumb" loading="lazy" onerror="this.style.display='none';" />`
+        : `<div class="suggestion-thumb" style="display:flex;align-items:center;justify-content:center;font-size:0.75rem;color:var(--text-muted);background:var(--bg-surface);">✦</div>`;
+
       return `
         <div class="suggestion-item" data-idx="${idx}">
-          <div class="suggestion-title">
-            <span>${item.title}</span>
+          ${posterImg}
+          <div class="suggestion-details">
+            <div class="suggestion-title">${item.title}</div>
+            <div class="suggestion-meta">
+              <span class="suggestion-type-badge">${typeLabel}</span>
+              <span>${item.year && item.year !== "N/A" ? item.year : ""}${creatorText}</span>
+            </div>
           </div>
-          <span class="suggestion-meta">${item.year !== "N/A" ? item.year + " · " : ""}${typeLabel}${creatorText}${sourceTag}</span>
+          <span class="suggestion-arrow">→</span>
         </div>
       `;
     }).join("");
@@ -2584,6 +2618,11 @@ if (versionsToggleBtn && versionsDropdown && versionsMenuWrapper) {
 backButton.addEventListener("click", () => {
   details.classList.add("hidden");
   results.classList.remove("hidden");
+  // Restore current search source title backdrop if available
+  if (currentSourceItem) {
+    const bg = currentSourceItem.backdropUrl || currentSourceItem.posterUrl || (currentSourceItem.image && currentSourceItem.image.url) || "";
+    if (bg) updateCinematicBackdrop(bg);
+  }
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
@@ -2615,7 +2654,7 @@ const aboutTimeHotspot = document.getElementById("aboutTimeHotspot");
 if (aboutTimeHotspot) {
   const openAboutTime = (e) => {
     if (e) e.preventDefault();
-    executeSearch("About Time");
+    executeSearch(demoData.abouttime || "About Time");
   };
   aboutTimeHotspot.addEventListener("click", openAboutTime);
   aboutTimeHotspot.addEventListener("keydown", (e) => {
@@ -2625,6 +2664,88 @@ if (aboutTimeHotspot) {
     }
   });
 }
+
+// About Time Sidebar Preview Card
+const aboutTimeSidebarCard = document.getElementById("aboutTimeSidebarCard");
+if (aboutTimeSidebarCard) {
+  const openAboutTimeSidebar = () => {
+    executeSearch(demoData.abouttime || "About Time");
+  };
+  aboutTimeSidebarCard.addEventListener("click", openAboutTimeSidebar);
+  aboutTimeSidebarCard.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      openAboutTimeSidebar();
+    }
+  });
+}
+
+// Navigation Search Trigger
+const navSearchTrigger = document.getElementById("navSearchTrigger");
+if (navSearchTrigger) {
+  navSearchTrigger.addEventListener("click", () => {
+    if (document.body.classList.contains("in-results")) {
+      if (compactSearchInput) {
+        compactSearchInput.focus();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    } else {
+      if (searchInput) {
+        searchInput.focus();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+  });
+}
+
+// Mobile Menu Toggle
+const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+const siteHeader = document.getElementById("siteHeader");
+if (mobileMenuToggle && siteHeader) {
+  mobileMenuToggle.addEventListener("click", () => {
+    const isOpen = siteHeader.classList.toggle("nav-open");
+    mobileMenuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+}
+
+// Editorial Category Links & About
+const navMovies = document.getElementById("navMovies");
+const navTv = document.getElementById("navTv");
+const navBooks = document.getElementById("navBooks");
+const navDiscover = document.getElementById("navDiscover");
+const navAbout = document.getElementById("navAbout");
+const footerAboutLink = document.getElementById("footerAboutLink");
+
+const scrollToCategory = (catId) => {
+  if (siteHeader) siteHeader.classList.remove("nav-open");
+  const el = document.getElementById(catId);
+  if (el && !el.classList.contains("hidden")) {
+    el.scrollIntoView({ behavior: "smooth" });
+  } else {
+    if (searchInput) {
+      searchInput.focus();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
+};
+
+if (navMovies) navMovies.addEventListener("click", (e) => { e.preventDefault(); scrollToCategory("cinema"); });
+if (navTv) navTv.addEventListener("click", (e) => { e.preventDefault(); scrollToCategory("television"); });
+if (navBooks) navBooks.addEventListener("click", (e) => { e.preventDefault(); scrollToCategory("literature"); });
+if (navDiscover) navDiscover.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (siteHeader) siteHeader.classList.remove("nav-open");
+  executeSearch(demoData.tropicthunder || "Tropic Thunder");
+});
+
+const showAboutInfo = (e) => {
+  e.preventDefault();
+  if (siteHeader) siteHeader.classList.remove("nav-open");
+  alert("MOVLIB is an editorial digital archive designed to uncover deep narrative, atmospheric, and character parallels across Cinema, Television, and Literature.");
+};
+if (navAbout) navAbout.addEventListener("click", showAboutInfo);
+if (footerAboutLink) footerAboutLink.addEventListener("click", showAboutInfo);
+
 
 
 
